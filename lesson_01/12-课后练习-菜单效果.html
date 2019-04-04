@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>菜单效果练习</title>
+	<style>
+		ul {
+			list-style: none;
+		}
+
+		#list {
+			width: 132px;
+			height: 137px;
+			padding: 2px 8px;
+			margin: 90px auto;
+			font-size: 14px;
+			background-color: #f8f8f8;
+			border: 1px solid #bbb;
+			border-top: 1px solid #fe4502;
+		}
+
+		#list li {
+			line-height: 32px;
+			border-bottom: 1px solid #dfdfdf;
+		}
+
+		#list li:last-child {
+			border-bottom: 0;
+		}
+
+		#list i {
+			display: inline-block;
+			width: 25px;
+			height: 20px;
+			margin-right: 16px;
+			background-repeat: no-repeat;
+			vertical-align: middle;
+		}
+
+		#cloth {
+			background-image: url(../images/lesson_01/cloth.jpg);
+		}
+
+		#shoes {
+			background-image: url(../images/lesson_01/shoes.jpg);
+		}
+
+		#sport {
+			background-image: url(../images/lesson_01/sport.jpg);
+		}
+
+		#service {
+			background-image: url(../images/lesson_01/service.jpg);
+		}
+
+		#list span {
+			margin-left: 23px;
+		}
+	</style>
+</head>
+<body>
+	<ul id="list">
+		<li><i id="cloth"></i>服务内衣<span>&gt;</span></li>
+		<li><i id="shoes"></i>鞋包配饰<span>&gt;</span></li>
+		<li><i id="sport"></i>运动户外<span>&gt;</span></li>
+		<li><i id="service"></i>虚拟服务<span>&gt;</span></li>
+	</ul>
+</body>
+</html>
