@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>pages</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<base target="_self">
+	<style>
+		.pages {
+			width: 628px;
+			padding-top: 17px;
+			padding-bottom: 11px;
+			margin: 90px auto;
+			text-align: center;
+			background: #e8e8e8;
+			border: 1px solid #cdcdcd;
+		}
+
+		.pages a{
+			display: inline-block;
+			padding: 8px 9px;
+			color: #333;
+			background: #fff;
+			border: 1px solid #cdcdcd;
+		}
+
+		.pages a:hover {
+			color: #f00;
+			border-color: #f00;
+		}
+
+		.pages .current {
+			font-weight: 600;
+			background: #fcf9ea;
+			cursor: text;
+		}
+
+		.pages .current:hover {
+			color: #333;
+			border-color: #cdcdcd;
+		}
+	</style>
+</head>
+<body>
+	<div class="pages">
+		<a href="#">上一页</a>
+		<a class="current" href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+		<a href="#">···</a>
+		<a href="#">87</a>
+		<a href="#">下一页</a>
+	</div>
+</body>
+</html>
