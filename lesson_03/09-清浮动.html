@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>清浮动3</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+	/*
+		清浮动
+		1. 给父级加浮动；
+		2. 给父级加 display: inline-block;
+		3. 在浮动元素下加 <div class="clear"></div>
+				.clear { height: 0; font-size: 0; clear: both; }
+	 */
+
+		.box {
+			width: 300px;
+			margin: 0 auto;
+			border: 10px solid #000;
+		}
+
+		.content {
+			float: left;
+			width: 200px;
+			height: 200px;
+			background: #f00;
+		}
+
+		.clear {
+			height: 0;
+			/*font-size: 0;*/
+			background: #00f;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="content"></div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

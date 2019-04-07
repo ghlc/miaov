@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>after 伪类</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+	/*
+		 IE6, IE7下不支持 after 伪类
+	 */
+
+		p {
+			width: 200px;
+			border: 1px solid #000;
+		}
+
+		p:after {
+			display: block;
+			width: 100px;
+			height: 100px;
+			content: "~~~~~~";
+			background: #0ff;
+		}
+	</style>
+</head>
+<body>
+	<p>妙味课堂</p>
+</body>
+</html>

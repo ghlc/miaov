@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>IE6下最小高度问题</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body { background: #000; }
+
+	/*
+		在IE6下高度小于19像素的元素，会被当做19像素来处理
+
+		1. font-size: 0;
+	 */
+		.box {
+			height: 5px;
+			/*font-size: 0;*/
+			background: #f00;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

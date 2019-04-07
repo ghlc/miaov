@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>清浮动6</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+	/*
+		清浮动
+		1. 给父级加浮动；
+		2. 给父级加 display: inline-block;
+		3. 在浮动元素下加 <div class="clear"></div>
+				.clear { height: 0; font-size: 0; clear: both; }
+		4. 在浮动元素下加 <br clear="all">
+		5. 给浮动元素的父级加  zoom: 1;
+				&:after { display: block; content: ""; clear: both; }
+		6. 给浮动元素的父级加 overflow 配合 zoom: 1;
+	 */
+
+		.box {
+			width: 300px;
+			margin: 0 auto;
+			border: 10px solid #000;
+			overflow: hidden;
+			zoom: 1;
+		}
+
+		.content {
+			float: left;
+			width: 200px;
+			height: 200px;
+			background: #f00;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="content"></div>
+	</div>
+</body>
+</html>

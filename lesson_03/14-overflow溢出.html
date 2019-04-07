@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>overflow 溢出</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+	/*
+		overflow 溢出
+
+			auto 溢出显示滚动条
+			scroll 默认显示滚动条
+			hidden 溢出隐藏
+	 */
+
+		.box {
+			width: 300px;
+			height: 300px;
+			line-height: 30px;
+			border: 1px solid #000;
+			overflow: hidden;
+		}
+
+		h3 {
+			width: 100px;
+			height: 30px;
+			background: #f00;
+		}
+	</style>
+</head>
+<body>
+	<div class="box clear">
+		haslayout 是 Windows Internet Explorer 渲染引擎的一个内部组成部分。 在 Internet Explorer 中，一个元素要么自己对自身的内容进行计算大小和组织，要么依赖于父元素来计算尺寸和组织内容。 为了调节这两个不同的概念，渲染引擎采用了 hasLayout 的属性，属性值可以为 true 或 false。 当一个元素的 hasLayout 属性值为 true 时，我们说这个元素有一个布局（layout）
+		如何激发 haslayout？
+		要想更好的理解 css， 尤其是 IE 下对 css 的渲染，haslayout 是一个非常有必要彻底弄清楚的概念。 大多 IE 下的显示错误，就是源于 haslayout。 如果它设置成了 true，它就不得不去渲染它自己，因此元素不得不扩展去包含它的流出的内容。 例如浮动或者很长很长的没有截断的单词，如果 haslayout 没有被设置成 true， 那么元素得依靠某个祖先元素来渲染它。 这就是很多的 ie bugs 诞生的地方。
+		大部分的 IE 显示错误，都可以通过激发元素的 haslayout 属性来修正。 可以通过设置 css 尺寸属性（width/height）等来激发元素的 haslayout，使其“拥有布局”。
+	</div>
+	<h3>妙味课堂</h3>
+</body>
+</html>
