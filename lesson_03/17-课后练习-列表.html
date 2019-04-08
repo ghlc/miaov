@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>列表</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.box {
+			width: 500px;
+			margin: 0 auto;
+			padding: 15px 10px;
+			background-color: #ccc;
+		}
+
+		.box1 {
+			float: left;
+			width: 300px;
+			height: 17px;
+			margin-bottom: 10px;
+			background: #369;
+		}
+
+		.box2 {
+			float: right;
+			width: 200px;
+			height: 17px;
+			margin-bottom: 10px;
+			background: #f90;
+		}
+
+		.box3 { margin-bottom: 0; }
+
+		.clear:after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="box clear">
+		<div class="box1">box1</div>
+		<div class="box2">box2</div>
+		<div class="box1">box3</div>
+		<div class="box2">box4</div>
+		<div class="box1">box5</div>
+		<div class="box2">box6</div>
+		<div class="box1">box7</div>
+		<div class="box2">box8</div>
+		<div class="box1">box9</div>
+		<div class="box2">box10</div>
+		<div class="box1 box3">box11</div>
+		<div class="box2 box3">box12</div>
+	</div>
+</body>
+</html>

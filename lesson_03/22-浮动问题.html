@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动问题</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		/*
+			在IE6，IE7 元素浮动要并在同一行的元素都要加浮动。
+		 */
+
+		.box {
+			width: 400px;
+		}
+
+		.left {
+			float: left;
+			width: 100px;
+			height: 300px;
+			background-color: #f00;
+		}
+
+		.right {
+			float: left;
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="left"></div>
+		<div class="right">
+			<p>一个人使劲踮起脚尖靠近太阳的时候，全世界都挡不住她的阳光。</p>
+			<p>和阿妹一样，我走过来了。当时甚至没有想过这是好事还是坏事，只是知道该继续努力，被生活所迫，更是自主选择。每天像打了鸡血一样火力全开地追逐着一种叫“梦想”的东西，被我们举得高高的，划破最黑的夜。</p>
+			<p>当我们走过那一段，回头看，所有的纠结和磨难，都只是嘴角的微微一笑。不管在意或者不在意，那些不容易，是真真实实的存在过。而梦想，没有高低之分，都是魔力般的存在每个人的心中，从未走远。</p>
+		</div>
+	</div>
+</body>
+</html>

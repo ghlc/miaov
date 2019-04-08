@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>垂直对齐方式</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.box {
+			height: 200px;
+			text-align: center;
+			border: 10px solid #000;
+		}
+
+		.left {
+			display: inline-block;
+			width: 100px;
+			height: 200px;
+			background-color: #f00;
+			vertical-align: middle;
+		}
+
+		.right {
+			display: inline-block;
+			width: 200px;
+			height: 100px;
+			background-color: #00f;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<span class="left"></span>
+		<span class="right"></span>
+	</div>
+</body>
+</html>

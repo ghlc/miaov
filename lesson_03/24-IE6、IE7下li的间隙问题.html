@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>li的间隙问题</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		/*
+			IE6、IE7下 li 的几像素间隙问题
+
+			在IE6、IE7下 li 本身没浮动，内容浮动了，li 下方会多出来几像素。
+
+			解决办法：
+					1. 给 li 加浮动；
+					2. 给 li 加 vertical-align: top;
+		 */
+
+		.list { width: 300px; }
+
+		.list li {
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #000;
+			vertical-align: middle;
+		}
+
+		.list a {
+			float: left;
+			width: 100px;
+		}
+
+		.list span { float: right; }
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li>
+			<a href="#">标题内容文字信息</a>
+			<span>日期</span>
+		</li>
+		<li>
+			<a href="#">标题内容文字信息</a>
+			<span>日期</span>
+		</li>
+		<li>
+			<a href="#">标题内容文字信息</a>
+			<span>日期</span>
+		</li>
+		<li>
+			<a href="#">标题内容文字信息</a>
+			<span>日期</span>
+		</li>
+	</ul>
+</body>
+</html>

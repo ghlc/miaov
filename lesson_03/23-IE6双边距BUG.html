@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>IE6双边距BUG</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		/*
+			在IE6下，块元素有浮动和横向 margin，横向的 margin 值会被放大成2倍。
+
+			解决方法：display: inline;
+		 */
+
+		.wrap {
+			float: left;
+			border: 10px solid #000;
+		}
+
+		.box {
+			float: left;
+			display: inline;
+			width: 100px;
+			height: 100px;
+			margin: 0 100px;
+			background-color: #f00;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box"></div>
+	</div>
+</body>
+</html>
