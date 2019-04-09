@@ -5,31 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>浮动应用示例1</title>
+  <link rel="stylesheet" href="../css/reset.css">
   <style>
+    .wrap { width: 366px; }
+    .wrap .title {
+      height: 23px;
+      line-height: 23px;
+      background-image: url(../images/lesson_03/TitleBackground.jpg);
+    }
+    .title i {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-left: 6px;
+      margin-right: 12px;
+      background-image: url(../images/lesson_03/point.jpg);
+      vertical-align: middle;
+    }
+    .title span {
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h2>外媒评论精选</h2>
+    <h2 class="title"><i></i><span>外媒评论精选</span></h2>
     <ul class="list">
       <li>
-        <img src="" alt="加勒比海盗4">
+        <a href="#"><img src="../images/lesson_03/Caribbean.jpg" alt="加勒比海盗4"></a>
         <div class="content">
-          <h4><a href="#">《加勒比海盗4》————商业味浓郁</a></h4>
+          <h4><a href="#">《加勒比海盗4》——商业味浓郁</a></h4>
           <p>本集《加勒比海盗》讲述了杰克船长受英王所托寻找“不老泉”，与他... [<a href="#">详细</a>]</p>
         </div>
       </li>
       <li>
-        <img src="" alt="雷神托尔">
+        <a href="#"><img src="../images/lesson_03/Thor.jpg" alt="雷神托尔"></a>
         <div class="content">
-          <h4><a href="#">《雷神托尔》————神话版莎翁戏剧</a></h4>
+          <h4><a href="#">《雷神托尔》——神话版莎翁戏剧</a></h4>
           <p>《雷神》由克里斯·海姆斯沃斯和今年新晋奥斯卡影后娜塔莉·波特曼... [<a href="#">详细</a>]</p>
         </div>
       </li>
       <li>
-        <img src="" alt="源代码">
+        <a href="#"><img src="../images/lesson_03/Source.jpg" alt="源代码"></a>
         <div class="content">
-          <h4><a href="#">《源代码》————科幻与惊悚完美结合</a></h4>
+          <h4><a href="#">《源代码》——科幻与惊悚完美结合</a></h4>
           <p>《源代码》由杰克·吉伦哈尔、米歇尔·莫娜汉、维拉·法梅加主演。... [<a href="#">详细</a>]</p>
         </div>
       </li>
