@@ -12,3 +12,11 @@ ol, ul {
 a { text-decoration: none; }
 
 img { border: none; }
+
+.clearfix { zoom: 1; }
+
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+}

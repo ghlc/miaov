@@ -7,43 +7,117 @@
   <title>浮动应用示例2</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
+    .wrap {
+      width: 310px;
+      padding: 8px;
+      margin: 30px auto;
+      background-color: #00f3ff;
+    }
+    .title {
+      height: 28px;
+      padding-left: 38px;
+      line-height: 28px;
+      background-image: url(../images/lesson_03/mark.png);
+    }
+    .top {
+      padding-top: 13px;
+      padding-bottom: 15px;
+    }
+    .top img {
+      padding: 2px;
+      margin-right: 12px;
+      background-color: #fff;
+      border: 1px solid #c8c4d3;
+      vertical-align: top;
+    }
+    .introduce {
+      display: inline-block;
+      width: 176px;
+      vertical-align: top;
+    }
+    .introduce li {
+      line-height: 20px;
+      color: #666;
+    }
+    .introduce h4 { line-height: 28px; }
+
+    .introduce a { color: #333; }
+
+    .introduce .more { color: #666; }
+
+    .list {
+      padding-left: 17px;
+      padding-right: 19px;
+    }
+    .list-title { float: left; }
+
+    .list-title i {
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      margin-right: 6px;
+      background-image: url(../images/lesson_03/blackpoint.jpg);
+      vertical-align: middle;
+    }
+    .list-title a {
+      display: inline-block;
+      line-height: 22px;
+      color: #333;
+      vertical-align: middle;
+    }
+    .list span {
+      float: right;
+      line-height: 22px;
+      color: #888;
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h2>明星荐片</h2>
-    <div class="recommen">
-      <a href="#"><img src="../images/lesson_03/JiangWen.jpg" alt="让子弹飞"></a>
-      <ul class="recommen-content">
+    <h2 class="title">明星荐片</h2>
+    <div class="top">
+      <a href="#"><img src="../images/lesson_03/JiangWen.jpg" alt="让子弹飞"></a><ul class="introduce">
         <li><h4><a href="#">周秀娜荐片：让子弹飞</a></h4></li>
-        <li>导演：<span>姜文</span></li>
-        <li>主演：<span>姜文 周润发 葛优</span></li>
-        <li>点评：我最近最喜欢的要算《让子弹飞》了，超喜欢··· [<a href="#">详细</a>]</li>
+        <li>导演：<a href="#">姜文</a></li>
+        <li>主演：<a href="#">姜文</a> <a href="#">周润发</a> <a href="#">葛优</a></li>
+        <li>点评：我最近最喜欢的要算《让子弹飞》了，超喜欢··· [<a class="more" href="#">详细</a>]</li>
       </ul>
     </div>
     <ul class="list">
-      <li>
-        <a href="#">《巴别塔》：好的故事引人深思</a>
+      <li class="clearfix">
+        <div class="list-title">
+          <i></i><a href="#">《巴别塔》：好的故事引人深思</a>
+        </div>
         <span>阿朵</span>
       </li>
-      <li>
-        <a href="#">《洛杉矶之战》：外星人那么弱智？</a>
+      <li class="clearfix">
+        <div class="list-title">
+          <i></i><a href="#">《洛杉矶之战》：外星人那么弱智？</a>
+        </div>
         <span>丁子峻</span>
       </li>
-      <li>
-        <a href="#">《让子弹飞》：姜文是我的偶像</a>
+      <li class="clearfix">
+        <div class="list-title">
+          <i></i><a href="#">《让子弹飞》：姜文是我的偶像</a>
+        </div>
         <span>周秀娜</span>
       </li>
-      <li>
-        <a href="#">《剑雨》：武侠里也可以有爱情</a>
+      <li class="clearfix">
+        <div class="list-title">
+          <i></i><a href="#">《剑雨》：武侠里也可以有爱情</a>
+        </div>
         <span>叶念琛</span>
       </li>
-      <li>
-        <a href="#">《春风沉醉的夜晚》：非常真实</a>
+      <li class="clearfix">
+        <div class="list-title">
+          <i></i><a href="#">《春风沉醉的夜晚》：非常真实</a>
+        </div>
         <span>如小果</span>
       </li>
-      <li>
-        <a href="#">《克洛伊》：故事简单却细致</a>
+      <li class="clearfix">
+        <div class="list-title">
+          <i></i><a href="#">《克洛伊》：故事简单却细致</a>
+        </div>
         <span>刘若英</span>
       </li>
     </ul>

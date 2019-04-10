@@ -10,20 +10,30 @@
     .wrap {
       width: 366px;
       padding: 30px;
-      margin: 0 auto;
+      margin: 30px auto;
       background-color: #00f;
     }
-    .title1, .title2, .title3, .title4 {
+
+    .title1, .title2, .title3, .title4, .box1, .box2, .box3, .box4 {
       height: 23px;
-      line-height: 23px;
       margin-bottom: 30px;
       background-image: url("../images/lesson_03/TitleBackground.jpg");
-      background-repeat: no-repeat;
     }
-    .title1 img, .title3 img {
+
+    .title1, .title2 { line-height: 23px; }
+
+    .title1 img, .title2 i, .title3 img, .title4 i, .box1 img, .box2 i {
       margin-left: 6px;
       margin-right: 12px;
       vertical-align: middle;
+    }
+
+    .title2 i, .title4 i, .box2 i { display: inline-block; }
+
+    .title2 i, .title4 i, .box2 i, .box4 i {
+      width: 12px;
+      height: 12px;
+      background-image: url("../images/lesson_03/point.jpg");
     }
 
     .title3 span, .title4 span {
@@ -31,93 +41,53 @@
       vertical-align: middle;
     }
 
-    .title2 i, .title4 i {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin-left: 6px;
-      margin-right: 12px;
-      background-image: url("../images/lesson_03/point.jpg");
-      vertical-align: middle;
-    }
-
-    .box1, .box2, .box3, .box4 {
-      height: 23px;
-      margin-bottom: 30px;
-      background-image: url("../images/lesson_03/TitleBackground.jpg");
-      background-repeat: no-repeat;
-    }
-    .box1 img {
-      margin-left: 6px;
-      margin-right: 12px;
-      vertical-align: middle;
-    }
     .box1 h2, .box2 h2 {
       display: inline-block;
       line-height: 23px;
       vertical-align: middle;
     }
 
-    .box2 i {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin-left: 6px;
-      margin-right: 12px;
-      background-image: url("../images/lesson_03/point.jpg");
-      background-repeat: no-repeat;
-      vertical-align: middle;
-    }
-
-    .box3 img {
+    .box3 img, .box4 i {
       float: left;
       margin-top: 6px;
       margin-left: 6px;
       margin-right: 12px;
-      /* vertical-align: middle; */
     }
+
     .box3 h2, .box4 h2 {
       float: left;
       line-height: 23px;
-      /* vertical-align: middle; */
-    }
-
-    .box4 i {
-      float: left;
-      width: 12px;
-      height: 12px;
-      margin-top: 6px;
-      margin-left: 6px;
-      margin-right: 12px;
-      background-image: url("../images/lesson_03/point.jpg");
-      background-repeat: no-repeat;
-      vertical-align: middle;
     }
   </style>
 </head>
 <body>
   <div class="wrap">
+  <!-- 第一种类比 -->
+    <h2 class="title1"><img src="../images/lesson_03/point.jpg" alt="标识">外媒评论精选</h2>
 
-    <h2 class="title1"><img src="../images/lesson_03/point.jpg" alt="点"> 外媒评论精选</h2>
+    <h2 class="title2"><i></i>外媒评论精选</h2>
 
-    <h2 class="title2"><i></i> 外媒评论精选</h2>
+  <!-- 第二种类比 -->
+    <h2 class="title3">
+      <img src="../images/lesson_03/point.jpg" alt="标识"><span>外媒评论精选</span>
+    </h2>
 
-    <h2 class="title3"><img src="../images/lesson_03/point.jpg" alt="点"> <span>外媒评论精选</span></h2>
+    <h2 class="title4">
+      <i></i><span>外媒评论精选</span>
+    </h2>
 
-    <h2 class="title4"><i></i> <span>外媒评论精选</span></h2>
-
+  <!-- 第三种类比 -->
     <div class="box1">
-      <img src="../images/lesson_03/point.jpg" alt="点">
-      <h2>外媒评论精选</h2>
+      <img src="../images/lesson_03/point.jpg" alt="标识"><h2>外媒评论精选</h2>
     </div>
 
     <div class="box2">
-      <i></i>
-      <h2>外媒评论精选</h2>
+      <i></i><h2>外媒评论精选</h2>
     </div>
 
+  <!-- 第四种类比 -->
     <div class="box3">
-      <img src="../images/lesson_03/point.jpg" alt="点">
+      <img src="../images/lesson_03/point.jpg" alt="标识">
       <h2>外媒评论精选</h2>
     </div>
 

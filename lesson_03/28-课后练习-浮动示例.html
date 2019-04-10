@@ -7,10 +7,13 @@
   <title>浮动应用示例1</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
-    .wrap { width: 366px; }
-    .wrap .title {
+    .wrap {
+      width: 366px;
+      margin: 30px auto;
+      background-color: #f4fafb;
+    }
+    .title {
       height: 23px;
-      line-height: 23px;
       background-image: url(../images/lesson_03/TitleBackground.jpg);
     }
     .title i {
@@ -22,31 +25,80 @@
       background-image: url(../images/lesson_03/point.jpg);
       vertical-align: middle;
     }
-    .title span {
+    .title h2 {
+      display: inline-block;
+      line-height: 23px;
+      color: #294852;
       vertical-align: middle;
     }
+    .list { padding: 2px 5px 0; }
+
+    .list li {
+      padding-top: 11px;
+      padding-bottom: 11px;
+    }
+    .photo {
+      float: left;
+      width: 95px;
+      padding: 2px;
+      margin-right: 13px;
+      background-color: #fff;
+      border: 1px solid #c8c4d3;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+    }
+    .content {
+      float: right;
+      width: 242px;
+    }
+    .content h4 { line-height: 2; }
+
+    .content h4 a { color: #333; }
+
+    .content p {
+      line-height: 20px;
+      color: #666;
+    }
+    .content p a { color: #666; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h2 class="title"><i></i><span>外媒评论精选</span></h2>
+    <div class="title">
+      <i></i><h2>外媒评论精选</h2>
+    </div>
     <ul class="list">
-      <li>
-        <a href="#"><img src="../images/lesson_03/Caribbean.jpg" alt="加勒比海盗4"></a>
+      <li class="clearfix">
+        <div class="photo">
+          <a href="#">
+            <img src="../images/lesson_03/Caribbean.jpg" alt="加勒比海盗4">
+          </a>
+        </div>
         <div class="content">
           <h4><a href="#">《加勒比海盗4》——商业味浓郁</a></h4>
           <p>本集《加勒比海盗》讲述了杰克船长受英王所托寻找“不老泉”，与他... [<a href="#">详细</a>]</p>
         </div>
       </li>
-      <li>
-        <a href="#"><img src="../images/lesson_03/Thor.jpg" alt="雷神托尔"></a>
+      <li class="clearfix">
+        <div class="photo">
+          <a href="#">
+            <img src="../images/lesson_03/Thor.jpg" alt="雷神托尔">
+          </a>
+        </div>
         <div class="content">
           <h4><a href="#">《雷神托尔》——神话版莎翁戏剧</a></h4>
           <p>《雷神》由克里斯·海姆斯沃斯和今年新晋奥斯卡影后娜塔莉·波特曼... [<a href="#">详细</a>]</p>
         </div>
       </li>
-      <li>
-        <a href="#"><img src="../images/lesson_03/Source.jpg" alt="源代码"></a>
+      <li class="clearfix">
+        <div class="photo">
+          <a href="#">
+            <img src="../images/lesson_03/Source.jpg" alt="源代码">
+          </a>
+        </div>
         <div class="content">
           <h4><a href="#">《源代码》——科幻与惊悚完美结合</a></h4>
           <p>《源代码》由杰克·吉伦哈尔、米歇尔·莫娜汉、维拉·法梅加主演。... [<a href="#">详细</a>]</p>
