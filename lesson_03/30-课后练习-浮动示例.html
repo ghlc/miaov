@@ -7,39 +7,119 @@
   <title>浮动应用示例3</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
+    .wrap {
+      width: 364px;
+      padding: 10px 6px;
+      margin: 30px auto;
+      background-color: #f4fafb;
+      border: 1px solid #c3e6ee;
+    }
+    .title {
+      height: 25px;
+      background-image: url(../images/lesson_03/HeadBackground.jpg);
+    }
+    .title i {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-left: 3px;
+      margin-right: 12px;
+      background-image: url(../images/lesson_03/point.jpg);
+      vertical-align: middle;
+    }
+    .title h2 {
+      display: inline-block;
+      line-height: 25px;
+      color: #294852;
+      vertical-align: middle;
+    }
+    .piclist {
+      padding-top: 16px;
+      padding-left: 2px;
+    }
+    .piclist li {
+      float: left;
+      margin-right: 15px;
+    }
+    .piclist .m-r { margin-right: 0; }
+
+    .poster {
+      padding-right: 18px;
+      background: url(../images/lesson_03/RightBackground.jpg) no-repeat center right;
+    }
+    .piclist img {
+      padding: 2px;
+      background-color: #fff;
+      border: 1px solid #c8c4d3;
+      vertical-align: top;
+    }
+    .piclist h4 {
+      margin-top: 3px;
+      margin-right: 18px;
+      text-align: center;
+      line-height: 24px;
+    }
+    .piclist a { color: #333; }
+
+    .list { padding-left: 21px; }
+
+    .list i {
+      float: left;
+      width: 3px;
+      height: 3px;
+      margin-top: 10px;
+      margin-right: 11px;
+      background-image: url(../images/lesson_03/blackpoint.jpg);
+    }
+    .list a {
+      float: left;
+      line-height: 22px;
+      color: #333;
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h2>华语谍报</h2>
-    <ul class="piclist">
+    <div class="title">
+      <i></i><h2>华语谍报</h2>
+    </div>
+    <ul class="piclist clearfix">
       <li>
-        <a href="#">
-          <img src="../images/lesson_03/Uncle.jpg" alt="大叔">
-          <h4>大叔</h4>
-        </a>
+        <div class="poster">
+          <a href="#">
+            <img src="../images/lesson_03/Uncle.jpg" alt="大叔">
+          </a>
+        </div>
+        <h4><a href="#">大叔</a></h4>
       </li>
       <li>
-        <a href="#">
-          <img src="../images/lesson_03/LiuDehua.jpg" alt="我知女人心">
-          <h4>我知女人心</h4>
-        </a>
+        <div class="poster">
+          <a href="#">
+            <img src="../images/lesson_03/LiuDehua.jpg" alt="我知女人心">
+          </a>
+        </div>
+        <h4><a href="#">我知女人心</a></h4>
       </li>
-      <li>
-        <a href="#">
-          <img src="../images/lesson_03/Assassins.jpg" alt="十三刺客">
-          <h4>十三刺客</h4>
-        </a>
+      <li class="m-r">
+        <div class="poster">
+          <a href="#">
+            <img src="../images/lesson_03/Assassins.jpg" alt="十三刺客">
+          </a>
+        </div>
+        <h4><a href="#">十三刺客</a></h4>
       </li>
     </ul>
     <ul class="list">
-      <li>
+      <li class="clearfix">
+        <i></i>
         <a href="#">化妆，还是伪装？港三区美亚版《最强喜事》</a>
       </li>
-      <li>
+      <li class="clearfix">
+        <i></i>
         <a href="#">阴间猛鬼斗阳间小三——港三区千绩版《恶胎》</a>
       </li>
-      <li>
+      <li class="clearfix">
+        <i></i>
         <a href="#">孤寂的爱情心事——《征婚启事》碟评</a>
       </li>
     </ul>

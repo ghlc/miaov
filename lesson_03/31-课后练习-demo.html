@@ -52,31 +52,34 @@
     .list {
       height: 31px;
       border-bottom: 1px dotted #abadac;
-      background-color: #eff3f2;
     }
     .list dt, .list dd {
       float: left;
-      height: 16px;
-      line-height: 16px;
+      padding-top: 10px;
+      padding-bottom: 4px;
     }
     .list dt {
       width: 120px;
-      padding-top: 10px;
-      padding-bottom: 4px;
       padding-left: 10px;
+      line-height: 16px;
       color: #000;
       background-color: #eaeeed;
     }
     .list dd {
-      width: 80px;
-      padding-left: 15px;
-      margin-top: 10px;
-      margin-bottom: 4px;
+      width: 81px;
+      padding-right: 15px;
+      background-color: #eff3f2;
+    }
+    .list .begin { padding-left: 25px; }
+
+    .list .end { padding-right: 14px; }
+
+    .list dd a {
+      display: block;
+      line-height: 16px;
+      color: #343434;
       border-right: 1px solid #ccc;
     }
-    .list .chief { padding-left: 25px; }
-
-    .list a { color: #343434; }
   </style>
 </head>
 <body>
@@ -118,21 +121,21 @@
     </ul>
     <dl class="list clearfix">
       <dt>-基本业务</dt>
-      <dd class="chief"><a href="#">国际漫游</a></dd>
+      <dd class="begin"><a href="#">国际漫游</a></dd>
       <dd><a href="#">国际长途</a></dd>
       <dd><a href="#">国际漫游</a></dd>
       <dd><a href="#">国际长途</a></dd>
       <dd><a href="#">国际漫游</a></dd>
-      <dd><a href="#">更多</a></dd>
+      <dd class="end"><a href="#">更多</a></dd>
     </dl>
     <dl class="list clearfix">
       <dt>-基本业务</dt>
-      <dd class="chief"><a href="#">国际漫游</a></dd>
+      <dd class="begin"><a href="#">国际漫游</a></dd>
       <dd><a href="#">国际长途</a></dd>
       <dd><a href="#">国际漫游</a></dd>
       <dd><a href="#">国际长途</a></dd>
       <dd><a href="#">国际漫游</a></dd>
-      <dd><a href="#">更多</a></dd>
+      <dd class="end"><a href="#">更多</a></dd>
     </dl>
   </div>
 </body>

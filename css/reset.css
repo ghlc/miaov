@@ -13,6 +13,10 @@ a { text-decoration: none; }
 
 img { border: none; }
 
+.fl { float: left; }
+
+.fr { float: right; }
+
 .clearfix { zoom: 1; }
 
 .clearfix:after {

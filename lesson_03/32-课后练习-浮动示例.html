@@ -7,34 +7,121 @@
   <title>浮动应用示例5</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
+    .wrap {
+      width: 460px;
+      margin: 30px auto;
+    }
+    .left {
+      float: left;
+      width: 221px;
+      padding-top: 12px;
+      padding-left: 7px;
+      background: url(../images/lesson_03/BackgroundShadow.jpg) no-repeat right center;
+    }
+    .left .poster {
+      float: left;
+      padding-right: 5px;
+      background: url(../images/lesson_03/BorderShadow.jpg) no-repeat right 2px;
+    }
+    .left .poster img {
+      padding: 3px;
+      border: 1px solid #c3cfd9;
+      vertical-align: top;
+    }
+    .introduce {
+      float: right;
+      width: 87px;
+    }
+    .introduce h4 {
+      line-height: 20px;
+    }
+    .introduce a {
+      color: #4f6c84;
+    }
+    .introduce p {
+      line-height: 20px;
+      color: #7190a6;
+    }
+    .list {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+    .list i {
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      margin-right: 7px;
+      background-image: url(../images/lesson_03/blackpoint.jpg);
+      vertical-align: middle;
+    }
+    .list a {
+      line-height: 20px;
+      color: #666;
+      vertical-align: middle;
+    }
+    .piclist {
+      float: right;
+      width: 228px;
+      padding-top: 12px;
+      padding-left: 2px;
+      border-left: 1px solid #d9e0e7;
+    }
+    .piclist li {
+      float: left;
+      margin-left: 10px;
+    }
+    .piclist .poster {
+      padding: 3px;
+      border: 1px solid #c3cfd9;
+    }
+    .piclist .poster img {
+      vertical-align: top;
+    }
+    .piclist h4 {
+      line-height: 26px;
+      text-align: center;
+    }
+    .piclist h4 a {
+      color: #4f6c84;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap clearfix">
     <div class="left">
-      <a href="#"><img src="../images/lesson_03/qianfu.jpg" alt="潜伏"></a>
-      <div>
-        <h4><a href="#">潜伏</a></h4>
-        <p>导演：姜伟</p>
-        <p>主演：姚晨 孙红雷</p>
+      <div class="clearfix">
+        <a class="poster" href="#"><img src="../images/lesson_03/qianfu.jpg" alt="潜伏"></a>
+        <div class="introduce">
+          <h4><a href="#">潜伏</a></h4>
+          <p>导演：姜伟</p>
+          <p>主演：姚晨 孙红雷</p>
+        </div>
       </div>
-      <ul>
-        <li><a href="#">海清张嘉译演绎房奴生活《蜗居》</a></li>
-        <li><a href="#">琼瑶经典言情剧集锦</a> <a href="#">梦露电影知多少</a></li>
+      <ul class="list">
+        <li>
+          <i></i><a href="#">海清张嘉译演绎房奴生活《蜗居》</a>
+        </li>
+        <li>
+          <i></i><a href="#">琼瑶经典言情剧集锦 </a><a href="#"> 梦露电影知多少</a>
+        </li>
       </ul>
     </div>
-    <ul class="piclist">
+    <ul class="piclist clearfix">
       <li>
-        <a href="#">
-          <img src="../images/lesson_03/LoveEnd.jpg" alt="将爱情进行到底">
-          <h4>将爱情进行到底</h4>
-        </a>
+        <div class="poster">
+          <a href="#">
+            <img src="../images/lesson_03/LoveEnd.jpg" alt="将爱情进行到底">
+          </a>
+        </div>
+        <h4><a href="#">将爱情进行到底</a></h4>
       </li>
       <li>
-        <a href="#">
-          <img src="../images/lesson_03/HappyEvent.jpg" alt="家有喜事">
-          <h4>家有喜事</h4>
-        </a>
+        <div class="poster">
+          <a href="#">
+            <img src="../images/lesson_03/HappyEvent.jpg" alt="家有喜事">
+          </a>
+        </div>
+        <h4><a href="#">家有喜事</a></h4>
       </li>
     </ul>
   </div>
