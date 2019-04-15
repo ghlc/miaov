@@ -30,18 +30,16 @@
     }
     .introduce {
       float: right;
-      width: 87px;
+      width: 75px;
+      padding-right: 12px;
     }
-    .introduce h4 {
-      line-height: 20px;
-    }
-    .introduce a {
-      color: #4f6c84;
-    }
-    .introduce p {
-      line-height: 20px;
-      color: #7190a6;
-    }
+    .introduce dt,
+    .introduce dd { line-height: 20px; }
+
+    .introduce a { color: #4f6c84; }
+
+    .introduce dd { color: #7190a6; }
+
     .list {
       padding-top: 9px;
       padding-bottom: 9px;
@@ -56,7 +54,7 @@
     }
     .list a {
       line-height: 20px;
-      color: #666;
+      color: #4f6c84;
       vertical-align: middle;
     }
     .piclist {
@@ -74,28 +72,25 @@
       padding: 3px;
       border: 1px solid #c3cfd9;
     }
-    .piclist .poster img {
-      vertical-align: top;
-    }
+    .piclist .poster img { vertical-align: top; }
+
     .piclist h4 {
       line-height: 26px;
       text-align: center;
     }
-    .piclist h4 a {
-      color: #4f6c84;
-    }
+    .piclist h4 a { color: #4f6c84; }
   </style>
 </head>
 <body>
-  <div class="wrap clearfix">
+  <div class="wrap">
     <div class="left">
       <div class="clearfix">
         <a class="poster" href="#"><img src="../images/lesson_03/qianfu.jpg" alt="潜伏"></a>
-        <div class="introduce">
-          <h4><a href="#">潜伏</a></h4>
-          <p>导演：姜伟</p>
-          <p>主演：姚晨 孙红雷</p>
-        </div>
+        <dl class="introduce">
+          <dt><a href="#">潜伏</a></dt>
+          <dd>导演：姜伟</dd>
+          <dd>主演：姚晨 孙红雷</dd>
+        </dl>
       </div>
       <ul class="list">
         <li>
