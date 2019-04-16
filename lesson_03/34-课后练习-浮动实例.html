@@ -8,53 +8,69 @@
   <link rel="stylesheet" href="../css/reset.css">
   <style>
 		.wrap {
-			width: 678px;
-			height: 447px;
-			padding: 19px 9px 0;
+			width: 660px;
+			height: 431px;
+			padding: 16px 9px 0;
 			margin: 30px auto;
 			border: 1px solid #e4e4e4;
 		}
-		.list {
+		.head {
+			height: 35px;
 			padding-right: 10px;
 			padding-left: 10px;
 		}
+		.logo {
+			padding-right: 14px;
+			vertical-align: top;
+		}
+		.list {
+			width: 540px;
+			padding-top: 5px;
+		}
 		.list li {
 			float: left;
+			padding-right: 18px;
 		}
-		.list img {
-			vertical-align: bottom;
+		.list .right{
+			float: right;
+			background: url(../images/lesson_03/img01/LeftArrow.jpg) no-repeat 27px 13px;
 		}
 		.list a {
+			line-height: 30px;
+			font-size: 14px;
 			color: #1a1a1a;
-			vertical-align: bottom;
 		}
-		.piclist {
-			padding-top: 10px;
-		}
+		.list .more { font-size: 12px; }
+
 		.piclist li {
 			float: left;
 			padding-right: 10px;
 			padding-left: 10px;
+			margin-top: 11px;
 		}
+		.piclist img { vertical-align: top; }
+
 		.piclist a {
+			line-height: 30px;
 			color: #1a1a1a;
 		}
+		.poster a { display: block; }
   </style>
 </head>
 <body>
 	<div class="wrap">
-		<ul class="list clearfix">
-			<li>
-				<a href="#"><img class="logo" src="../images/lesson_03/img01/logo.jpg" alt="logo"></a>
-			</li>
-			<li><a href="#">电视剧频道</a></li>
-			<li><a href="#">台剧</a></li>
-			<li><a href="#">韩剧</a></li>
-			<li><a href="#">TVB</a></li>
-			<li><a href="#">美剧</a></li>
-			<li><a href="#">最新片花</a></li>
-			<li class="fr"><a class="more" href="#">更多</a></li>
-		</ul>
+		<div class="head clearfix">
+			<img class="logo fl" src="../images/lesson_03/img01/logo.jpg" alt="logo">
+			<ul class="list fl clearfix">
+				<li><a href="#">电视剧频道</a></li>
+				<li><a href="#">台剧</a></li>
+				<li><a href="#">韩剧</a></li>
+				<li><a href="#">TVB</a></li>
+				<li><a href="#">美剧</a></li>
+				<li><a href="#">最新片花</a></li>
+				<li class="right"><a class="more" href="#">更多</a></li>
+			</ul>
+		</div>
 		<ul class="piclist clearfix">
 			<li>
 				<div class="poster">

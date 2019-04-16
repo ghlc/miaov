@@ -7,32 +7,81 @@
   <title>浮动实例天猫</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
+		.wrap {
+			width: 740px;
+			padding: 7px 19px 10px 6px;
+			margin: 30px auto;
+			background-color: #fdf8f1;
+		}
+		.title {
+			padding-left: 1px;
+			font-size: 16px;
+			line-height: 28px;
+			color: #756a69;
+		}
+		.list {
+			width: 740px;
+			border-bottom: 2px solid #806f66;
+		}
+		.list li {
+			float: left;
+			width: 100px;
+			margin-right: 1px;
+			text-align: center;
+			background-color: #eaddcc;
+		}
+		.list a {
+			line-height: 23px;
+			color: #595959;
+		}
+		.list .current {
+			background-color: #806f66;
+		}
+		.current a {
+			color: #fff;
+		}
+		.msglist li {
+			padding: 16px 10px 0 32px;
+			border-bottom: 1px solid #e3e3e3;
+		}
+		.msglist .avatar {
+			padding: 3px;
+		}
+		.msglist .detail {
 
+		}
+		.msglist .close {
+
+		}
+		.msglist .active {
+			background-color: #ccc;
+			background-color: #f9f0e3;
+		}
   </style>
 </head>
 <body>
 	<div class="wrap">
-		<h2 class="head">消息盒子</h2>
-		<ul class="menu">
+		<h2 class="title">消息盒子</h2>
+		<ul class="list clearfix">
 			<li><a href="#">未读</a></li>
-			<li><a href="#">全部</a></li>
+			<li class="current"><a href="#">全部</a></li>
 			<li><a href="#">我的成长</a></li>
 			<li><a href="#">特权活动</a></li>
 			<li><a href="#">系统消息</a></li>
 			<li><a href="#">其他</a></li>
 		</ul>
 		<ul class="msglist">
-			<li>
-				<div class="avatar">
+			<li class="active clearfix">
+				<div class="avatar fl">
 					<img src="../images/lesson_03/img02/avatar.jpg" alt="天猫俱乐部">
 				</div>
-				<div class="detail">
+				<div class="detail fl">
 					<h4>天猫俱乐部：</h4>
 					<p><strong>天猫达人经验值发送成功</strong> 您上个月购买天猫商品，总共获得<strong>1600</strong>点天猫达人经验值，已经发放成功！查看天猫达人经验值请<a href="#">点此查看</a></p>
 					<p class="date">2013年03月04日</p>
 				</div>
-				<a class="close" href="#">
-					<img src="../images/lesson_03/img02/avatar.jpg" alt="关闭">
+				<a class="close fr" href="#">
+					<img src="../images/lesson_03/img02/icon.jpg" alt="关闭">
 				</a>
 			</li>
 			<li>
