@@ -7,179 +7,359 @@
   <title>浮动实例迅雷</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
+		.wrap {
+			width: 970px;
+			padding: 8px 12px 8px 7px;
+			margin: 30px auto;
+		}
+		.list li {
+			padding: 6px 11px 10px 10px;
+			border-bottom: 1px solid #ddd;
+			border-left: 1px solid #ddd;
+		}
+		.list .movie { border-top: 3px solid #abe27d; }
 
+		.list .male { border-top: 3px solid #e187c4; }
+
+		.list .tv { border-top: 3px solid #a6a6a6; }
+
+		.list .tvb { border-top: 3px solid #7fbfda; }
+
+		.list .overseas { border-top: 3px solid #e18787; }
+
+		.list .variety {
+			padding-right: 9px;
+			padding-left: 9px;
+			border-top: 3px solid #e5cc6f;
+			border-right: 1px solid #ddd;
+		}
+		.list dt { text-align: center; }
+
+		.list dt a {
+			font-size: 16px;
+			line-height: 30px;
+		}
+		.movie-title a { color: #abe27d; }
+
+		.male-title a { color: #e187c4; }
+
+		.tv-title a { color: #a6a6a6; }
+
+		.tvb-title a { color: #7fbfda; }
+
+		.overseas-title a { color: #e18787; }
+
+		.variety-title a { color: #e5cc6f; }
+
+		.piclist img {
+			padding: 1px;
+			margin-top: 5px;
+			border: 1px solid #dbdbd9;
+			vertical-align: top;
+		}
+		.piclist h4 {
+			float: left;
+			max-width: 117px;
+			overflow-x: hidden;
+			white-space: nowrap;
+			text-overflow: clip;
+		}
+		.piclist h4 a {
+			line-height: 24px;
+			font-size: 14px;
+			color: #3d3d3d;
+		}
+		.piclist span {
+			margin-top: 4px;
+			font-weight: 500;
+			color: #b7b7b7;
+		}
+		.piclist i {
+			float: right;
+			width: 8px;
+			height: 10px;
+			margin-top: 7px;
+			background-image: url(../images/lesson_03/img03/icon.jpg);
+		}
+		.divide {
+			padding-top: 1px;
+			padding-bottom: 11px;
+			margin-bottom: 8px;
+			border-bottom: 1px dashed #dbdbdb;
+		}
+		.textlist { padding-top: 4px; }
+
+		.textlist a {
+			font-size: 14px;
+			line-height: 22px;
+			color: #3c3c3c;
+		}
+		.textlist span {
+			font-weight: 500;
+			color: #ababab;
+		}
+		.textlist p {
+			line-height: 20px;
+			color: #ababab;
+		}
   </style>
 </head>
 <body>
 	<div class="wrap">
-		<ul class="list">
-			<li>
-				<dl class="1">
-					<dt><a href="#">热门大片</a></dt>
-					<dd>
+		<ul class="list clearfix">
+			<li class="movie fl">
+				<dl>
+					<dt class="movie-title"><a href="#">热门大片</a></dt>
+					<dd class="piclist">
 						<a href="#">
 							<img src="../images/lesson_03/img03/JiYiDeDaoYing.jpg" alt="记忆的倒影">
 						</a>
-						<h4><a href="#">记忆的倒影</a></h4>
+						<div class="clearfix">
+							<h4>
+								<a href="#">记忆的倒影</a>
+								<span>(480P)</span>
+							</h4>
+							<i></i>
+						</div>
 					</dd>
-					<dd><a href="#">
+					<dd class="piclist divide">
+						<a href="#">
 							<img src="../images/lesson_03/img03/JiuTu.jpg" alt="酒徒">
-							<h4><a href="#">酒徒</a></h4>
-						</a></dd>
-					<dd>
+						</a>
+						<div class="clearfix">
+							<h4>
+								<a href="#">酒徒</a>
+								<span>(720P)</span>
+							</h4>
+							<i></i>
+						</div>
+					</dd>
+					<dd class="textlist">
 						<h4>
 							<a href="#">幸福额度</a>
+							<span>(720P)</span>
 						</h4>
 						<p>3男抢2个林志玲</p>
 					</dd>
-					<dd>
+					<dd class="textlist">
 						<h4>
 							<a href="#">假如没有你</a>
+							<span>(720P)</span>
 						</h4>
 						<p>中国版阿甘正传</p>
 					</dd>
 				</dl>
 			</li>
-			<li>
-				<dl class="2">
-					<dt><a href="#">男性影院</a></dt>
-					<dd>
+			<li class="male fl">
+				<dl>
+					<dt class="male-title"><a href="#">男性影院</a></dt>
+					<dd class="piclist">
 						<a href="#">
 							<img src="../images/lesson_03/img03/YiYiDiBai.jpg" alt="以一敌百">
 						</a>
-						<h4><a href="#">以一敌百</a></h4>
+						<div class="clearfix">
+							<h4>
+								<a href="#">以一敌百</a>
+								<span></span>
+							</h4>
+							<i></i>
+						</div>
 					</dd>
-					<dd>
+					<dd class="piclist divide">
 						<a href="#">
 							<img src="../images/lesson_03/img03/QingChunShiLeYuan.jpg" alt="青春失乐园">
 						</a>
-						<h4><a href="#">青春失乐园</a></h4>
+						<div class="clearfix">
+							<h4>
+								<a href="#">青春失乐园</a>
+								<span>(第04集)</span>
+							</h4>
+							<i></i>
+						</div>
 					</dd>
-					<dd>
+					<dd class="textlist">
 						<h4>
 							<a href="#">暴劫倾情</a>
+							<span>(480P)</span>
 						</h4>
 						<p>女医生爱上强奸犯</p>
 					</dd>
-					<dd>
+					<dd class="textlist">
 						<h4>
 							<a href="#">密室2</a>
+							<span>(720P)</span>
 						</h4>
 						<p>邮轮连环杀人事件</p>
 					</dd>
 				</dl>
 			</li>
-			<li>
-				<dl class="3">
-					<dt><a href="#">同步卫视</a></dt>
-					<dd>
+			<li class="tv fl">
+				<dl>
+					<dt class="tv-title"><a href="#">同步卫视</a></dt>
+					<dd class="piclist">
 						<a href="#">
 							<img src="../images/lesson_03/img03/ZanJiaNaXieShi.jpg" alt="咱家那些事">
 						</a>
-						<h4><a href="#">咱家那些事</a></h4>
+						<div class="clearfix">
+							<h4>
+								<a href="#">咱家那些事</a>
+								<span>(至20集)</span>
+							</h4>
+							<i></i>
+						</div>
 					</dd>
-					<dd>
+					<dd class="piclist divide">
 						<a href="#">
 							<img src="../images/lesson_03/img03/YaoShanDaJiaFei.jpg" alt="瑶山大剿匪">
 						</a>
-						<h4><a href="#">瑶山大剿匪</a></h4>
+						<div class="clearfix">
+							<h4>
+								<a href="#">瑶山大剿匪</a>
+								<span>(34集全)</span>
+							</h4>
+							<i></i>
+						</div>
 					</dd>
-					<dd>
+					<dd class="textlist">
 						<h4>
 							<a href="#">钱多多嫁人记</a>
+							<span>(08抢先)</span>
 						</h4>
 						<p>钱多多参加相亲大会</p>
 					</dd>
-					<dd>
+					<dd class="textlist">
 						<h4>
 							<a href="#">杨门虎将</a>
+							<span>(30集全)</span>
 						</h4>
 						<p>赵雅芝最美最赞佘太君</p>
 					</dd>
 				</dl>
 			</li>
-			<li>
-				<dl class="4">
-					<dt><a href="#">TVB剧场</a></dt>
-					<dd>
+			<li class="tvb fl">
+				<dl>
+					<dt class="tvb-title"><a href="#">TVB剧场</a></dt>
+					<dd class="piclist">
 						<a href="#">
 							<img src="../images/lesson_03/img03/WanFengZhiWang.jpg" alt="万凰之王">
 						</a>
-						<h4><a href="#">万凰之王</a></h4>
+						<div class="clearfix">
+							<h4>
+								<a href="#">万凰之王</a>
+								<span>(至29集)</span>
+							</h4>
+							<i></i>
+						</div>
 					</dd>
-					<dd>
+					<dd class="piclist divide">
 						<a href="#">
 							<img src="../images/lesson_03/img03/TianYuDi.jpg" alt="天与地">
 						</a>
-						<h4><a href="#">天与地</a></h4>
+						<div class="clearfix">
+							<h4>
+								<a href="#">天与地</a>
+								<span>(至09集)</span>
+							</h4>
+							<i></i>
+						</div>
 					</dd>
-					<dd>
+					<dd class="textlist">
 						<h4>
 							<a href="#">赌场风云</a>
+							<span>(35集全)</span>
 						</h4>
 						<p>欧阳震华赌王养成记</p>
 					</dd>
-					<dd>
+					<dd class="textlist">
 						<h4>
 							<a href="#">少年四大名捕</a>
+							<span>(25集全)</span>
 						</h4>
 						<p>男色当道四小生显神通</p>
 					</dd>
 				</dl>
 			</li>
-			<li>
-				<dl class="5">
-					<dt><a href="#">海外剧场</a></dt>
-					<dd>
+			<li class="overseas fl">
+				<dl>
+					<dt class="overseas-title"><a href="#">海外剧场</a></dt>
+					<dd class="piclist">
 						<a href="#">
 							<img src="../images/lesson_03/img03/YaoShuaiQiDeShengHuo.jpg" alt="要帅气的生活">
 						</a>
-						<h4><a href="#">要帅气的生活</a></h4>
+						<div class="clearfix">
+							<h4>
+								<a href="#">要帅气的生活</a>
+								<span>(至23集)</span>
+							</h4>
+							<i></i>
+						</div>
 					</dd>
-					<dd>
+					<dd class="piclist divide">
 						<a href="#">
 							<img src="../images/lesson_03/img03/JiaRuMingTianLaiLin.jpg" alt="假如明天来临">
 						</a>
-						<h4><a href="#">假如明天来临</a></h4>
+						<div class="clearfix">
+							<h4>
+								<a href="#">假如明天来临</a>
+								<span>(至11集)</span>
+							</h4>
+							<i></i>
+						</div>
 					</dd>
-					<dd>
+					<dd class="textlist">
 						<h4>
 							<a href="#">太阳的新娘</a>
+							<span>(至29集)</span>
 						</h4>
 						<p>误弃富少嫁老男人</p>
 					</dd>
-					<dd>
+					<dd class="textlist">
 						<h4>
 							<a href="#">女儿是花儿</a>
+							<span>(至15集)</span>
 						</h4>
 						<p>90后女孩恶整后妈</p>
 					</dd>
 				</dl>
 			</li>
-			<li>
-				<dl class="6">
-					<dt><a href="#">人气综艺</a></dt>
-					<dd>
+			<li class="variety fl">
+				<dl>
+					<dt class="variety-title"><a href="#">人气综艺</a></dt>
+					<dd class="piclist">
 						<a href="#">
 							<img src="../images/lesson_03/img03/FeiChengWuRao.jpg" alt="非诚勿扰">
 						</a>
-						<h4><a href="#">非诚勿扰</a></h4>
+						<div class="clearfix">
+							<h4>
+								<a href="#">非诚勿扰</a>
+								<span>(12-04期)</span>
+							</h4>
+							<i></i>
+						</div>
 					</dd>
-					<dd>
+					<dd class="piclist divide">
 						<a href="#">
 							<img src="../images/lesson_03/img03/ZhongGuoDaRenXiu.jpg" alt="中国达人秀">
 						</a>
-						<h4><a href="#">中国达人秀</a></h4>
+						<div class="clearfix">
+							<h4>
+								<a href="#">中国达人秀</a>
+								<span>()</span>
+							</h4>
+							<i></i>
+						</div>
 					</dd>
-					<dd>
+					<dd class="textlist">
 						<h4>
 							<a href="#">快乐大本营</a>
+							<span>(12-03期)</span>
 						</h4>
 						<p>千山暮雪大玩虐戏</p>
 					</dd>
-					<dd>
+					<dd class="textlist">
 						<h4>
 							<a href="#">本山快乐营</a>
+							<span>(12-03期)</span>
 						</h4>
 						<p>笑口常开你哭啥呀</p>
 					</dd>

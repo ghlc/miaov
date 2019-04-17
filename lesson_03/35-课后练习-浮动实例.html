@@ -19,10 +19,8 @@
 			line-height: 28px;
 			color: #756a69;
 		}
-		.list {
-			width: 740px;
-			border-bottom: 2px solid #806f66;
-		}
+		.list { width: 740px; }
+
 		.list li {
 			float: left;
 			width: 100px;
@@ -30,32 +28,49 @@
 			text-align: center;
 			background-color: #eaddcc;
 		}
+		.list .current { background-color: #806f66; }
+
 		.list a {
 			line-height: 23px;
 			color: #595959;
 		}
-		.list .current {
-			background-color: #806f66;
-		}
-		.current a {
-			color: #fff;
-		}
+		.current a { color: #fff; }
+
+		.msglist { border-top: 2px solid #806f66; }
+
 		.msglist li {
-			padding: 16px 10px 0 32px;
+			padding: 16px 10px 4px 32px;
 			border-bottom: 1px solid #e3e3e3;
 		}
-		.msglist .avatar {
-			padding: 3px;
-		}
+		.msglist .active { background-color: #f9f0e3; }
+
+		.msglist .avatar { padding: 3px; }
+
+		.avatar img { vertical-align: top; }
+
+		.active .avatar { background-color: #ccc; }
+
 		.msglist .detail {
-
+			width: 520px;
+			padding-left: 10px;
 		}
-		.msglist .close {
-
+		.detail h4 {
+			line-height: 20px;
+			color: #806f66;
 		}
-		.msglist .active {
-			background-color: #ccc;
-			background-color: #f9f0e3;
+		.detail p {
+			line-height: 20px;
+			color: #666;
+		}
+		.detail .date {
+			line-height: 40px;
+			color: #b5b4b3;
+		}
+		.detail strong { padding-right: 14px; }
+
+		.detail a {
+			text-decoration: underline;
+			color: #806f66;
 		}
   </style>
 </head>
@@ -77,30 +92,30 @@
 				</div>
 				<div class="detail fl">
 					<h4>天猫俱乐部：</h4>
-					<p><strong>天猫达人经验值发送成功</strong> 您上个月购买天猫商品，总共获得<strong>1600</strong>点天猫达人经验值，已经发放成功！查看天猫达人经验值请<a href="#">点此查看</a></p>
+					<p><strong>天猫达人经验值发送成功</strong> 您上个月购买天猫商品，总共获得<strong>1600</strong>点天猫达人经验值，已经发放成功！查看天猫达人经验值请 <a href="#">点此查看</a></p>
 					<p class="date">2013年03月04日</p>
 				</div>
 				<a class="close fr" href="#">
 					<img src="../images/lesson_03/img02/icon.jpg" alt="关闭">
 				</a>
 			</li>
-			<li>
-				<div class="avatar">
+			<li class="clearfix">
+				<div class="avatar fl">
 					<img src="../images/lesson_03/img02/avatar.jpg" alt="天猫俱乐部">
 				</div>
-				<div class="detail">
+				<div class="detail fl">
 					<h4>天猫俱乐部：</h4>
 					<p><strong>天猫达人经验值发送成功</strong> 您上个月在Tmall.com登录<strong>2</strong>次，获得<strong>10</strong>点天猫达人经验值，已发放至您的经验值账户！</p>
 					<p class="date">2013年03月04日</p>
 				</div>
 			</li>
-			<li>
-				<div class="avatar">
+			<li class="clearfix">
+				<div class="avatar fl">
 					<img src="../images/lesson_03/img02/avatar.jpg" alt="天猫俱乐部">
 				</div>
-				<div class="detail">
+				<div class="detail fl">
 					<h4>天猫俱乐部：</h4>
-					<p><strong>天猫达人经验值发送成功</strong> 您上个月购买天猫商品，总共获得<strong>509</strong>点天猫达人经验值，已经发放成功！查看天猫达人经验值请<a href="#">点此查看</a></p>
+					<p><strong>天猫达人经验值发送成功</strong> 您上个月购买天猫商品，总共获得<strong>509</strong>点天猫达人经验值，已经发放成功！查看天猫达人经验值请 <a href="#">点此查看</a></p>
 					<p class="date">2013年02月04日</p>
 				</div>
 			</li>
