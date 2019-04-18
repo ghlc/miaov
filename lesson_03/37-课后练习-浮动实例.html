@@ -8,94 +8,144 @@
   <link rel="stylesheet" href="../css/reset.css">
   <style>
 		.wrap {
-			width: 751px;
-			padding: 5px 32px 12px 23px;
+			width: 696px;
+			padding: 6px 32px 0 23px;
 			margin: 30px auto;
+		}
+		.head { border-bottom: 1px solid #ddd; }
+
+		.head .title {
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 36px;
+			color: #666;
+		}
+		.head a {
+			padding-right: 3px;
+			margin-top: 4px;
+			line-height: 30px;
+			color: #825d5b;
+		}
+		.list { padding-top: 17px; }
+
+		.list li {
+			float: left;
+			width: 110px;
+			padding-top: 6px;
+			padding-right: 36px;
+			padding-bottom: 10px;
+		}
+		.list .p-r-0 { padding-right: 0; }
+
+		.list img { vertical-align: top; }
+
+		.detail { padding-top: 4px; }
+
+		.detail dt {
+			font-weight: 600;
+			color: #a2a2a2;
+		}
+		.detail a {
+			line-height: 22px;
+			font-size: 14px;
+			color: #825d5b;
+		}
+		.detail p {
+			padding-top: 5px;
+			line-height: 18px;
+			color: #333333;
+		}
+		.detail span {
+			line-height: 30px;
+			color: #825d5b;
 		}
   </style>
 </head>
 <body>
 	<div class="wrap">
-		<h2 class="title">最新上架<a href="#">更多新上架</a></h2>
-		<ul class="list">
+		<div class="head clearfix">
+			<h2 class="title fl">最新上架</h2>
+			<a class="fr" href="#">更多新上架</a>
+		</div>
+		<ul class="list clearfix">
 			<li>
 				<a href="#"><img src="../images/lesson_03/img04/YuanYangPu.jpg" alt="鸳鸯谱"></a>
-				<dl class="1">
-					<dt>鸳鸯谱</dt>
-					<dd>东东枪 等</dd>
-					<dd>8.00元</dd>
+				<dl class="detail">
+					<dt><a href="#">鸳鸯谱</a></dt>
+					<dd><p>东东枪 等</p></dd>
+					<dd><span>8.00元</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img04/WaiXingRenFangYuJiHua.jpg" alt="外星人防御计划"></a>
-				<dl class="2">
-					<dt>外星人防御计划</dt>
-					<dd>汪洁</dd>
-					<dd>8.99元</dd>
+				<dl class="detail">
+					<dt><a href="#">外星人防御计划</a></dt>
+					<dd><p>汪洁</p></dd>
+					<dd><span>8.99元</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img04/BuChengGouQieIII.jpg" alt="不曾苟且Ⅲ"></a>
-				<dl class="3">
-					<dt>不曾苟且Ⅲ</dt>
-					<dd>啄木鸟</dd>
-					<dd>8.00元</dd>
+				<dl class="detail">
+					<dt><a href="#">不曾苟且Ⅲ</a></dt>
+					<dd><p>啄木鸟</p></dd>
+					<dd><span>8.00元</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img04/MaoZeDongZhuan.jpg" alt="毛泽东传"></a>
-				<dl class="4">
-					<dt>毛泽东传</dt>
-					<dd>（美）罗斯·特里尔 胡为雄 等译</dd>
-					<dd>18.00元</dd>
+				<dl class="detail">
+					<dt><a href="#">毛泽东传</a></dt>
+					<dd><p>（美）罗斯·特里尔 胡为雄 等译</p></dd>
+					<dd><span>18.00元</span></dd>
 				</dl>
 			</li>
-			<li>
+			<li class="p-r-0">
 				<a href="#"><img src="../images/lesson_03/img04/AppChuangFuChuanQi.jpg" alt="App创富传奇"></a>
-				<dl class="5">
-					<dt>App创富传奇</dt>
-					<dd>（美）史蒂文斯 曾文斌译</dd>
-					<dd>18.00元</dd>
+				<dl class="detail">
+					<dt><a href="#">App创富传奇</a></dt>
+					<dd><p>（美）史蒂文斯 曾文斌译</p></dd>
+					<dd><span>18.00元</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img04/RenWu.jpg" alt="《人物》2013年3月号"></a>
-				<dl class="6">
-					<dt>《人物》2013年3月号</dt>
-					<dd>李海鹏 林天宏 张卓等</dd>
-					<dd>5.99元</dd>
+				<dl class="detail">
+					<dt><a href="#">《人物》2013年3月号</a> [作品]</dt>
+					<dd><p>李海鹏 林天宏 张卓等</p></dd>
+					<dd><span>5.99元</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img04/WoYaoQuDeDiFangChunNuanHuaKai.jpg" alt="醉：我要去的地方春暖花开"></a>
-				<dl class="7">
-					<dt>醉：我要去的地方春暖花开（上）</dt>
-					<dd>独眼</dd>
-					<dd>3.99元</dd>
+				<dl class="detail">
+					<dt><a href="#">醉：我要去的地方春暖花开（上）</a> [作品]</dt>
+					<dd><p>独眼</p></dd>
+					<dd><span>3.99元</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img04/BingDaoRiJi.jpg" alt="冰岛日记"></a>
-				<dl class="8">
-					<dt>冰岛日记</dt>
-					<dd>米周</dd>
-					<dd>1.99元</dd>
+				<dl class="detail">
+					<dt><a href="#">冰岛日记</a> [作品]</dt>
+					<dd><p>米周</p></dd>
+					<dd><span>1.99元</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img04/TianJingYuYouShang.jpg" alt="恬静与忧伤"></a>
-				<dl class="9">
-					<dt>恬静与忧伤</dt>
-					<dd>破罐</dd>
-					<dd>0.99元</dd>
+				<dl class="detail">
+					<dt><a href="">恬静与忧伤</a> [作品]</dt>
+					<dd><p>破罐</p></dd>
+					<dd><span>0.99元</span></dd>
 				</dl>
 			</li>
-			<li>
+			<li class="p-r-0">
 				<a href="#"><img src="../images/lesson_03/img04/YingHuaJiYanHuoYe.jpg" alt="樱花季，烟火夜"></a>
-				<dl class="10">
-					<dt>樱花季，烟火夜</dt>
-					<dd>夏木南生</dd>
-					<dd>1.99元</dd>
+				<dl class="detail">
+					<dt><a href="#">樱花季，烟火夜</a> [作品]</dt>
+					<dd><p>夏木南生</p></dd>
+					<dd><span>1.99元</span></dd>
 				</dl>
 			</li>
 		</ul>

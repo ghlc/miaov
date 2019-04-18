@@ -7,69 +7,140 @@
   <title>浮动实例网易</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
-
+		.wrap {
+			width: 300px;
+			padding: 14px 74px 17px 16px;
+			margin: 30px auto;
+		}
+		.list {
+			padding-bottom: 22px;
+			border-bottom: 1px solid #ddd;
+		}
+		.list li {
+			padding-bottom: 7px;
+			border-bottom: 1px dashed #ddd;
+		}
+		.list li:last-child {
+			border-bottom: none;
+		}
+		.list i {
+			float: left;
+			width: 17px;
+			height: 14px;
+			margin-top: 5px;
+			text-align: center;
+			font-style: normal;
+			line-height: 14px;
+			color: #f8ffdc;
+			background-color: #999;
+			list-style-type: none;
+		}
+		.list .bgcolor {
+			background-color: #942f25;
+		}
+		.list h4 {
+			float: left;
+			padding-left: 14px;
+		}
+		.list h4 a {
+			font-weight: 500;
+			line-height: 26px;
+			color: #333;
+		}
+		.list p {
+			float: right;
+			padding-top: 4px;
+			padding-right: 8px;
+		}
+		.list span {
+			line-height: 20px;
+			color: #c71012;
+		}
+		.list .current i {
+			width: 21px;
+			height: 18px;
+			margin-top: 6px;
+			line-height: 18px;
+		}
+		.current h4, .current p {
+			padding-left: 2px;
+		}
+		.current h4 a {
+			font-size: 14px;
+			line-height: 22px;
+			color: #252525;
+		}
+		.current .pic {
+			display: block;
+			width: 94px;
+		}
+		.pic img {
+			vertical-align: top;
+		}
   </style>
 </head>
 <body>
 	<div class="wrap">
 		<ul class="list">
-			<li>
-				<i>1</i>
-				<a href="#">长城哈弗M4</a>
-				<span>6.39~7.19万</span>
+			<li class="clearfix">
+				<i class="bgcolor">1</i>
+				<h4><a href="#">长城哈弗M4</a></h4>
+				<p><span class="value">6.39~7.19万</span></p>
 			</li>
-			<li>
-				<i>2</i>
-				<a href="#">起亚K2三厢</a>
-				<span>7.29~10.99万</span>
+			<li class="clearfix">
+				<i class="bgcolor">2</i>
+				<h4><a href="#">起亚K2三厢</a></h4>
+				<p><span class="value">7.29~10.99万</span></p>
 			</li>
-			<li>
-				<i>3</i>
-				<a href="#">现代瑞纳三厢</a>
-				<span>7.39~10.69万</span>
+			<li class="clearfix">
+				<i class="bgcolor">3</i>
+				<h4><a href="#">现代瑞纳三厢</a></h4>
+				<p><span class="value">7.39~10.69万</span></p>
 			</li>
-			<li>
+			<li class="current clearfix">
 				<i>4</i>
-				<a href="">
+				<a class="pic clearfix" href="#">
 					<img src="../images/lesson_03/img06/car.jpg" alt="雪佛兰赛欧三厢">
 				</a>
 				<h4><a href="#">雪佛兰赛欧三厢</a></h4>
-				<p>最新年款2010</p>
-				<span>5.68~7.93万</span>
 				<p>
-					<a href="#">参数配置</a>
-					<a href="#">外观</a>
+					<span class="model">最新年款2010</span>
+					<span class="value">5.68~7.93万</span>
+				</p>
+				<p class="parameter">
+					<a class="configuration" href="#">参数配置</a>
+					<a class="exterior" href="#">外观</a>
 				</p>
 			</li>
-			<li>
+			<li class="clearfix">
 				<i>5</i>
-				<a href="#">长安逸动</a>
-				<span>7.39~9.49万</span>
+				<h4><a href="#">长安逸动</a></h4>
+				<p><span class="value">7.39~9.49万</span></p>
 			</li>
-			<li>
+			<li class="clearfix">
 				<i>6</i>
-				<a href="#">长安CS35</a>
-				<span>7.89~9.29万</span>
+				<h4><a href="#">长安CS35</a></h4>
+				<p><span class="value">7.89~9.29万</span></p>
 			</li>
-			<li>
+			<li class="clearfix">
 				<i>7</i>
-				<a href="#">长城C30</a>
-				<span>6.45~8.35万</span>
+				<h4><a href="#">长城C30</a></h4>
+				<p><span class="value">6.45~8.35万</span></p>
 			</li>
-			<li>
+			<li class="clearfix">
 				<i>8</i>
-				<a href="#">本田飞度</a>
-				<span>7.98~11.98万</span>
+				<h4><a href="#">本田飞度</a></h4>
+				<p><span class="value">7.98~11.98万</span></p>
 			</li>
-			<li>
+			<li class="clearfix">
 				<i>9</i>
-				<a href="#">福特嘉年华</a>
-				<span>7.99~11.29万</span>
+				<h4><a href="#">福特嘉年华</a></h4>
+				<p><span class="value">7.99~11.29万</span></p>
 			</li>
-			<li>
+			<li class="clearfix">
 				<i>10</i>
-				<a href="#">比亚迪速锐</a>
-				<span>6.59~9.99万</span>
+				<h4><a href="#">比亚迪速锐</a></h4>
+				<p><span class="value">6.59~9.99万</span></p>
 			</li>
 		</ul>
 	</div>

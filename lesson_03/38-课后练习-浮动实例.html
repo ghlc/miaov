@@ -7,67 +7,170 @@
   <title>浮动实例微博</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
+		.wrap {
+			width: 680px;
+			padding: 4px 4px 12px 5px;
+			margin: 30px auto;
+		}
+		.head { padding-bottom: 7px; }
 
+		.head p {
+			float: left;
+			line-height: 28px;
+			color: #333;
+		}
+		.head a {
+			float: right;
+			width: 22px;
+			height: 20px;
+			border: 1px solid #ccc;
+		}
+		.head .prev { background-image: url(../images/lesson_03/img05/RightArrow.jpg); }
+
+		.head .next {
+			margin-right: 10px;
+			background-image: url(../images/lesson_03/img05/LeftArrow.jpg);
+		}
+		.attention { padding-top: 3px; }
+
+		.attention a { display: block; }
+
+		.attention img { vertical-align: top; }
+
+		.attention .btn {
+			width: 54px;
+			height: 22px;
+			margin: 12px auto 0;
+			text-align: center;
+			line-height: 20px;
+			color: #fff;
+			background: url(../images/lesson_03/img05/bottom.jpg);
+		}
+		.list li {
+			float: left;
+			width: 308px;
+			height: 133px;
+			padding: 7px 15px 0 10px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #e6e6e6;
+			background-color: #f3f3f3;
+		}
+		.list li:nth-child(2n) { margin-right: 0; }
+
+		.detail { padding-left: 10px; }
+
+		.detail dd {
+			line-height: 20px;
+			color: #333;
+		}
+		.detail a { color: #0a8cd2; }
+
+		.detail dt a {
+			font-weight: 600;
+			line-height: 20px;
+			vertical-align: middle;
+		}
+		.detail p {
+			width: 218px;
+			line-height: 20px;
+			color: #808080;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		.detail i {
+			display: inline-block;
+			padding-left: 6px;
+			list-style-type: none;
+			vertical-align: middle;
+		}
+		.red-star {
+			width: 13px;
+			height: 14px;
+			background: url(../images/lesson_03/img05/RedStar.jpg) no-repeat right center;
+		}
+		.big-v {
+			width: 16px;
+			height: 14px;
+			background: url(../images/lesson_03/img05/BigV.jpg) no-repeat right center;
+		}
   </style>
 </head>
 <body>
 	<div class="wrap">
-		<p class="1">线下不知道怎么搭讪？现在微博上打声招呼把~ <a class="prev" href="#"></a><a class="next" href="#"></a></p>
-		<ul class="list">
-			<li>
-				<a href="#"><img src="../images/lesson_03/img05/XiaoQing.jpg" alt="小晓筱晴"></a>
-				<dl class="1">
-					<dt>小晓筱晴</dt>
-					<dd>简介：教师</dd>
+		<div class="head clearfix">
+			<p>线下不知道怎么搭讪？现在微博上打声招呼把~</p>
+			<a class="prev" href="#"></a>
+			<a class="next" href="#"></a>
+		</div>
+		<ul class="list clearfix">
+			<li class="clearfix">
+				<div class="attention fl">
+					<a href="#"><img src="../images/lesson_03/img05/XiaoQing.jpg" alt="小晓筱晴"></a>
+					<a class="btn" href="#">+关注</a>
+				</div>
+				<dl class="detail fl">
+					<dt><a href="#">小晓筱晴</a><i class="red-star"></i></dt>
+					<dd><p>简介：教师</p></dd>
 					<dd>你们是同学</dd>
 				</dl>
-				<a href="#">关注</a>
 			</li>
-			<li>
-				<a href="#"><img src="../images/lesson_03/img05/MuTou.jpg" alt="木头HSU卿"></a>
-				<dl class="2">
-					<dt>木头HSU卿</dt>
-					<dd>你们是同学</dd>
-					<dd></dd>
-				</dl>
-				<a href="#">关注</a>
-			</li>
-			<li>
-				<a href="#"><img src="../images/lesson_03/img05/GuaiGuaiNv.jpg" alt="别再叫我乖乖女"></a>
-				<dl class="3">
-					<dt>别再叫我乖乖女</dt>
-					<dd>简介：Life isn't always perfect. Life is…</dd>
+			<li class="clearfix">
+				<div class="attention fl">
+					<a href="#"><img src="../images/lesson_03/img05/MuTou.jpg" alt="木头HSU卿"></a>
+					<a class="btn" href="#">+关注</a>
+				</div>
+				<dl class="detail fl">
+					<dt><a href="#">木头HSU卿</a></dt>
 					<dd>你们是同学</dd>
 				</dl>
-				<a href="#">关注</a>
 			</li>
-			<li>
-				<a href="#"><img src="../images/lesson_03/img05/ShaBing.jpg" alt="沙冰sunshina水水"></a>
-				<dl class="4">
-					<dt>沙冰sunshina水水</dt>
-					<dd>简介：未来很远、但又很近··</dd>
+			<li class="clearfix">
+				<div class="attention fl">
+					<a href="#"><img src="../images/lesson_03/img05/GuaiGuaiNv.jpg" alt="别再叫我乖乖女"></a>
+					<a class="btn" href="#">+关注</a>
+				</div>
+				<dl class="detail fl">
+					<dt><a href="#">别再叫我乖乖女</a></dt>
+					<dd><p>简介：Life isn't always perfect. Life isn't always perfect</p></dd>
 					<dd>你们是同学</dd>
 				</dl>
-				<a href="#">关注</a>
 			</li>
-			<li>
-				<a href="#"><img src="../images/lesson_03/img05/Rainy.jpg" alt="I_Rainy"></a>
-				<dl class="5">
-					<dt>I_Rainy</dt>
+			<li class="clearfix">
+				<div class="attention fl">
+					<a href="#"><img src="../images/lesson_03/img05/ShaBing.jpg" alt="沙冰sunshina水水"></a>
+					<a class="btn" href="#">+关注</a>
+				</div>
+				<dl class="detail fl">
+					<dt><a href="#">沙冰sunshina水水</a></dt>
+					<dd><p>简介：未来很远、但又很近。。</p></dd>
+					<dd>你们是同学</dd>
+				</dl>
+			</li>
+			<li class="clearfix">
+				<div class="attention fl">
+					<a href="#"><img src="../images/lesson_03/img05/Rainy.jpg" alt="I_Rainy"></a>
+					<a class="btn" href="#">+关注</a>
+				</div>
+				<dl class="detail fl">
+					<dt><a href="#">I_Rainy</a></dt>
 					<dd>Ta可能在你附近</dd>
-					<dd></dd>
 				</dl>
-				<a href="#">关注</a>
 			</li>
-			<li>
-				<a href="#"><img src="../images/lesson_03/img05/HanHan.jpg" alt="韩寒"></a>
-				<dl class="6">
-					<dt>韩寒</dt>
-					<dd>作家，赛车手韩寒</dd>
-					<dd>我关注的人中：<a href="#">潘石屹</a>关注了他</dd>
+			<li class="clearfix">
+				<div class="attention fl">
+					<a href="#"><img src="../images/lesson_03/img05/HanHan.jpg" alt="韩寒"></a>
+					<a class="btn" href="#">+关注</a>
+				</div>
+				<dl class="detail fl">
+					<dt><a href="#">韩寒</a><i class="big-v"></i></dt>
+					<dd>
+						<p>作家，赛车手韩寒</p>
+						<p>我关注的人中：<a href="#">潘石屹</a>关注了他</p>
+					</dd>
 					<dd>80后作家</dd>
 				</dl>
-				<a href="#">关注</a>
 			</li>
 		</ul>
 	</div>
