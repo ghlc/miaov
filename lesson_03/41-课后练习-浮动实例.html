@@ -7,14 +7,84 @@
   <title>浮动实例嘀嗒团</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
+  	body { background-color: #fafafa; }
 
+		.wrap {
+			width: 968px;
+			height: 100px;
+			padding: 4px 10px 9px;
+			margin: 30px auto;
+			background-color: #f3f3f3;
+			border: 1px solid #fff;
+		}
+		.list {
+			padding-top: 6px;
+			padding-bottom: 8px;
+			border-bottom: 1px solid #e2e2e2;
+		}
+		.topic {
+			padding-bottom: 6px;
+			border-bottom: none;
+		}
+		.list dt, .list dd { float: left; }
+
+		.list dt {
+			padding-right: 21px;
+			font-weight: 600;
+			line-height: 18px;
+			color: #333;
+		}
+		.list dd {
+			padding-right: 10px;
+			padding-left: 10px;
+			color: #878787;
+		}
+		.list a {
+			line-height: 18px;
+			color: #444;
+		}
+		.list .all {
+			margin-right: 10px;
+			margin-left: 10px;
+			padding-right: 5px;
+			padding-left: 5px;
+			background-color: #06c;
+			box-shadow: 1px 1px 2px #d2d2d2;
+		}
+		.all a { color: #fff; }
+
+		.list .more {
+			float: right;
+			padding-right: 0;
+		}
+		.more a {
+			padding-right: 18px;
+			color: #f90;
+			background: url(../images/lesson_03/img08/BottomArrow.jpg) no-repeat right center;
+		}
+		.topic dt {
+			line-height: 22px;
+			padding-right: 26px;
+		}
+		.topic dd {
+			padding-right: 18px;
+			padding-left: 12px;
+			margin-right: 5px;
+			margin-left: 5px;
+			background: url(../images/lesson_03/img08/LiBackground.jpg) no-repeat center center;
+			background-size: 100% 100%;
+		}
+		.topic a {
+			line-height: 22px;
+			color: #fff;
+		}
   </style>
 </head>
 <body>
 	<div class="wrap">
-		<dl class="list">
+		<dl class="list clearfix">
 			<dt>分类</dt>
-			<dd><a href="#">全部</a></dd>
+			<dd class="all"><a href="#">全部</a></dd>
 			<dd><a href="#">今日新单</a>(44)</dd>
 			<dd><a href="#">美食</a>(298)</dd>
 			<dd><a href="#">娱乐</a>(140)</dd>
@@ -24,23 +94,23 @@
 			<dd><a href="#">电影</a>(34)</dd>
 			<dd><a href="#">旅游</a>(77)</dd>
 			<dd><a href="#">摄影</a>(93)</dd>
-			<dd><a href="#">更多</a><i></i></dd>
+			<dd class="more"><a href="#">更多</a></dd>
 		</dl>
-		<dl class="list">
+		<dl class="list clearfix">
 			<dt>地区</dt>
-			<dd><a href="#">全部</a></dd>
+			<dd class="all"><a href="#">全部</a></dd>
 			<dd><a href="#">朝阳区</a>(363)</dd>
 			<dd><a href="#">海淀区</a>(163)</dd>
 			<dd><a href="#">丰台区</a>(118)</dd>
 			<dd><a href="#">东城区</a>(113)</dd>
 			<dd><a href="#">西城区</a>(87)</dd>
-			<dd><a href="#">昌平区</a>(66)/dd>
+			<dd><a href="#">昌平区</a>(66)</dd>
 			<dd><a href="#">大兴区</a>(30)</dd>
 			<dd><a href="#">石景山区</a>(27)</dd>
 			<dd><a href="#">顺义区</a>(17)</dd>
-			<dd><a href="#">更多</a><i></i></dd>
+			<dd class="more"><a href="#">更多</a></dd>
 		</dl>
-		<dl class="topic-list">
+		<dl class="list topic clearfix">
 			<dt>专题</dt>
 			<dd><a href="#">精品摄影专场</a></dd>
 			<dd><a href="#">丽人专场</a></dd>

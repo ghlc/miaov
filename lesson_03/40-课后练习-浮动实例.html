@@ -7,45 +7,137 @@
   <title>浮动实例迅雷+</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
+		.wrap {
+			width: 948px;
+			height: 221px;
+			padding: 9px 17px 0 15px;
+			margin: 30px auto;
+			background: #fcfcfc url(../images/lesson_03/img07/BorderBackground.jpg) no-repeat 698px center;
+			border: 1px solid #ededed;
+		}
+		.head .title {
+			font-size: 16px;
+			line-height: 28px;
+			color: #666;
+		}
+		.head a {
+			line-height: 28px;
+			color: #b0b0b0;
+		}
+		.recreation { width: 668px; }
 
+		.headline, .piclist { padding-top: 8px; }
+
+		.headline a { display: block; }
+
+		.headline img, .piclist img { vertical-align: top; }
+
+		.textlist { padding-left: 13px; }
+
+		.textlist li {
+			padding-top: 6px;
+			padding-bottom: 9px;
+			border-top: 1px dashed #fff;
+			border-bottom: 1px dashed #e6e6e6;
+		}
+		.textlist li:first-child { border-top: none; }
+
+		.textlist li:last-child { border-bottom: none; }
+
+		.textlist h3 a {
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 26px;
+			color: #333;
+		}
+		.textlist p { color: #999; }
+
+		.textlist p a {
+			line-height: 22px;
+			color: #333;
+		}
+		.focus { width: 238px; }
+
+		.piclist {
+			padding-bottom: 8px;
+			border-bottom: 1px dashed #e6e6e6;
+		}
+		.piclist li { float: left; }
+
+		.piclist li:first-child { padding-right: 15px; }
+
+		.piclist .photo {
+			display: block;
+			padding: 1px;
+			border: 1px solid #e4e4e4;
+		}
+		.piclist h4 a {
+			font-weight: 500;
+			line-height: 22px;
+			color: #333;
+		}
+		.hot {
+			padding-top: 10px;
+			color: #999;
+			border-top: 1px dashed #fff;
+		}
+		.hot a {
+			line-height: 20px;
+			color: #333;
+		}
   </style>
 </head>
 <body>
-	<div class="wrap">
-		<div class="recreation">
-			<h2 class="title">娱乐<a href="#">更多&gt;</a></h2>
-			<div class="headline">
+	<div class="wrap clearfix">
+		<div class="recreation fl clearfix">
+			<div class="head clearfix">
+				<h2 class="title fl">娱乐</h2>
+				<a class="fr" href="#">更多 &gt;</a>
+			</div>
+			<div class="headline fl">
 				<a href="#">
 					<img src="../images/lesson_03/img07/Recreation.jpg" alt="网曝王大治婚外情 1月会娇妻2月见董洁">
 				</a>
 			</div>
-			<ul class="textlist">
+			<ul class="textlist fl">
 				<li>
 					<h3><a href="#">郎朗与李云迪被爆交恶多年 水火不容</a></h3>
-					<p>相关：<a href="#">郎朗王力宏酒店搭肩旧照 李云迪靠微博“超越”郎朗</a></p>
+					<p>相关：<a href="#">郎朗王力宏酒店搭肩旧照</a>
+						<a href="#">李云迪靠微博“超越”郎朗</a>
+					</p>
 				</li>
 				<li>
 					<h3><a href="#">李双江之子年龄存疑 涉案嫌犯4名90后</a></h3>
-					<p>相关：<a href="#">梦鸽称李天一未成年 涉嫌强奸罪被批捕 觉得钱和关系能</a></p>
+					<p>相关：<a href="#">梦鸽称李天一未成年</a>
+						<a href="#">涉嫌强奸罪被批捕</a>
+						<a href="#">觉得钱和关系能</a>
+					</p>
 				</li>
 				<li>
 					<h3><a href="#">董洁潘粤明婚变有续集 男方谈儿子痛哭</a></h3>
-					<p>相关：<a href="#">揭秘董洁绯闻男友王大治 董洁王大治同游被拍</a></p>
+					<p>相关：<a href="#">揭秘董洁绯闻男友王大治</a>
+						<a href="#">董洁王大治同游被拍</a>
+					</p>
 				</li>
 			</ul>
 		</div>
-		<div class="focus">
-			<h2>焦点关注<a href="#">更多&gt;</a></h2>
-			<ul class="piclist">
-				<li><a href="#">
+		<div class="focus fr">
+			<div class="head clearfix">
+				<h2 class="title fl">焦点关注</h2>
+				<a class="fr" href="#">更多 &gt;</a>
+			</div>
+			<ul class="piclist clearfix">
+				<li>
+					<a class="photo" href="#">
 						<img src="../images/lesson_03/img07/WangZuXian.jpg" alt="王祖贤17岁旧照曝光">
-						<h4>王祖贤17岁旧照曝光</h4>
 					</a>
+					<h4><a href="#">王祖贤17岁旧照曝光</a></h4>
 				</li>
-				<li><a href="#">
+				<li>
+					<a class="photo" href="#">
 						<img src="../images/lesson_03/img07/FengHuangChuanQi.jpg" alt="凤凰传奇年收入过亿">
-						<h4>凤凰传奇年收入过亿</h4>
 					</a>
+					<h4><a href="#">凤凰传奇年收入过亿</a></h4>
 				</li>
 			</ul>
 			<p class="hot">热门：

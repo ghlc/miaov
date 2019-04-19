@@ -20,14 +20,16 @@
 			padding-bottom: 7px;
 			border-bottom: 1px dashed #ddd;
 		}
-		.list li:last-child {
-			border-bottom: none;
-		}
-		.list i {
+		.list li:last-child { border-bottom: none; }
+
+		.list .num-photo {
 			float: left;
+			padding-top: 5px;
+		}
+		.num-photo i {
+			display: block;
 			width: 17px;
 			height: 14px;
-			margin-top: 5px;
 			text-align: center;
 			font-style: normal;
 			line-height: 14px;
@@ -35,51 +37,92 @@
 			background-color: #999;
 			list-style-type: none;
 		}
-		.list .bgcolor {
-			background-color: #942f25;
-		}
-		.list h4 {
+		.num-photo .bgcolor { background-color: #942f25; }
+
+		.list .detail {
 			float: left;
-			padding-left: 14px;
+			width: 281px;
+			padding-left: 2px;
 		}
-		.list h4 a {
+		.detail h4 {
+			float: left;
+			padding-left: 12px;
+		}
+		.detail h4 a {
 			font-weight: 500;
 			line-height: 26px;
 			color: #333;
 		}
-		.list p {
+		.detail .amount {
 			float: right;
 			padding-top: 4px;
 			padding-right: 8px;
 		}
-		.list span {
+		.amount span {
 			line-height: 20px;
 			color: #c71012;
 		}
-		.list .current i {
+		.num-photo .photo,
+		.detail .param,
+		.amount .model { display: none; }
+
+		.current .num-photo { padding-top: 6px; }
+
+		.current i {
 			width: 21px;
 			height: 18px;
-			margin-top: 6px;
 			line-height: 18px;
 		}
-		.current h4, .current p {
-			padding-left: 2px;
-		}
-		.current h4 a {
-			font-size: 14px;
-			line-height: 22px;
-			color: #252525;
-		}
-		.current .pic {
+		.current .photo {
 			display: block;
 			width: 94px;
 		}
-		.pic img {
-			vertical-align: top;
-		}
-		.detail {
+		.photo img { vertical-align: top; }
+
+		.current .detail {
 			width: 204px;
-			padding-left: 2px;
+			padding-top: 11px;
+		}
+		.current h4, .current .amount {
+			float: none;
+			padding-top: 0;
+			padding-left: 0;
+		}
+		.current h4 a {
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 20px;
+			color: #252525;
+		}
+		.current .param {
+			display: block;
+			width: 134px;
+		}
+		.current .model, .current .config { float: left; }
+
+		.current .value, .current .shape-pic, .current .shape { float: right; }
+
+		.current .model {
+			display: block;
+			color: #888;
+		}
+		.current span { line-height: 20px; }
+
+		.current .param a { line-height: 30px; }
+
+		.current .config { color: #252525; }
+
+		.current .shape-pic {
+			width: 12px;
+			height: 9px;
+			padding: 1px;
+			margin-top: 8px;
+			background: url(../images/lesson_03/img06/photo.jpg) no-repeat center center;
+			border: 1px solid #c2c2c0;
+		}
+		.current .shape {
+			padding-left: 8px;
+			color: #325281;
 		}
   </style>
 </head>
@@ -87,68 +130,204 @@
 	<div class="wrap">
 		<ul class="list">
 			<li class="clearfix">
-				<i class="bgcolor">1</i>
-				<h4><a href="#">长城哈弗M4</a></h4>
-				<p><span class="value">6.39~7.19万</span></p>
-			</li>
-			<li class="clearfix">
-				<i class="bgcolor">2</i>
-				<h4><a href="#">起亚K2三厢</a></h4>
-				<p><span class="value">7.29~10.99万</span></p>
-			</li>
-			<li class="clearfix">
-				<i class="bgcolor">3</i>
-				<h4><a href="#">现代瑞纳三厢</a></h4>
-				<p><span class="value">7.39~10.69万</span></p>
-			</li>
-			<li class="current clearfix">
-				<div class="photo fl">
-					<i>4</i>
-					<a class="pic clearfix" href="#">
-					<img src="../images/lesson_03/img06/car.jpg" alt="雪佛兰赛欧三厢">
+				<div class="num-photo">
+					<i class="bgcolor">1</i>
+					<a class="photo" href="#">
+						<img src="../images/lesson_03/img06/car.jpg" alt="长城哈弗M4">
 					</a>
 				</div>
-				<div class="detail fl">
+				<div class="detail clearfix">
+					<h4><a href="#">长城哈弗M4</a></h4>
+					<p class="amount clearfix">
+						<span class="model">最新年款2010</span>
+						<span class="value">6.39~7.19万</span>
+					</p>
+					<p class="param clearfix">
+						<a class="config" href="#">参数配置</a>
+						<a class="shape" href="#">外观</a>
+						<a class="shape-pic" href="#"></a>
+					</p>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="num-photo">
+					<i class="bgcolor">2</i>
+					<a class="photo" href="#">
+						<img src="../images/lesson_03/img06/car.jpg" alt="起亚K2三厢">
+					</a>
+				</div>
+				<div class="detail clearfix">
+					<h4><a href="#">起亚K2三厢</a></h4>
+					<p class="amount clearfix">
+						<span class="model">最新年款2010</span>
+						<span class="value">7.29~10.99万</span>
+					</p>
+					<p class="param clearfix">
+						<a class="config" href="#">参数配置</a>
+						<a class="shape" href="#">外观</a>
+						<a class="shape-pic" href="#"></a>
+					</p>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="num-photo">
+					<i class="bgcolor">3</i>
+					<a class="photo" href="#">
+						<img src="../images/lesson_03/img06/car.jpg" alt="现代瑞纳三厢">
+					</a>
+				</div>
+				<div class="detail clearfix">
+					<h4><a href="#">现代瑞纳三厢</a></h4>
+					<p class="amount clearfix">
+						<span class="model">最新年款2010</span>
+						<span class="value">7.39~10.69万</span>
+					</p>
+					<p class="param clearfix">
+						<a class="config" href="#">参数配置</a>
+						<a class="shape" href="#">外观</a>
+						<a class="shape-pic" href="#"></a>
+					</p>
+				</div>
+			</li>
+			<li class="current clearfix">
+				<div class="num-photo clearfix">
+					<i>4</i>
+					<a class="photo" href="#">
+						<img src="../images/lesson_03/img06/car.jpg" alt="雪佛兰赛欧三厢">
+					</a>
+				</div>
+				<div class="detail">
 					<h4><a href="#">雪佛兰赛欧三厢</a></h4>
-					<p>
+					<p class="amount clearfix">
 						<span class="model">最新年款2010</span>
 						<span class="value">5.68~7.93万</span>
 					</p>
-					<p class="parameter">
-						<a class="configuration" href="#">参数配置</a>
-						<a class="exterior" href="#">外观</a>
+					<p class="param clearfix">
+						<a class="config" href="#">参数配置</a>
+						<a class="shape" href="#">外观</a>
+						<a class="shape-pic" href="#"></a>
 					</p>
 				</div>
 			</li>
 			<li class="clearfix">
-				<i>5</i>
-				<h4><a href="#">长安逸动</a></h4>
-				<p><span class="value">7.39~9.49万</span></p>
+				<div class="num-photo">
+					<i>5</i>
+					<a class="photo" href="#">
+						<img src="../images/lesson_03/img06/car.jpg" alt="长安逸动">
+					</a>
+				</div>
+				<div class="detail clearfix">
+					<h4><a href="#">长安逸动</a></h4>
+					<p class="amount clearfix">
+						<span class="model">最新年款2010</span>
+						<span class="value">7.39~9.49万</span>
+					</p>
+					<p class="param clearfix">
+						<a class="config" href="#">参数配置</a>
+						<a class="shape" href="#">外观</a>
+						<a class="shape-pic" href="#"></a>
+					</p>
+				</div>
 			</li>
 			<li class="clearfix">
-				<i>6</i>
-				<h4><a href="#">长安CS35</a></h4>
-				<p><span class="value">7.89~9.29万</span></p>
+				<div class="num-photo">
+					<i>6</i>
+					<a class="photo" href="#">
+						<img src="../images/lesson_03/img06/car.jpg" alt="长安CS35">
+					</a>
+				</div>
+				<div class="detail clearfix">
+					<h4><a href="#">长安CS35</a></h4>
+					<p class="amount clearfix">
+						<span class="model">最新年款2010</span>
+						<span class="value">7.89~9.29万</span>
+					</p>
+					<p class="param clearfix">
+						<a class="config" href="#">参数配置</a>
+						<a class="shape" href="#">外观</a>
+						<a class="shape-pic" href="#"></a>
+					</p>
+				</div>
 			</li>
 			<li class="clearfix">
-				<i>7</i>
-				<h4><a href="#">长城C30</a></h4>
-				<p><span class="value">6.45~8.35万</span></p>
+				<div class="num-photo">
+					<i>7</i>
+					<a class="photo" href="#">
+						<img src="../images/lesson_03/img06/car.jpg" alt="长城C30">
+					</a>
+				</div>
+				<div class="detail clearfix">
+					<h4><a href="#">长城C30</a></h4>
+					<p class="amount clearfix">
+						<span class="model">最新年款2010</span>
+						<span class="value">6.45~8.35万</span>
+					</p>
+					<p class="param clearfix">
+						<a class="config" href="#">参数配置</a>
+						<a class="shape" href="#">外观</a>
+						<a class="shape-pic" href="#"></a>
+					</p>
+				</div>
 			</li>
 			<li class="clearfix">
-				<i>8</i>
-				<h4><a href="#">本田飞度</a></h4>
-				<p><span class="value">7.98~11.98万</span></p>
+				<div class="num-photo">
+					<i>8</i>
+					<a class="photo" href="#">
+						<img src="../images/lesson_03/img06/car.jpg" alt="本田飞度">
+					</a>
+				</div>
+				<div class="detail clearfix">
+					<h4><a href="#">本田飞度</a></h4>
+					<p class="amount clearfix">
+						<span class="model">最新年款2010</span>
+						<span class="value">7.98~11.98万</span>
+					</p>
+					<p class="param clearfix">
+						<a class="config" href="#">参数配置</a>
+						<a class="shape" href="#">外观</a>
+						<a class="shape-pic" href="#"></a>
+					</p>
+				</div>
 			</li>
 			<li class="clearfix">
-				<i>9</i>
-				<h4><a href="#">福特嘉年华</a></h4>
-				<p><span class="value">7.99~11.29万</span></p>
+				<div class="num-photo">
+					<i>9</i>
+					<a class="photo" href="#">
+						<img src="../images/lesson_03/img06/car.jpg" alt="福特嘉年华">
+					</a>
+				</div>
+				<div class="detail clearfix">
+					<h4><a href="#">福特嘉年华</a></h4>
+					<p class="amount clearfix">
+						<span class="model">最新年款2010</span>
+						<span class="value">7.99~11.29万</span>
+					</p>
+					<p class="param clearfix">
+						<a class="config" href="#">参数配置</a>
+						<a class="shape" href="#">外观</a>
+						<a class="shape-pic" href="#"></a>
+					</p>
+				</div>
 			</li>
 			<li class="clearfix">
-				<i>10</i>
-				<h4><a href="#">比亚迪速锐</a></h4>
-				<p><span class="value">6.59~9.99万</span></p>
+				<div class="num-photo">
+					<i>10</i>
+					<a class="photo" href="#">
+						<img src="../images/lesson_03/img06/car.jpg" alt="比亚迪速锐">
+					</a>
+				</div>
+				<div class="detail clearfix">
+					<h4><a href="#">比亚迪速锐</a></h4>
+					<p class="amount clearfix">
+						<span class="model">最新年款2010</span>
+						<span class="value">6.59~9.99万</span>
+					</p>
+					<p class="param clearfix">
+						<a class="config" href="#">参数配置</a>
+						<a class="shape" href="#">外观</a>
+						<a class="shape-pic" href="#"></a>
+					</p>
+				</div>
 			</li>
 		</ul>
 	</div>
