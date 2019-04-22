@@ -7,75 +7,136 @@
   <title>浮动实例QQ音乐</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
+		.wrap {
+			width: 720px;
+			height: 411px;
+			padding: 19px 10px 0 13px;
+			margin: 30px auto;
+		}
+		.head { padding-bottom: 13px; }
 
+		.title {
+			float: left;
+			padding-right: 12px;
+			padding-left: 8px;
+			font-size: 26px;
+			line-height: 30px;
+			color: #333;
+			border-left: 5px solid #ff7800;
+		}
+		.head a {
+			float: left;
+			margin-top: 10px;
+			font-size: 14px;
+			line-height: 20px;
+			color: #0f820c;
+		}
+		.list li {
+			float: left;
+			padding-top: 5px;
+			padding-right: 20px;
+			padding-bottom: 15px;
+		}
+		.list img { vertical-align: top; }
+
+		.list dl { padding-top: 4px; }
+
+		.list dt {
+			width: 160px;
+			color: #515151;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		.list dt a {
+			line-height: 24px;
+			color: #0f820c;
+		}
+		.list dd {
+			line-height: 22px;
+			color: #8b8b8b;
+		}
+		.list span {
+			line-height: 24px;
+			color: #aba3b7;
+		}
+		.paly-volume {
+			float: left;
+			padding-left: 15px;
+			background: url(../images/lesson_03/img10/BorderBackground.jpg) no-repeat left center;
+		}
+		.date { float: right; }
   </style>
 </head>
 <body>
 	<div class="wrap">
-		<h2 class="title">MV首播<a href="#">/更多</a></h2>
-		<ul class="list">
+		<div class="head clearfix">
+			<h2 class="title">MV首播</h2>
+			<a href="#">/ 更多</a>
+		</div>
+		<ul class="list clearfix">
 			<li>
 				<a href="#"><img src="../images/lesson_03/img10/COINS.jpg" alt="COINS"></a>
 				<dl>
-					<dt><a href="#">COINS</a>-王若琳</dt>
+					<dt><a href="#">COINS</a> - 王若琳</dt>
 					<dd>愉悦新奇的电子曲风</dd>
-					<dd><span class="paly-volume">5716</span><span class="date">2013-03-15</span></dd>
+					<dd class="clearfix"><span class="paly-volume">5716</span><span class="date">2013-03-15</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img10/YuLong.jpg" alt="御龙·铭千古"></a>
 				<dl>
-					<dt><a href="#">御龙·铭千古</a>-林志炫</dt>
+					<dt><a href="#">御龙·铭千古</a> - 林志炫</dt>
 					<dd>化身三国名将，浴血沙场</dd>
-					<dd><span class="paly-volume">16690</span><span class="date">2013-03-15</span></dd>
+					<dd class="clearfix"><span class="paly-volume">16690</span><span class="date">2013-03-15</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img10/Oops.jpg" alt="Oops!"></a>
 				<dl>
-					<dt><a href="#">Oops!</a>-G.NA</dt>
+					<dt><a href="#">Oops!</a> - G.NA</dt>
 					<dd>极品尤物大秀长腿美胸</dd>
-					<dd><span class="paly-volume">163568</span><span class="date">2013-03-14</span></dd>
+					<dd class="clearfix"><span class="paly-volume">163568</span><span class="date">2013-03-14</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img10/HappensInTheDark.jpg" alt="Happens In The Dark"></a>
 				<dl>
-					<dt><a href="#">Happens In The Dark</a>-Jed…</dt>
+					<dt><a href="#">Happens In The Dark</a> - Jedward</dt>
 					<dd>双胞胎王子致命诱惑</dd>
-					<dd><span class="paly-volume">3761</span><span class="date">2013-03-14</span></dd>
+					<dd class="clearfix"><span class="paly-volume">3761</span><span class="date">2013-03-14</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img10/We.jpg" alt="我们不是说好了吗"></a>
 				<dl>
-					<dt><a href="#">我们不是说好了吗</a>-彭于晏</dt>
+					<dt><a href="#">我们不是说好了吗</a> - 彭于晏</dt>
 					<dd>《分手合约》主题曲</dd>
-					<dd><span class="paly-volume">150262</span><span class="date">2013-03-14</span></dd>
+					<dd class="clearfix"><span class="paly-volume">150262</span><span class="date">2013-03-14</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img10/22.jpg" alt="22"></a>
 				<dl>
-					<dt><a href="#">22</a>-Taylor Swift</dt>
+					<dt><a href="#">22</a> - Taylor Swift</dt>
 					<dd>22岁的青春纪念册</dd>
-					<dd><span class="paly-volume">141529</span><span class="date">2013-03-13</span></dd>
+					<dd class="clearfix"><span class="paly-volume">141529</span><span class="date">2013-03-13</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img10/Expect.jpg" alt="Expect"></a>
 				<dl>
-					<dt><a href="#">Expect</a>-Girl's Day</dt>
+					<dt><a href="#">Expect</a> - Girl's Day</dt>
 					<dd>年幼出轨一秒钟变前任</dd>
-					<dd><span class="paly-volume">156910</span><span class="date">2013-03-14</span></dd>
+					<dd class="clearfix"><span class="paly-volume">156910</span><span class="date">2013-03-14</span></dd>
 				</dl>
 			</li>
 			<li>
 				<a href="#"><img src="../images/lesson_03/img10/Sadness.jpg" alt="Sadness"></a>
 				<dl>
-					<dt><a href="#">Sadness</a>-M4M</dt>
+					<dt><a href="#">Sadness</a> - M4M</dt>
 					<dd>中韩天团出道单曲</dd>
-					<dd><span class="paly-volume">70977</span><span class="date">2013-03-13</span></dd>
+					<dd class="clearfix"><span class="paly-volume">70977</span><span class="date">2013-03-13</span></dd>
 				</dl>
 			</li>
 		</ul>
