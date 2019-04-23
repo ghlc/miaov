@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位问题</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+  /*
+  在 IE6 下定位元素的父级宽高都为奇数，那么定位元素的 right 和 bottom 都有 1 像素的偏差。
+   */
+    .box1 {
+      position: relative;
+      width: 303px;
+      height: 303px;
+      border: 1px solid #000;
+    }
+    .box2 {
+      position: absolute;
+      right: -1px;
+      bottom: -1px;
+      width: 50px;
+      height: 50px;
+      background-color: #0f0;
+    }
+	</style>
+</head>
+<body>
+  <div class="box1">
+    <div class="box2"></div>
+  </div>
+</body>
+</html>

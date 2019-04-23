@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>弹窗蒙版</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+    /*
+    body < html < 文档
+     */
+    html, body { height: 100%; }
+
+    .content {
+      width: 500px;
+      height: 300px;
+    }
+
+    /*
+    标准浏览器 不透明度 opacity: 0~1;
+    IE私有 filter:alpha(opacity=1~100);
+     */
+    .mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: .4;
+      filter:alpha(opacity=40);
+    }
+    .alter {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      height: 300px;
+      margin-top: -152px;
+      margin-left: -202px;
+      background-color: #fff;
+      border: 2px solid #0ff;
+    }
+	</style>
+</head>
+<body>
+  <div class="content">
+    测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容
+  </div>
+
+  <div class="mask"></div>
+  <div class="alter"></div>
+</body>
+</html>

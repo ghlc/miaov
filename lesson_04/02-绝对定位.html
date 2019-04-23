@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		/*
+		position: absolute; 绝对定位
+			a. 使元素完全脱离文档流；
+			b. 使内嵌支持宽高；
+			c. 块属性标签内容撑开宽度；
+
+		z-index: [num]; 定位层级
+			a. 定位元素默认后者层级高于前者；
+		 */
+    div { font-size: 20px; }
+
+		.box1 {
+			position: absolute;
+			z-index: 2;
+      width: 100px;
+      height: 100px;
+      background-color: #f00;
+    }
+		.box2 {
+			position: relative;
+			z-index: 1;
+			width: 200px;
+			height: 200px;
+			background-color: #0f0;
+		}
+		.box3 {
+      width: 100px;
+      height: 100px;
+      background-color: #00f;
+    }
+	</style>
+</head>
+<body>
+	<div class="box1">div1</div>
+	<div class="box2">div2</div>
+	<div class="box3">div3</div>
+</body>
+</html>
