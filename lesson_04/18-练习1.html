@@ -36,7 +36,12 @@
 		.deep-read a { color: #323232; }
 		.program-list-right { width: 286px; }
 		.program-list-item { position: relative; float: left; width: 128px; padding-bottom: 10px; }
-		.program-list-item:hover .bullet-box-shadow { display: block; }
+		.program-list-item:first-of-type:hover .bullet-box-shadow { display: block; top: -7px; }
+		.program-list-item:nth-of-type(2):hover .bullet-box-shadow { display: block; top: -7px; }
+		.program-list-item:nth-of-type(3):hover .bullet-box-shadow { display: block; top: -37px; }
+		.program-list-item:nth-of-type(4):hover .bullet-box-shadow { display: block; top: -37px; }
+		.program-list-item:nth-of-type(5):hover .bullet-box-shadow { display: block; top: -61px; }
+		.program-list-item:last-of-type:hover .bullet-box-shadow { display: block; top: -61px; }
 		.program-list-item:nth-child(even) { padding-right: 1px; }
 		.program-list-item:nth-child(odd) { padding-right: 29px; }
 		.program-list-picture { width: 128px; height: 80px; }
@@ -48,8 +53,15 @@
 		.program-list-data .view { width: 14px; height: 16px; background: url('../images/lesson_04/view.jpg') no-repeat center center; }
 		.program-list-data .review { width: 14px; height: 16px; background: url('../images/lesson_04/review.jpg') no-repeat center center; }
 		.program-list-data span { float: left; padding-right: 3px; padding-left: 4px; color: #909092; }
-		.bullet-box-shadow { position: absolute; top: -61px; left: 145px; display: none; width: 280px; height: 191px; background: rgba(183, 183, 183, 0.5); z-index: 1; }
-		.bullet-box { position: relative; top: -7px; left: -7px; width: 278px; height: 189px; border: 1px solid #909092; background: #fff; }
+		.bullet-box-shadow { position: absolute; left: 145px; display: none; width: 280px; height: 191px; background: rgba(183, 183, 183, 0.5); z-index: 1; }
+		.bullet-box { position: relative; top: -7px; left: -7px; width: 260px; height: 173px; padding: 8px 9px; border: 1px solid #909092; background: #fff; }
+		.program-desc-title { line-height: 22px; font-size: 14px; color: #004cc8; }
+		.program-desc-summary { line-height: 20px; color: #909090; }
+		.program-desc-data { padding-top: 5px; }
+		.program-desc-data li { float: left; width: 50%; line-height: 20px; color: #8f8f8f; }
+		.program-desc-type { line-height: 30px; color: #909090; }
+		.program-desc-type .program-title { padding-right: 20px; color: #014ccb; }
+		.program-desc-type .program-type { color: #000; }
 	</style>
 </head>
 <body>
@@ -106,17 +118,19 @@
 							<i class="view"></i><span class="views">486,732</span>
 							<i class="review"></i><span class="reviews">3,385</span>
 						</div>
-						<div class="bullet-box" style="display: none;">
-							<h4 class="program-desc-title">日本新任驻华大使病逝</h4>
-							<div class="program-desc-summary">
-								《新白发魔女传》根据梁羽生武侠小说改编。明朝天启四年，广元地区连年饥荒。户部侍郎卓继贤奉太子之命运粮草前往灾区，行至玉龙...
+						<div class="bullet-box-shadow">
+							<div class="bullet-box">
+									<h4 class="program-desc-title">日本新任驻华大使病逝</h4>
+									<div class="program-desc-summary">
+										《新白发魔女传》根据梁羽生武侠小说改编。明朝天启四年，广元地区连年饥荒。户部侍郎卓继贤奉太子之命运粮草前往灾区，行至玉龙...
+									</div>
+									<ul class="program-desc-data clearfix">
+										<li class="views">播放：<span>486,732</span></li>
+									<li class="reviews">评论：<span>3,385</span></li>
+									<li class="steps">顶踩：<span>45,236 / 4,772</span></li>
+								</ul>
+								<p class="program-desc-type">节目：<span class="program-title">日本新任驻华大使病逝</span>分类：<span class="program-type">新闻</span></p>
 							</div>
-							<ul class="program-desc-data">
-								<li class="views">播放：<span>486,732</span></li>
-								<li class="reviews">评论：<span>3,385</span></li>
-								<li class="steps">顶踩：<span>45,236 / 4,772</span></li>
-							</ul>
-							<p class="program-desc-type">节目：<span class="program-title">日本新任驻华大使病逝</span>分类：<span class="program-type">新闻</span></p>
 						</div>
 					</li>
 					<li class="program-list-item">
@@ -128,17 +142,19 @@
 							<i class="view"></i><span class="views">789,535</span>
 							<i class="review"></i><span class="reviews">2,284</span>
 						</div>
-						<div class="bullet-box" style="display: none;">
-							<h4 class="program-desc-title">实拍早教阿姨暴力喂饭</h4>
-							<div class="program-desc-summary">
-								《新白发魔女传》根据梁羽生武侠小说改编。明朝天启四年，广元地区连年饥荒。户部侍郎卓继贤奉太子之命运粮草前往灾区，行至玉龙...
+						<div class="bullet-box-shadow">
+							<div class="bullet-box">
+								<h4 class="program-desc-title">实拍早教阿姨暴力喂饭</h4>
+								<div class="program-desc-summary">
+									《新白发魔女传》根据梁羽生武侠小说改编。明朝天启四年，广元地区连年饥荒。户部侍郎卓继贤奉太子之命运粮草前往灾区，行至玉龙...
+								</div>
+								<ul class="program-desc-data clearfix">
+									<li class="views">播放：<span>789,535</span></li>
+									<li class="reviews">评论：<span>2,284</span></li>
+									<li class="steps">顶踩：<span>45,236 / 4,772</span></li>
+								</ul>
+								<p class="program-desc-type">节目：<span class="program-title">实拍早教阿姨暴力喂饭</span>分类：<span class="program-type">新闻</span></p>
 							</div>
-							<ul class="program-desc-data">
-								<li class="views">播放：<span>789,535</span></li>
-								<li class="reviews">评论：<span>2,284</span></li>
-								<li class="steps">顶踩：<span>45,236 / 4,772</span></li>
-							</ul>
-							<p class="program-desc-type">节目：<span class="program-title">实拍早教阿姨暴力喂饭</span>分类：<span class="program-type">新闻</span></p>
 						</div>
 					</li>
 					<li class="program-list-item">
@@ -150,17 +166,19 @@
 							<i class="view"></i><span class="views">5,197,623</span>
 							<i class="review"></i><span class="reviews">14,37</span>
 						</div>
-						<div class="bullet-box" style="display: none;">
-							<h4 class="program-desc-title">丁少华爆冷破音遭狠批</h4>
-							<div class="program-desc-summary">
-								《新白发魔女传》根据梁羽生武侠小说改编。明朝天启四年，广元地区连年饥荒。户部侍郎卓继贤奉太子之命运粮草前往灾区，行至玉龙...
+						<div class="bullet-box-shadow">
+							<div class="bullet-box">
+								<h4 class="program-desc-title">丁少华爆冷破音遭狠批</h4>
+								<div class="program-desc-summary">
+									《新白发魔女传》根据梁羽生武侠小说改编。明朝天启四年，广元地区连年饥荒。户部侍郎卓继贤奉太子之命运粮草前往灾区，行至玉龙...
+								</div>
+								<ul class="program-desc-data clearfix">
+									<li class="views">播放：<span>5,197,623</span></li>
+									<li class="reviews">评论：<span>14,37</span></li>
+									<li class="steps">顶踩：<span>45,236 / 4,772</span></li>
+								</ul>
+								<p class="program-desc-type">节目：<span class="program-title">丁少华爆冷破音遭狠批</span>分类：<span class="program-type">娱乐</span></p>
 							</div>
-							<ul class="program-desc-data">
-								<li class="views">播放：<span>5,197,623</span></li>
-								<li class="reviews">评论：<span>14,37</span></li>
-								<li class="steps">顶踩：<span>45,236 / 4,772</span></li>
-							</ul>
-							<p class="program-desc-type">节目：<span class="program-title">丁少华爆冷破音遭狠批</span>分类：<span class="program-type">娱乐</span></p>
 						</div>
 					</li>
 					<li class="program-list-item">
@@ -172,17 +190,19 @@
 							<i class="view"></i><span class="views">5,197,623</span>
 							<i class="review"></i><span class="reviews">14,37</span>
 						</div>
-						<div class="bullet-box" style="display: none;">
-							<h4 class="program-desc-title">丁少华爆冷破音遭狠批</h4>
-							<div class="program-desc-summary">
-								《新白发魔女传》根据梁羽生武侠小说改编。明朝天启四年，广元地区连年饥荒。户部侍郎卓继贤奉太子之命运粮草前往灾区，行至玉龙...
+						<div class="bullet-box-shadow">
+							<div class="bullet-box">
+									<h4 class="program-desc-title">丁少华爆冷破音遭狠批</h4>
+								<div class="program-desc-summary">
+									《新白发魔女传》根据梁羽生武侠小说改编。明朝天启四年，广元地区连年饥荒。户部侍郎卓继贤奉太子之命运粮草前往灾区，行至玉龙...
+								</div>
+								<ul class="program-desc-data clearfix">
+									<li class="views">播放：<span>5,197,623</span></li>
+									<li class="reviews">评论：<span>14,37</span></li>
+									<li class="steps">顶踩：<span>45,236 / 4,772</span></li>
+								</ul>
+								<p class="program-desc-type">节目：<span class="program-title">丁少华爆冷破音遭狠批</span>分类：<span class="program-type">娱乐</span></p>
 							</div>
-							<ul class="program-desc-data">
-								<li class="views">播放：<span>5,197,623</span></li>
-								<li class="reviews">评论：<span>14,37</span></li>
-								<li class="steps">顶踩：<span>45,236 / 4,772</span></li>
-							</ul>
-							<p class="program-desc-type">节目：<span class="program-title">丁少华爆冷破音遭狠批</span>分类：<span class="program-type">娱乐</span></p>
 						</div>
 					</li>
 					<li class="program-list-item">
@@ -200,7 +220,7 @@
 								<div class="program-desc-summary">
 									《新白发魔女传》根据梁羽生武侠小说改编。明朝天启四年，广元地区连年饥荒。户部侍郎卓继贤奉太子之命运粮草前往灾区，行至玉龙...
 								</div>
-								<ul class="program-desc-data">
+								<ul class="program-desc-data clearfix">
 									<li class="views">播放：<span>6,389,475</span></li>
 									<li class="reviews">评论：<span>8,486</span></li>
 									<li class="steps">顶踩：<span>45,236 / 4,772</span></li>
@@ -218,17 +238,19 @@
 							<i class="view"></i><span class="views">6,389,475</span>
 							<i class="review"></i><span class="reviews">8,486</span>
 						</div>
-						<div class="bullet-box" style="display: none;">
-							<h4 class="program-desc-title">&lt;新白发魔女&gt;故地重逢</h4>
-							<div class="program-desc-summary">
-								《新白发魔女传》根据梁羽生武侠小说改编。明朝天启四年，广元地区连年饥荒。户部侍郎卓继贤奉太子之命运粮草前往灾区，行至玉龙...
+						<div class="bullet-box-shadow">
+							<div class="bullet-box">
+								<h4 class="program-desc-title">&lt;新白发魔女&gt;故地重逢</h4>
+								<div class="program-desc-summary">
+									《新白发魔女传》根据梁羽生武侠小说改编。明朝天启四年，广元地区连年饥荒。户部侍郎卓继贤奉太子之命运粮草前往灾区，行至玉龙...
+								</div>
+								<ul class="program-desc-data clearfix">
+									<li class="views">播放：<span>6,389,475</span></li>
+									<li class="reviews">评论：<span>8,486</span></li>
+									<li class="steps">顶踩：<span>45,236 / 4,772</span></li>
+								</ul>
+								<p class="program-desc-type">节目：<span class="program-title">新白发魔女</span>分类：<span class="program-type">电视剧</span></p>
 							</div>
-							<ul class="program-desc-data">
-								<li class="views">播放：<span>6,389,475</span></li>
-								<li class="reviews">评论：<span>8,486</span></li>
-								<li class="steps">顶踩：<span>45,236 / 4,772</span></li>
-							</ul>
-							<p class="program-desc-type">节目：<span class="program-title">新白发魔女</span>分类：<span class="program-type">电视剧</span></p>
 						</div>
 					</li>
 				</ul>
