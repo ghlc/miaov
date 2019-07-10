@@ -7,20 +7,35 @@
   <title>练习2</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
+    .wrap { width: 608px; height: 395px; margin: 60px auto; border: 1px solid #e5e5e5; }
+    .preview-info { width: 100%; height: 185px; }
+    .head-menu-keyword { background: #eaf9fe; }
+    .menu-list {  }
+    .menu-list-item { float: left; padding-right: 15px; padding-left: 15px; line-height: 30px; color: #014ccb; }
+    .menu-list-item .current { background: #fff; }
 
+    .tv-preview { height: 193px; padding: 15px 16px 0 14px; border-top: 1px solid #e5e5e5; }
+    .tv-list-item {  }
+
+    .option { padding-right: 22px; }
+    .area-title, .area-select, .year-title, .year-select, .type-title, .type-select { float: left; line-height: 22px; }
+    .area-select, .year-select, .type-select { padding-right: 7px; padding-left: 7px; background: url('../images/lesson_04/borderline.jpg') no-repeat right center;}
+    .area-select:last-of-type, .year-select:last-of-type, .type-select:last-of-type { background: none; }
+    .area-select:first-of-type, .year-select:first-of-type, .type-select:first-of-type { padding-left: 0; }
+    .area-select a, .year-select a, .type-select a { color: #044dcd; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="preview-info">
-      <div class="head-menu-keyword">
-        <ul class="menu-list">
-          <li class="menu-list-item">最新电视剧</li>
+      <div class="head-menu-keyword clearfix">
+        <ul class="menu-list fl clearfix">
+          <li class="menu-list-item current">最新电视剧</li>
           <li class="menu-list-item">大陆剧</li>
           <li class="menu-list-item">韩剧</li>
           <li class="menu-list-item">港台剧</li>
         </ul>
-        <div class="keyword-group">
+        <div class="keyword-group fr">
           <span class="keyword-option">爱情有点蓝</span>
           <span class="keyword-option">风语</span>
           <span class="keyword-option">欢喜婆婆</span>
@@ -35,9 +50,9 @@
           <a class="text-right" href="#">&gt;&gt;解密《五星红旗》</a>
           <a class="text-right" href="#">&gt;&gt;《宫》引网友口水战</a>
         </div>
-        <ul class="preview-list">
-          <li class="preview-list-item">
-            <div class="theater">
+        <ul class="preview-list clearfix">
+          <li class="preview-list-item fl clearfix">
+            <div class="theater fl">
               <div class="hot-tv">
                 <a href="#"><img src="../images/lesson_04/ChineseFlag.jpg" alt=""></a>
                 <div class="mark-layer">
@@ -47,7 +62,7 @@
               </div>
               <h3 class="series-title"><a href="#">《五星红旗》大结局</a></h3>
             </div>
-            <ul class="preview-info-list">
+            <ul class="preview-info-list fr">
               <li class="priview-info-item"><a href="#">央一武侠剧：侠隐记</a></li>
               <li class="priview-info-item"><a href="#">文章变特种兵：雪豹</a></li>
               <li class="priview-info-item"><a href="#">新武侠：怪侠一枝梅</a></li>
@@ -55,8 +70,8 @@
               <li class="priview-info-item"><a href="#">青春期撞上更年期！</a></li>
             </ul>
           </li>
-          <li class="preview-list-item">
-            <div class="theater">
+          <li class="preview-list-item fl clearfix">
+            <div class="theater fl">
               <div class="hot-tv">
                 <a href="#"><img src="../images/lesson_04/HomeTemptation.jpg" alt=""></a>
                 <div class="mask-layer">
@@ -66,7 +81,7 @@
               </div>
               <h3 class="series-title"><a href="#">湖南卫视：回家的诱惑</a></h3>
             </div>
-            <ul class="preview-info-list">
+            <ul class="preview-info-list fr">
               <li class="priview-info-item"><a href="#">凌潇潇唐一菲定情之作</a></li>
               <li class="priview-info-item"><a href="#">阿sa密恋：呼叫大明星</a></li>
               <li class="priview-info-item"><a href="#">偶像阵容：幸福最晴天</a></li>
@@ -78,8 +93,8 @@
       </div>
     </div>
     <div class="tv-preview">
-      <ul class="tv-list">
-        <li class="tv-list-item">
+      <ul class="tv-list clearfix">
+        <li class="tv-list-item fl">
           <div class="tv-cover-out">
             <div class="tv-cover-middle">
               <div class="tv-cover">
@@ -94,7 +109,7 @@
           <h3 class="tv-title"><a href="#">黄志忠张丰毅枪林弹雨</a></h3>
           <p class="tv-summary">江苏卫视：中国远征军</p>
         </li>
-        <li class="tv-list-item">
+        <li class="tv-list-item fl">
           <div class="tv-cover">
             <a href="#"><img src="../images/lesson_04/Rape.jpg" alt=""></a>
             <div class="mask-layer">
@@ -105,7 +120,7 @@
           <h3 class="tv-title"><a href="#">谍战题材剧：锄奸</a></h3>
           <p class="tv-summary">杜淳杨若兮铲除内奸</p>
         </li>
-        <li class="tv-list-item">
+        <li class="tv-list-item fl">
           <div class="tv-cover">
             <a href="#"><img src="../images/lesson_04/Palace.jpg" alt=""></a>
             <div class="mask-layer">
@@ -116,7 +131,7 @@
           <h3 class="tv-title"><a href="#">完整未删减版：宫</a></h3>
           <p class="tv-summary">杨幂穿越卷入宫斗情仇</p>
         </li>
-        <li class="tv-list-item">
+        <li class="tv-list-item fl">
           <div class="tv-cover">
             <a href="#"><img src="../images/lesson_04/Brother.jpg" alt=""></a>
             <div class="mask-layer">
@@ -130,10 +145,10 @@
           <p class="tv-summary">张嘉译邓超手足情深</p>
         </li>
       </ul>
-      <ul class="select">
-        <li class="option">
-          <dl class="area">
-            <dt class="area-title">地区：</dt>
+      <ul class="menu clearfix">
+        <li class="option fl">
+          <dl class="area clearfix">
+            <dt class="area-title">地区:</dt>
             <dd class="area-select"><a href="#">大陆</a></dd>
             <dd class="area-select"><a href="#">香港</a></dd>
             <dd class="area-select"><a href="#">韩国</a></dd>
@@ -141,9 +156,9 @@
             <dd class="area-select"><a href="#">美国</a></dd>
           </dl>
         </li>
-        <li class="option">
-          <dl class="year">
-            <dt class="year-title">上映：</dt>
+        <li class="option fl">
+          <dl class="year clearfix">
+            <dt class="year-title">上映:</dt>
             <dd class="year-select"><a href="#">2010</a></dd>
             <dd class="year-select"><a href="#">2009</a></dd>
             <dd class="year-select"><a href="#">2008</a></dd>
@@ -153,9 +168,9 @@
             <dd class="year-select"><a href="#">2004</a></dd>
           </dl>
         </li>
-        <li class="option">
-          <dl class="type">
-            <dt class="type-title">类型：</dt>
+        <li class="option fl">
+          <dl class="type clearfix">
+            <dt class="type-title">类型:</dt>
             <dd class="type-select"><a href="#">言情</a></dd>
             <dd class="type-select"><a href="#">古装</a></dd>
             <dd class="type-select"><a href="#">都市</a></dd>
