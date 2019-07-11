@@ -8,18 +8,35 @@
   <link rel="stylesheet" href="../css/reset.css">
   <style>
     .wrap { width: 608px; height: 395px; margin: 60px auto; border: 1px solid #e5e5e5; }
-    .preview-info { width: 100%; height: 185px; }
+    .preview-info { width: 100%; height: 186px; }
     .head-menu-keyword { background: #eaf9fe; }
-    .menu-list {  }
     .menu-list-item { float: left; padding-right: 15px; padding-left: 15px; line-height: 30px; color: #014ccb; }
     .menu-list-item .current { background: #fff; }
 
-    .tv-preview { height: 193px; padding: 15px 16px 0 14px; border-top: 1px solid #e5e5e5; }
-    .tv-list-item {  }
-
-    .option { padding-right: 22px; }
+    .logo-ad { height: 18px; padding: 14px 0 10px 14px; line-height: 18px; }
+    .preview-list-item { padding-left: 14px; }
+    .hot-tv { position: relative; width: 128px; height: 80px; }
+    .hot-tv img { width: 100%; height: 100%; vertical-align: top; }
+    .theater .mark-layer { position: absolute; top: 61px; left: 0; width: 116px; height: 18px; padding-right: 5px; padding-left: 7px; line-height: 18px; color: #fff; background: rgba(0, 0, 0, .5) }
+    .hot-tv .HD { float: right; width: 16px; height: 18px; background: url('../images/lesson_04/HD.jpg') no-repeat center center;  }
+    .series-title { line-height: 26px; font-weight: normal; color: #004ec9; }
+    .preview-info-list { width: 136px; padding-left: 20px; }
+    .priview-info-item { line-height: 20px; }
+    .priview-info-item a { color: #044acc; }
+    .tv-preview { height: 189px; padding: 19px 5px 0 3px; border-top: 1px solid #e5e5e5; }
+    .tv-list-item { margin: 0 11px; }
+    .tv-cover-out { width: 123px; height: 75px; margin-left: 4px; border-right: 1px solid #c5c7c4; border-bottom: 1px solid #c5c7c4; }
+    .tv-cover-middle { position: relative; top: -2px; left: -2px; width: 123px; height: 75px; border-right: 1px solid #c5c7c4; border-bottom: 1px solid #c5c7c4; }
+    .tv-cover { position: relative; top: -2px; left: -2px; width: 124px; height: 76px; }
+    .tv-cover img { width: 100%; height: 100%; vertical-align: top; }
+    .tv-cover .mask-layer { position: absolute; top: 56px; left: 0; width: 120px; height: 20px; padding: 0 2px; line-height: 20px; color: #fff; background: rgba(101, 97, 96, .5); }
+    .tv-cover .HD { float: right; width: 16px; height: 20px; background: url('../images/lesson_04/HD.jpg') no-repeat center center;  }
+    .tv-title { padding-top: 4px; line-height: 20px; font-weight: normal; color: #004ecc; }
+    .tv-summary { line-height: 20px; color: #909090; }
+    .menu { padding-top: 9px; padding-left: 11px; }
+    .option { padding-right: 24px; }
     .area-title, .area-select, .year-title, .year-select, .type-title, .type-select { float: left; line-height: 22px; }
-    .area-select, .year-select, .type-select { padding-right: 7px; padding-left: 7px; background: url('../images/lesson_04/borderline.jpg') no-repeat right center;}
+    .area-select, .year-select, .type-select { padding-right: 6px; padding-left: 7px; background: url('../images/lesson_04/borderline.jpg') no-repeat right center;}
     .area-select:last-of-type, .year-select:last-of-type, .type-select:last-of-type { background: none; }
     .area-select:first-of-type, .year-select:first-of-type, .type-select:first-of-type { padding-left: 0; }
     .area-select a, .year-select a, .type-select a { color: #044dcd; }
@@ -55,8 +72,8 @@
             <div class="theater fl">
               <div class="hot-tv">
                 <a href="#"><img src="../images/lesson_04/ChineseFlag.jpg" alt=""></a>
-                <div class="mark-layer">
-                  <span>40集全</span>
+                <div class="mark-layer clearfix">
+                  <span class="fl">40集全</span>
                   <i class="HD"></i>
                 </div>
               </div>
@@ -74,8 +91,8 @@
             <div class="theater fl">
               <div class="hot-tv">
                 <a href="#"><img src="../images/lesson_04/HomeTemptation.jpg" alt=""></a>
-                <div class="mask-layer">
-                  <span>更新至06</span>
+                <div class="mark-layer clearfix">
+                  <span class="fl">更新至06</span>
                   <i class="HD"></i>
                 </div>
               </div>
@@ -99,48 +116,58 @@
             <div class="tv-cover-middle">
               <div class="tv-cover">
                 <a href="#"><img src="../images/lesson_04/ChineseExpeditionaryForce.jpg" alt=""></a>
-                <div class="mask-layer">
-                  <span>更新至6</span>
+                <div class="mask-layer clearfix">
+                  <span class="fl">更新至6</span>
                   <i class="HD"></i>
                 </div>
               </div>
             </div>
           </div>
-          <h3 class="tv-title"><a href="#">黄志忠张丰毅枪林弹雨</a></h3>
-          <p class="tv-summary">江苏卫视：中国远征军</p>
+          <h3 class="tv-title"><a href="#">江苏卫视：中国远征军</a></h3>
+          <p class="tv-summary">黄志忠张丰毅枪林弹雨</p>
         </li>
         <li class="tv-list-item fl">
-          <div class="tv-cover">
-            <a href="#"><img src="../images/lesson_04/Rape.jpg" alt=""></a>
-            <div class="mask-layer">
-                <span>更新至12</span>
-                <i class="HD"></i>
+          <div class="tv-cover-out">
+            <div class="tv-cover-middle">
+              <div class="tv-cover">
+                <a href="#"><img src="../images/lesson_04/Rape.jpg" alt=""></a>
+                <div class="mask-layer clearfix">
+                  <span class="fl">更新至12</span>
+                    <i class="HD"></i>
+                  </div>
+                </div>
             </div>
           </div>
           <h3 class="tv-title"><a href="#">谍战题材剧：锄奸</a></h3>
           <p class="tv-summary">杜淳杨若兮铲除内奸</p>
         </li>
         <li class="tv-list-item fl">
-          <div class="tv-cover">
-            <a href="#"><img src="../images/lesson_04/Palace.jpg" alt=""></a>
-            <div class="mask-layer">
-                <span>35集全</span>
-                <i class="HD"></i>
+          <div class="tv-cover-out">
+            <div class="tv-cover-middle">
+              <div class="tv-cover">
+                <a href="#"><img src="../images/lesson_04/Palace.jpg" alt=""></a>
+                <div class="mask-layer clearfix">
+                  <span class="fl">35集全</span>
+                  <i class="HD"></i>
+                </div>
+              </div>
             </div>
           </div>
           <h3 class="tv-title"><a href="#">完整未删减版：宫</a></h3>
           <p class="tv-summary">杨幂穿越卷入宫斗情仇</p>
         </li>
         <li class="tv-list-item fl">
-          <div class="tv-cover">
-            <a href="#"><img src="../images/lesson_04/Brother.jpg" alt=""></a>
-            <div class="mask-layer">
-                <span>更新至30</span>
-                <i class="HD"></i>
+          <div class="tv-cover-out">
+            <div class="tv-cover-middle">
+              <div class="tv-cover">
+                <a href="#"><img src="../images/lesson_04/Brother.jpg" alt=""></a>
+                <div class="mask-layer clearfix">
+                    <span class="fl">更新至30</span>
+                    <i class="HD"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="tv-cover-middle"></div>
-          <div class="tv-cover-out"></div>
           <h3 class="tv-title"><a href="#">四大卫视：你是我兄弟</a></h3>
           <p class="tv-summary">张嘉译邓超手足情深</p>
         </li>
