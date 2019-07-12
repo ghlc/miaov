@@ -10,17 +10,26 @@
     .wrap { width: 608px; height: 395px; margin: 60px auto; border: 1px solid #e5e5e5; }
     .preview-info { width: 100%; height: 186px; }
     .head-menu-keyword { background: #eaf9fe; }
-    .menu-list-item { float: left; padding-right: 15px; padding-left: 15px; line-height: 30px; color: #014ccb; }
-    .menu-list-item .current { background: #fff; }
-
-    .logo-ad { height: 18px; padding: 14px 0 10px 14px; line-height: 18px; }
+    .menu-list-item { float: left; padding-right: 14px; padding-left: 14px; line-height: 30px; font-size: 14px; color: #014ccb; border-right: 1px solid #e5e5e5; border-bottom: 1px solid transparent; }
+    .menu-list-item.current { font-weight: bold; letter-spacing: 1px; background: #fff; }
+    .keyword-group { padding-right: 14px; line-height: 28px; }
+    .keyword-option { padding-left: 9px; padding-right: 8px; color: #014ccb; background: url('../images/lesson_04/borderline.jpg') no-repeat left center; }
+    .keyword-option:first-of-type { background: none; }
+    .keyword-option:last-of-type { padding-right: 0; }
+    .main { margin-top: -1px; border-top: 1px solid #e5e5e5;  }
+    .logo-ad { height: 18px; padding: 14px 14px 10px; }
+    .logo { padding-left: 21px; }
+    .logo img, .logo a { vertical-align: super; }
+    .logo a { padding-left: 4px; }
+    .logo-ad .text-right { line-height: 18px; }
+    .text-right a:first-of-type { padding-right: 6px; }
     .preview-list-item { padding-left: 14px; }
     .hot-tv { position: relative; width: 128px; height: 80px; }
     .hot-tv img { width: 100%; height: 100%; vertical-align: top; }
-    .theater .mark-layer { position: absolute; top: 61px; left: 0; width: 116px; height: 18px; padding-right: 5px; padding-left: 7px; line-height: 18px; color: #fff; background: rgba(0, 0, 0, .5) }
-    .hot-tv .HD { float: right; width: 16px; height: 18px; background: url('../images/lesson_04/HD.jpg') no-repeat center center;  }
-    .series-title { line-height: 26px; font-weight: normal; color: #004ec9; }
-    .preview-info-list { width: 136px; padding-left: 20px; }
+    .theater .mark-layer { position: absolute; top: 61px; left: 0; width: 117px; height: 18px; padding-right: 5px; padding-left: 6px; line-height: 18px; color: #fff; background: rgba(0, 0, 0, .5) }
+    .hot-tv .HD { float: right; width: 16px; height: 18px; background: url('../images/lesson_04/HD.jpg') no-repeat center center; }
+    .series-title { line-height: 24px; font-weight: normal; color: #004ec9; }
+    .preview-info-list { width: 136px; padding-left: 22px; margin-top: -1px; }
     .priview-info-item { line-height: 20px; }
     .priview-info-item a { color: #044acc; }
     .tv-preview { height: 189px; padding: 19px 5px 0 3px; border-top: 1px solid #e5e5e5; }
@@ -53,19 +62,20 @@
           <li class="menu-list-item">港台剧</li>
         </ul>
         <div class="keyword-group fr">
-          <span class="keyword-option">爱情有点蓝</span>
-          <span class="keyword-option">风语</span>
-          <span class="keyword-option">欢喜婆婆</span>
-          <span class="keyword-option">延安爱情</span>
+          <span class="keyword-option">爱情有点蓝</span><span class="keyword-option">风语</span><span class="keyword-option">欢喜婆婆</span><span class="keyword-option">延安爱情</span>
         </div>
       </div>
       <div class="main">
-        <div class="logo-ad">
-          <img class="logo" src="../images/lesson_04/logo.jpg" alt="">
-          <img class="Ad" src="../images/lesson_04/Ad.jpg" alt="">
-          <a href="#">首席赞助</a>
-          <a class="text-right" href="#">&gt;&gt;解密《五星红旗》</a>
-          <a class="text-right" href="#">&gt;&gt;《宫》引网友口水战</a>
+        <div class="logo-ad clearfix">
+          <img class="fl" src="../images/lesson_04/logo.jpg" alt="">
+          <div class="logo fl">
+            <img src="../images/lesson_04/Ad.jpg" alt="">
+            <a href="#">首席赞助</a>
+          </div>
+          <div class="text-right fr">
+            <a href="#">&gt;&gt;解密《五星红旗》</a>
+            <a href="#">&gt;&gt;《宫》引网友口水战</a>
+          </div>
         </div>
         <ul class="preview-list clearfix">
           <li class="preview-list-item fl clearfix">
