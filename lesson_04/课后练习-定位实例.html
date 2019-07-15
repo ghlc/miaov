@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>定位实例按钮控制商品图片上下滚动</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    .wrap { width: 168px; margin: 60px auto; }
+    .head { height: 24px; padding: 0 10px; background: url('../images/lesson_04/img01/headBg.jpg') repeat-x center center; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+    .head .title, .head .more { line-height: 24px; color: #fff; }
+    .container { position: relative; width: 166px; height: 426px; border: 1px solid #ced6d6; border-bottom: 2px solid #ced6d6; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; overflow: -hidden; }
+
+    .info-list { padding: 0 12px; }
+    .info-list-item { padding-top: 6px; border-bottom: 1px solid #c6c6ce; }
+    .info-title { line-height: 24px; }
+    .info-wrap { padding: 8px 0 15px 0; }
+    .info-content { float: left; width: 55%; height: 64px;  }
+    .info-content p { line-height: 16px; }
+    .info-time { color: #bdbdbd; }
+    .info-pic { float: right; margin-right: -10px; margin-top: -50px; }
+
+    .up-Btn, .down-Btn { position: absolute; left: 0; width: 100%; height: 22px; cursor: pointer; }
+    .up-Btn { top:0; background: #efefe7 url('../images/lesson_04/img01/upArrow.jpg') no-repeat center center; }
+    .down-Btn { bottom: 2px; background: #efefe7 url('../images/lesson_04/img01/downArrow.jpg') no-repeat center center; }
+    </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="head clearfix">
+      <h2 class="title fl">妙味课堂</h2>
+      <a href="#" class="more fr">&gt;&gt;更多</a>
+    </header>
+    <div class="container">
+      <ul class="info-list">
+        <li class="info-list-item">
+          <p class="info-title"><strong></strong></p>
+          <div class="info-wrap clearfix">
+            <div class="info-content">
+              <p>Mac 翻新产品</p>
+              <p>iPod 翻新产品</p>
+            </div>
+            <img src="../images/lesson_04/img01/save.jpg" alt="" class="info-pic">
+          </div>
+        </li>
+        <li class="info-list-item">
+          <p class="info-title"><strong>翻新笔记本</strong></p>
+          <div class="info-wrap clearfix">
+            <div class="info-content">
+              <p>RMB 5,788起最多降低了 35%</p>
+            </div>
+            <img src="../images/lesson_04/img01/macbook.jpg" alt="" class="info-pic">
+          </div>
+        </li>
+        <li class="info-list-item">
+          <p class="info-title"><strong>翻新台式机</strong></p>
+          <div class="info-wrap clearfix">
+            <div class="info-content">
+              <p>RMB 7,698起最多降低了 46%</p>
+            </div>
+            <img src="../images/lesson_04/img01/mac.jpg" alt="" class="info-pic">
+          </div>
+        </li>
+        <li class="info-list-item">
+          <p class="info-title"><strong></strong></p>
+          <div class="info-wrap clearfix">
+            <div class="info-content">
+              <p>Mac 完全解析</p>
+            </div>
+            <p class="info-time">4:49</p>
+            <img src="../images/lesson_04/img01/macos.jpg" alt="" class="info-pic">
+          </div>
+        </li>
+        <li class="info-list-item">
+          <p class="info-title"><strong></strong></p>
+          <div class="info-wrap clearfix">
+            <div class="info-content">
+              <p>无线网络基础</p>
+              <p class="info-time">3:00</p>
+            </div>
+            <img src="../images/lesson_04/img01/wifi.jpg" alt="" class="info-pic">
+          </div>
+        </li>
+        <li class="info-list-item">
+          <p class="info-title"><strong></strong></p>
+          <div class="info-wrap clearfix">
+            <div class="info-content">
+              <p>从 PC 到 Mac: 基本知识</p>
+              <p class="info-time">6:57</p>
+            </div>
+            <img src="../images/lesson_04/img01/keyboard.jpg" alt="" class="info-pic">
+          </div>
+        </li>
+        <li class="info-list-item">
+          <p class="info-title"><strong></strong></p>
+          <div class="info-wrap clearfix">
+            <div class="info-content">
+              <p>转移到 Mac</p>
+            </div>
+            <p class="info-time">5:20</p>
+            <img src="../images/lesson_04/img01/software.jpg" alt="" class="info-pic">
+          </div>
+        </li>
+        <li class="info-list-item">
+          <p class="info-title"><strong>翻新iPod</strong></p>
+          <div class="info-wrap clearfix">
+            <div class="info-content">
+              <p>RMB 348起最多降低了 43%</p>
+            </div>
+            <img src="../images/lesson_04/img01/ipod.jpg" alt="" class="info-pic">
+          </div>
+        </li>
+      </ul>
+      <div class="up-Btn"></div>
+      <div class="down-Btn"></div>
+    </div>
+  </div>
+</body>
+</html>
