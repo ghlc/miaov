@@ -9,21 +9,26 @@
   <style>
     .wrap { width: 168px; margin: 60px auto; }
     .head { height: 24px; padding: 0 10px; background: url('../images/lesson_04/img01/headBg.jpg') repeat-x center center; border-top-left-radius: 5px; border-top-right-radius: 5px; }
-    .head .title, .head .more { line-height: 24px; color: #fff; }
-    .container { position: relative; width: 166px; height: 426px; border: 1px solid #ced6d6; border-bottom: 2px solid #ced6d6; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; overflow: -hidden; }
-
+    .head .title { line-height: 20px; color: #fff; }
+    .head .more { line-height: 22px; color: #fff; }
+    .container { position: relative; width: 166px; height: 426px; border: 1px solid #ced6d6; border-bottom: 2px solid #ced6d6; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; overflow: hidden; }
     .info-list { padding: 0 12px; }
-    .info-list-item { padding-top: 6px; border-bottom: 1px solid #c6c6ce; }
-    .info-title { line-height: 24px; }
-    .info-wrap { padding: 8px 0 15px 0; }
-    .info-content { float: left; width: 55%; height: 64px;  }
-    .info-content p { line-height: 16px; }
-    .info-time { color: #bdbdbd; }
-    .info-pic { float: right; margin-right: -10px; margin-top: -50px; }
-
+    .info-list-item { padding-top: 2px; border-bottom: 1px solid #c6c6ce; }
+    .info-list-item:first-of-type { padding-top: 25px; }
+    .info-title { line-height: 30px; }
+    .info-wrap { padding-top: 10px; }
+    .info-content { position: relative; float: left; width: 51.9%; height: 56px;  }
+    .info-list-item:first-of-type .info-content { width: 54.5%; }
+    .info-content p { line-height: 14px; }
+    .info-list-item:first-of-type .info-content p { line-height: 20px; }
+    .info-time { position: absolute; bottom: 0; left: 0; color: #bdbdbd; }
+    .info-pic { float: right; margin-right: -4px; margin-top: -54px; margin-bottom: 15px; }
+    .info-list-item:first-of-type .info-pic { margin-right: -12px; margin-top: -42px; margin-bottom: 2px; }
+    .info-list-item:nth-of-type(2) .info-pic { margin-bottom: 13px; }
+    .info-list-item:nth-of-type(3) .info-pic { margin-bottom: 17px; }
     .up-Btn, .down-Btn { position: absolute; left: 0; width: 100%; height: 22px; cursor: pointer; }
     .up-Btn { top:0; background: #efefe7 url('../images/lesson_04/img01/upArrow.jpg') no-repeat center center; }
-    .down-Btn { bottom: 2px; background: #efefe7 url('../images/lesson_04/img01/downArrow.jpg') no-repeat center center; }
+    .down-Btn { bottom: 0; background: #efefe7 url('../images/lesson_04/img01/downArrow.jpg') no-repeat center center; border-bottom: 2px solid #fff; }
     </style>
 </head>
 <body>
@@ -40,6 +45,7 @@
             <div class="info-content">
               <p>Mac 翻新产品</p>
               <p>iPod 翻新产品</p>
+              <p class="info-time"></p>
             </div>
             <img src="../images/lesson_04/img01/save.jpg" alt="" class="info-pic">
           </div>
@@ -49,6 +55,7 @@
           <div class="info-wrap clearfix">
             <div class="info-content">
               <p>RMB 5,788起最多降低了 35%</p>
+              <p class="info-time"></p>
             </div>
             <img src="../images/lesson_04/img01/macbook.jpg" alt="" class="info-pic">
           </div>
@@ -58,6 +65,7 @@
           <div class="info-wrap clearfix">
             <div class="info-content">
               <p>RMB 7,698起最多降低了 46%</p>
+              <p class="info-time"></p>
             </div>
             <img src="../images/lesson_04/img01/mac.jpg" alt="" class="info-pic">
           </div>
@@ -66,9 +74,9 @@
           <p class="info-title"><strong></strong></p>
           <div class="info-wrap clearfix">
             <div class="info-content">
-              <p>Mac 完全解析</p>
+              <p>Mac 完全<br>解析</p>
+              <p class="info-time">4:49</p>
             </div>
-            <p class="info-time">4:49</p>
             <img src="../images/lesson_04/img01/macos.jpg" alt="" class="info-pic">
           </div>
         </li>
@@ -76,7 +84,7 @@
           <p class="info-title"><strong></strong></p>
           <div class="info-wrap clearfix">
             <div class="info-content">
-              <p>无线网络基础</p>
+              <p>无线网络<br>基础</p>
               <p class="info-time">3:00</p>
             </div>
             <img src="../images/lesson_04/img01/wifi.jpg" alt="" class="info-pic">
@@ -86,7 +94,7 @@
           <p class="info-title"><strong></strong></p>
           <div class="info-wrap clearfix">
             <div class="info-content">
-              <p>从 PC 到 Mac: 基本知识</p>
+              <p>从 PC 到 <br>Mac: <br>基本知识</p>
               <p class="info-time">6:57</p>
             </div>
             <img src="../images/lesson_04/img01/keyboard.jpg" alt="" class="info-pic">
@@ -97,8 +105,8 @@
           <div class="info-wrap clearfix">
             <div class="info-content">
               <p>转移到 Mac</p>
+              <p class="info-time">5:20</p>
             </div>
-            <p class="info-time">5:20</p>
             <img src="../images/lesson_04/img01/software.jpg" alt="" class="info-pic">
           </div>
         </li>
@@ -107,6 +115,7 @@
           <div class="info-wrap clearfix">
             <div class="info-content">
               <p>RMB 348起最多降低了 43%</p>
+              <p class="info-time"></p>
             </div>
             <img src="../images/lesson_04/img01/ipod.jpg" alt="" class="info-pic">
           </div>
