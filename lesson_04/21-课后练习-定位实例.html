@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>带缩略图的图片切换</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    .wrap { position: relative; width: 489px; height: 392px; padding: 0 17px 0 7px; margin: 60px auto; background-color: #b5ad9c; border-top: 1px solid #000; }
+    .title { height: 28px; line-height: 26px; font-size: 18px; font-weight: normal; color: #fff; }
+    .container { height: 327px; box-shadow: 2px 2px 3px #fff; overflow: hidden; }
+    .scroll-pic-list { width: 2445px; background: #fff; }
+    .scroll-pic-item { float: left; }
+    .dot-list { position: absolute; bottom: 10px; left: 211.5px; }
+    .dot-list-item { position: relative; float: left; width: 12px; height: 12px; margin-right: 6px; background: #9c9c9c; border-radius: 50%; cursor: pointer; }
+    .dot-list-item.current { background: #f7c600; }
+    .small-pic { position: absolute; top: -64px; left: -37px; display: none; width: 80px; height: 51px; padding: 3px; background: #fff; }
+    .small-pic img { width: 100%; height: 100%; }
+    .guide { position: absolute; bottom: -8px; left: 39px; width: 0; height: 0; border: 4px solid transparent; border-top-color: #fff; }
+    .dot-list-item:hover .small-pic { display: block; }
+    .arrow-left, .arrow-right { position: absolute; top: 174px; width: 38px; height: 38px; line-height: 30px; text-align: center; background: #f79c08; border-radius: 50%; opacity: .5; filter: Alpha(opacity=50); cursor: pointer; }
+    .arrow-left:hover, .arrow-right:hover { opacity: 1; filter: Alpha(opacity=100); }
+    .arrow-left i, .arrow-right i { font-size: 30px; font-weight: bold; color: #fff; }
+    .arrow-left { left: 28px; }
+    .arrow-right { right: 37px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2 class="title">带略缩图的图片轮换</h2>
+    <div class="container">
+      <ul class="scroll-pic-list clearfix">
+        <li class="scroll-pic-item"><img src="../images/lesson_04/img02/cake.jpg" alt=""></li>
+        <li class="scroll-pic-item"><img src="../images/lesson_04/img02/bread.jpg" alt=""></li>
+        <li class="scroll-pic-item"><img src="../images/lesson_04/img02/food.jpg" alt=""></li>
+        <li class="scroll-pic-item"><img src="../images/lesson_04/img02/chocolate.jpg" alt=""></li>
+        <li class="scroll-pic-item"><img src="../images/lesson_04/img02/dessert.jpg" alt=""></li>
+      </ul>
+    </div>
+    <ul class="dot-list clearfix">
+      <li class="dot-list-item current">
+        <div class="small-pic">
+          <img src="../images/lesson_04/img02/cake.jpg" alt="">
+          <div class="guide"></div>
+        </div>
+      </li>
+      <li class="dot-list-item">
+        <div class="small-pic">
+          <img src="../images/lesson_04/img02/bread.jpg" alt="">
+          <div class="guide"></div>
+        </div>
+      </li>
+      <li class="dot-list-item">
+        <div class="small-pic">
+          <img src="../images/lesson_04/img02/food.jpg" alt="">
+          <div class="guide"></div>
+        </div>
+      </li>
+      <li class="dot-list-item">
+        <div class="small-pic">
+          <img src="../images/lesson_04/img02/chocolate.jpg" alt="">
+          <div class="guide"></div>
+        </div>
+      </li>
+      <li class="dot-list-item">
+        <div class="small-pic">
+          <img src="../images/lesson_04/img02/dessert.jpg" alt="">
+          <div class="guide"></div>
+        </div>
+      </li>
+    </ul>
+    <div class="arrow-left"><i>&lt;</i></div>
+    <div class="arrow-right"><i>&gt;</i></div>
+  </div>
+</body>
+</html>

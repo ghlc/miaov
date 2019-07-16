@@ -13,6 +13,8 @@ a { text-decoration: none; }
 
 img { border: none; }
 
+i { font-style: normal; }
+
 .fl { float: left; }
 
 .fr { float: right; }
