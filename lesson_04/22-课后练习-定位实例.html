@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>点击展开收缩</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    .wrap { width: 178px; height: 367px; padding-top: 4px; padding-left: 5px; margin: 60px auto; background: url('../images/lesson_04/img03/Bg.jpg') repeat-y top left; border-top: 1px solid #000; }
+    .container { width: 100%; height: 100%; background: #fff; border-top: 1px solid #adadad; }
+    .column-list { width: 145px; border: 1px solid #8c9cb5; }
+    .column-content { height: 26px; padding-left: 11px; line-height: 26px; background: url('../images/lesson_04/img03/columnBg.jpg') repeat-x center center; cursor: pointer; }
+    .icon { display: inline-block; width: 9px; height: 9px; vertical-align: 2px; background: url('../images/lesson_04/img03/icon.jpg') no-repeat center center; }
+    .column-title { display: inline-block; width: 93px; padding-left: 10px; font-weight: bold; color: #fff; }
+    .column-list-item .arrow { display: inline-block; width: 12px; height: 12px; background: url('../images/lesson_04/img03/blueUpArrow.jpg') no-repeat center center; }
+    .column-list-item .column-content:hover .arrow { background: url('../images/lesson_04/img03/greenUpArrow.jpg') no-repeat center center; }
+    .column-list-item.current .arrow { background: url('../images/lesson_04/img03/blueDownArrow.jpg') no-repeat center center; }
+    .column-list-item.current .column-content:hover .arrow { background: url('../images/lesson_04/img03/greenDownArrow.jpg') no-repeat center center; }
+    .menu-list { display: none; }
+    .menu-list-item { height: 24px; padding-left: 31px; line-height: 24px; background: url('../images/lesson_04/img03/menuBg.jpg') repeat-x center center; }
+    .mark { display: inline-block; width: 11px; height: 11px; background: url('../images/lesson_04/img03/greenIcon.jpg') no-repeat center center; }
+    .menu-list-item a { padding-left: 10px; color: #6b7b94; cursor: pointer; }
+    .menu-list-item a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <ul class="column-list">
+        <li class="column-list-item">
+          <div class="column-content">
+            <i class="icon"></i><span class="column-title">妙味首页</span><i class="arrow"></i>
+          </div>
+        </li>
+        <li class="column-list-item">
+          <div class="column-content">
+            <i class="icon"></i><span class="column-title">关于妙味</span><i class="arrow"></i>
+          </div>
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <i class="mark"></i><a>团队介绍</a>
+            </li>
+            <li class="menu-list-item">
+              <i class="mark"></i><a>妙味成员</a>
+            </li>
+            <li class="menu-list-item">
+              <i class="mark"></i><a>想说的话</a>
+            </li>
+            <li class="menu-list-item">
+              <i class="mark"></i><a>寻觅高手</a>
+            </li>
+          </ul>
+        </li>
+        <li class="column-list-item current">
+          <div class="column-content">
+            <i class="icon"></i><span class="column-title">培训套餐</span><i class="arrow"></i>
+          </div>
+          <ul class="menu-list" style="display: block;">
+            <li class="menu-list-item">
+              <i class="mark"></i><a>CSS课程</a>
+            </li>
+            <li class="menu-list-item">
+              <i class="mark"></i><a>PHP课程</a>
+            </li>
+            <li class="menu-list-item">
+              <i class="mark"></i><a>AS3.0课程</a>
+            </li>
+            <li class="menu-list-item">
+              <i class="mark"></i><a>课程说明</a>
+            </li>
+          </ul>
+        </li>
+        <li class="column-list-item">
+          <div class="column-content">
+            <i class="icon"></i><span class="column-title">妙味特色</span><i class="arrow"></i>
+          </div>
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <i class="mark"></i><a>网站介绍</a>
+            </li>
+            <li class="menu-list-item">
+              <i class="mark"></i><a>精品套餐</a>
+            </li>
+            <li class="menu-list-item">
+              <i class="mark"></i><a>妙味特色</a>
+            </li>
+            <li class="menu-list-item">
+              <i class="mark"></i><a>免费试听</a>
+            </li>
+          </ul>
+        </li>
+        <li class="column-list-item">
+          <div class="column-content">
+            <i class="icon"></i><span class="column-title">妙味资料库</span><i class="arrow"></i>
+          </div>
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <i class="mark"></i><a>CSS</a>
+            </li>
+            <li class="menu-list-item">
+              <i class="mark"></i><a>PHP</a>
+            </li>
+            <li class="menu-list-item">
+              <i class="mark"></i><a>JavaScript</a>
+            </li>
+            <li class="menu-list-item">
+              <i class="mark"></i><a>AS</a>
+            </li>
+          </ul>
+        </li>
+        <li class="column-list-item">
+          <div class="column-content">
+            <i class="icon"></i><span class="column-title">联系妙味</span><i class="arrow"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
