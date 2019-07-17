@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>合页窗展示效果</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    .wrap { width: 238px; height: 302px; padding-left: 18px; margin: 60px auto; overflow: hidden; }
+    .title { padding-top: 5px; padding-bottom: 7px; }
+    .title img { vertical-align: top; }
+    .list { padding-left: 1px; }
+    .list-item { background: #fff; border-top: 1px solid #fff; border-bottom: 1px solid #fff; }
+    .list-item-summary { position: relative; width: 185px; height: 36px; padding-top: 4px; margin-left: 10px; text-align: center; background: #deefef; }
+    .list-item-summary p { line-height: 16px; color: #312929; }
+    .date-left, .date-right { position: absolute; top: 0; width: 40px; height: 40px; line-height: 40px; text-align: center; font-weight: bold; background: #fff; border-radius: 50%; }
+    .list-item.current .date-left, .list-item.current .date-right { color: #fff; background: #ce0000; }
+    .date-left { left: -23px; }
+    .date-right { right: -22px; }
+    .list-item-content { display: none; height: 101px; padding-top: 23px; }
+    .list-item.current .list-item-content { display: block; }
+    .list-item-img { width: 78px; height: 78px; border: 1px solid #d6d6d6; }
+    .list-item-img img { width: 100%; height: 100%; vertical-align: top; }
+    .list-item-detail { width: 108px; padding-left: 10px; margin-top: -1px; line-height: 16px; color: #635a6b; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2 class="title">
+      <img src="../images/lesson_04/img04/title.jpg" alt="">
+    </h2>
+    <ul class="list">
+      <li class="list-item">
+        <div class="list-item-summary">
+          <div class="date-left">1.1</div>
+          <div class="date-right">2.14</div>
+          <p>千元豪礼招募</p>
+          <p>最动人求婚方案</p>
+        </div>
+        <div class="list-item-content clearfix">
+          <div class="list-item-img fl"><img src="../images/lesson_04/img04/ring.jpg" alt=""></div>
+          <div class="list-item-detail fl">
+            擦亮你的智慧，点燃你的创意，奋力一挥、划破长空，自创一套“最动人求婚方案”...
+          </div>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="list-item-summary">
+          <div class="date-left">12.6</div>
+          <div class="date-right">12.31</div>
+          <p>圣诞享受爱</p>
+          <p>寒冬护肤心经大分享</p>
+        </div>
+        <div class="list-item-content clearfix " style="display: block;">
+          <div class="list-item-img fl"><img src="../images/lesson_04/img04/beautyGirl.jpg" alt=""></div>
+          <div class="list-item-detail fl">
+            以“【爱在圣诞】+自拟标题”为主题晒出你的冬季护肤小绝招，赢取千元护肤好礼...
+          </div>
+        </div>
+      </li>
+      <li class="list-item current">
+        <div class="list-item-summary">
+          <div class="date-left">12.9</div>
+          <div class="date-right">12.31</div>
+          <p>圣诞给予爱</p>
+          <p>派对季美妆大晒！</p>
+        </div>
+        <div class="list-item-content clearfix">
+          <div class="list-item-img fl"><img src="../images/lesson_04/img04/perrtyGirl.jpg" alt=""></div>
+          <div class="list-item-detail fl">
+            画一个圣诞派对妆，美丽升级自信满满；描一个圣诞约会妆，招桃花也让爱人悦然...
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
