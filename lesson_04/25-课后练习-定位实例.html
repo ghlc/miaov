@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>模拟手机短信发送</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    .wrap { width: 236px; height: 419px; padding: 87px 26px 88px 27px; margin: 60px auto; background: url('../images/lesson_04/img06/iphone.png') no-repeat center center; }
+    .container { position: relative; width: 100%; height: 100%; }
+    .conversation { width: 100%; height: 370px; }
+    .bottom-bar { position: absolute; bottom: 0; left: 0; width: 100%; height: 41px; padding-top: 7px; border-top: 1px solid #bdcec6; }
+    .avatar { width: 24px; height: 24px; padding: 5px 3px; border: 1px solid #ded6e7; border-radius: 5px; cursor: default; }
+    .msg { width: 139px; height: 34px; line-height: 34px; border: 1px solid #ded6e7; border-radius: 5px; resize: none; overflow-y: hidden; }
+    input[type=button], .msg, input[type=image] { vertical-align: middle; outline: none; }
+    input[type=image] { margin-left: 3px; }
+    input[type=button], .msg { padding: 0; margin-left: 2px; }
+    input[type=button] { background: #fff; border: none; }
+    .btn { height: 36px; line-height: 36px; font-size: 22px; color: #8c8494; cursor: pointer; }
+    </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <div class="conversation"></div>
+      <div class="bottom-bar">
+        <form action="" method="post">
+          <label for="male">
+            <input type="image" src="../images/lesson_04/img06/male.jpg" alt="" class="avatar">
+            <!-- <input type="text" name="" id="" class="msg"> -->
+            <textarea name="male" id="male" cols="20" rows="10" class="msg"></textarea>
+            <input type="button" value="发送" class="btn">
+          </label>
+          <label for="female">
+            <input type="image" src="../images/lesson_04/img06/female.jpg" alt="" class="avatar">
+            <!-- <input type="text" name="" id="" class="msg"> -->
+            <textarea name="female" id="female" cols="20" rows="10" class="msg"></textarea>
+            <input type="button" value="发送" class="btn">
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

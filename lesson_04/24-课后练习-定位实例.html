@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>科技频道自动轮换选项卡</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    body { width: 100%; height: 100%; background: #f7f7f7; }
+    .wrap { width: 315px; height: 149px; margin: 60px auto;  }
+    .menu-column { border-left: 1px solid #ded6de; }
+    .menu-option { display: inline-block; width: 80px; height: 31px; line-height: 30px; font-size: 14px; text-align: center; color: #000; border: 1px solid #c6c6c6; border-left: none; background: #f7f7f7; }
+    .menu-option.current { background: #fff; border-bottom-color: #fff; }
+    .container { width: 291px; height: 95px; padding: 10px 12px 10px 10px; margin-top: -1px; background: #fff; border: 1px solid #ded6de; }
+    .news { display: none; }
+    .news.current { display: block; }
+    .news-pic { width: 118px; height: 93px; border: 1px solid #636363; overflow: hidden; }
+    .news-pic-item { display: none; }
+    .news-pic-item.current { display: block; }
+    .news-pic-item img { width: 100%; height: 100%; vertical-align: top; }
+    .news-list { width: 170px; }
+    .news-list-item { padding-left: 8px; background: #dee7e7; border-bottom: 1px solid #fff; }
+    .news-list-item:hover, .news-list-item.current { background: #636363; }
+    .news-list-item:hover a, .news-list-item.current a { color: #fff; }
+    .news-list-item a:hover { text-decoration: underline; }
+    .news-title { height: 31px; font-weight: normal; }
+    .news-title a { line-height: 31px; color: #000; }
+    </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="menu-column">
+      <a href="#" class="menu-option current">专题</a><a href="#" class="menu-option">视频</a>
+    </div>
+    <div class="container">
+      <div class="news current clearfix">
+        <div class="news-pic fl">
+          <ul class="news-pic-list">
+            <li class="news-pic-item current"><img src="../images/lesson_04/img05/QiHu.jpg" alt=""></li>
+            <li class="news-pic-item"><img src="../images/lesson_04/img05/IT.jpg" alt=""></li>
+            <li class="news-pic-item"><img src="../images/lesson_04/img05/CCBN.jpg" alt=""></li>
+          </ul>
+        </div>
+        <ul class="news-list fr">
+          <li class="news-list-item current">
+            <h4 class="news-title"><a href="">奇虎360纽交所上市</a></h4>
+          </li>
+          <li class="news-list-item">
+            <h4 class="news-title"><a href="">2011年IT领袖峰会</a></h4>
+          </li>
+          <li class="news-list-item">
+            <h4 class="news-title"><a href="">CCBN召开 助三网融合</a></h4>
+          </li>
+        </ul>
+      </div>
+      <div class="news clearfix">
+        <div class="news-pic fl">
+          <ul class="news-pic-list">
+            <li class="news-pic-item"><img src="../images/lesson_04/img05/CCBN.jpg" alt=""></li>
+            <li class="news-pic-item"><img src="../images/lesson_04/img05/IT.jpg" alt=""></li>
+            <li class="news-pic-item"><img src="../images/lesson_04/img05/QiHu.jpg" alt=""></li>
+          </ul>
+        </div>
+        <ul class="news-list fr">
+          <li class="news-list-item">
+            <h4 class="news-title"><a href="">CCBN召开 助三网融合</a></h4>
+          </li>
+          <li class="news-list-item">
+            <h4 class="news-title"><a href="">2011年IT领袖峰会</a></h4>
+          </li>
+          <li class="news-list-item">
+            <h4 class="news-title"><a href="">奇虎360纽交所上市</a></h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
