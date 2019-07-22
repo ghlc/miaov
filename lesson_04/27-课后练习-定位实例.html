@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>鼠标滑过图片展开</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    .wrap { width: 940px; height: 130px; padding: 9px; margin: 60px auto; background: #f7f7f7; }
+    .promotion-list { background: #fff; border: 1px solid #deefd6; border-radius: 2px; }
+    .promotion-list:hover { background: #deefd6; }
+    .promotion-item { float: left; }
+    .promotion-item a { display: block; padding-top: 4px; padding-bottom: 1px; }
+    .promotion-item:nth-of-type(1) { background: url('../images/lesson_04/img08/bigMakeup.jpg') no-repeat; background-size: auto 72px; background-position: 52px bottom; }
+    .promotion-list:hover .promotion-item:nth-of-type(1) { background: url('../images/lesson_04/img08/smallMakeup.jpg') no-repeat right bottom; }
+    .promotion-list .promotion-item:nth-of-type(1):hover { background: #fff url('../images/lesson_04/img08/bigMakeup.jpg') no-repeat; background-size: auto 120px; background-position: right bottom; }
+    .promotion-list .promotion-item:nth-of-type(1).current { background: #fff url('../images/lesson_04/img08/bigMakeup.jpg') no-repeat; background-size: auto 120px; background-position: right bottom; }
+    .promotion-item:nth-of-type(2) { background: url('../images/lesson_04/img08/bigNewbron.jpg') no-repeat; background-size: auto 72px; background-position: 52px bottom; }
+    .promotion-list:hover .promotion-item:nth-of-type(2) { background: url('../images/lesson_04/img08/smallNewbron.jpg') no-repeat right bottom; }
+    .promotion-list .promotion-item:nth-of-type(2):hover { background:#fff url('../images/lesson_04/img08/bigNewbron.jpg') no-repeat; background-size: auto 120px; background-position: right bottom; }
+    .promotion-list .promotion-item:nth-of-type(2).current { background:#fff url('../images/lesson_04/img08/bigNewbron.jpg') no-repeat; background-size: auto 120px; background-position: right bottom; }
+    .promotion-item:nth-of-type(3) { background: url('../images/lesson_04/img08/bigFashion.jpg') no-repeat; background-size: auto 72px; background-position: 52px bottom; }
+    .promotion-list:hover .promotion-item:nth-of-type(3) { background: url('../images/lesson_04/img08/smallFashion.jpg') no-repeat right bottom; }
+    .promotion-list .promotion-item:nth-of-type(3):hover { background: #fff url('../images/lesson_04/img08/bigFashion.jpg') no-repeat; background-size: auto 120px; background-position: right bottom; }
+    .promotion-list .promotion-item:nth-of-type(3).current { background: #fff url('../images/lesson_04/img08/bigFashion.jpg') no-repeat; background-size: auto 120px; background-position: right bottom; }
+    .promotion-item:nth-of-type(4) { background: url('../images/lesson_04/img08/bigMeat.jpg') no-repeat; background-size: auto 72px; background-position: 52px bottom; }
+    .promotion-list:hover .promotion-item:nth-of-type(4) { background: url('../images/lesson_04/img08/smallMeat.jpg') no-repeat right bottom; }
+    .promotion-list .promotion-item:nth-of-type(4):hover { background: #fff url('../images/lesson_04/img08/bigMeat.jpg') no-repeat; background-size: auto 120px; background-position: right bottom; }
+    .promotion-list .promotion-item:nth-of-type(4).current { background: #fff url('../images/lesson_04/img08/bigMeat.jpg') no-repeat; background-size: auto 120px; background-position: right bottom; }
+    .promotion-item:nth-of-type(5) { background: url('../images/lesson_04/img08/bigFruits.jpg') no-repeat; background-size: auto 72px; background-position: 52px bottom; }
+    .promotion-list:hover .promotion-item:nth-of-type(5) { background: url('../images/lesson_04/img08/smallFruits.jpg') no-repeat right bottom; }
+    .promotion-list .promotion-item:nth-of-type(5):hover { background: #fff url('../images/lesson_04/img08/bigFruits.jpg') no-repeat; background-size: auto 120px; background-position: right bottom; }
+    .promotion-list .promotion-item:nth-of-type(5).current { background: #fff url('../images/lesson_04/img08/bigFruits.jpg') no-repeat; background-size: auto 120px; background-position: right bottom; }
+    .promotion-item:hover { background: #fff; }
+    .promotion-item.current { background: #fff; }
+    .promotion-info { width: 145px; height: 123px; padding-left: 10px; border-right: 1px dashed #c0c0c0; }
+    .promotion-item:last-of-type .promotion-info { border-right: 1px dashed transparent; }
+    .promotion-item .promotion-title { padding-top: 1px; line-height: 20px; }
+    .promotion-item:nth-of-type(1) .promotion-title { color: #f7185a; }
+    .promotion-item:nth-of-type(2) .promotion-title { color: #f75284; }
+    .promotion-item:nth-of-type(3) .promotion-title { color: #7339a5; }
+    .promotion-item:nth-of-type(4) .promotion-title { color: #c61842; }
+    .promotion-item:nth-of-type(5) .promotion-title { color: #738c08; }
+    .promotion-summary { line-height: 20px; color: #848484; }
+    .promotion-discount { line-height: 24px; font-style: italic; color: #f7185a; }
+    .promotion-discount span { font-size: 20px; }
+    .promotion-more { display: none; line-height: 26px; color: #f7185a; }
+    .promotion-item:hover .promotion-info { width: 303px; }
+    .promotion-item.current .promotion-info { width: 303px; }
+    .promotion-item:hover .promotion-title { padding-top: 0; line-height: 28px; font-size: 18px; }
+    .promotion-item.current .promotion-title { padding-top: 0; line-height: 28px; font-size: 18px; }
+    .promotion-item:hover .promotion-summary { line-height: 22px; }
+    .promotion-item.current .promotion-summary { line-height: 22px; }
+    .promotion-item:hover .promotion-discount { line-height: 34px; font-size: 16px; }
+    .promotion-item.current .promotion-discount { line-height: 34px; font-size: 16px; }
+    .promotion-item:hover .promotion-discount span { font-size: 26px; }
+    .promotion-item.current .promotion-discount span { font-size: 26px; }
+    .promotion-item:hover .promotion-more { display: block; }
+    .promotion-item.current .promotion-more { display: block; }
+    </style>
+</head>
+<body>
+  <div class="wrap">
+    <ul class="promotion-list clearfix">
+      <li class="promotion-item current">
+        <a href="#">
+          <div class="promotion-info">
+            <h3 class="promotion-title">聚美妆</h3>
+            <p class="promotion-summary">5分钟搞定妆容&nbsp;&nbsp;限时抢购</p>
+            <p class="promotion-discount"><span>3</span>折起</p>
+            <p class="promotion-more">进入专题抢购&gt;</p>
+          </div>
+        </a>
+      </li>
+      <li class="promotion-item">
+        <a href="#">
+          <div class="promotion-info">
+            <h3 class="promotion-title">Baby购</h3>
+            <p class="promotion-summary">待产·新生儿主题专场</p>
+            <p class="promotion-discount"><span>1.9</span>折起</p>
+            <p class="promotion-more">进入专题抢购&gt;</p>
+          </div>
+        </a>
+      </li>
+      <li class="promotion-item">
+        <a href="#">
+          <div class="promotion-info">
+            <h3 class="promotion-title">时装团</h3>
+            <p class="promotion-summary">最新款美包，年底秀美丽</p>
+            <p class="promotion-discount"><span>1</span>折起</p>
+            <p class="promotion-more">进入专题抢购&gt;</p>
+          </div>
+        </a>
+      </li>
+      <li class="promotion-item">
+        <a href="#">
+          <div class="promotion-info">
+            <h3 class="promotion-title">TV购</h3>
+            <p class="promotion-summary">澳洲领事馆 请你尝牛货</p>
+            <p class="promotion-discount"><span>5</span>折起</p>
+            <p class="promotion-more">进入专题抢购&gt;</p>
+          </div>
+        </a>
+      </li>
+      <li class="promotion-item">
+        <a href="# ">
+          <div class="promotion-info">
+            <h3 class="promotion-title">聚新鲜</h3>
+            <p class="promotion-summary">海南鲜果 正宗好好吃</p>
+            <p class="promotion-discount"><span>4</span>折起</p>
+            <p class="promotion-more">进入专题抢购&gt;</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
