@@ -7,61 +7,92 @@
   <title>数码频道选项卡</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
+    .hide { display: none; }
     .wrap { width: 702px; height: 260px; margin: 60px auto; }
-
+    .head-wrap { height: 39px; padding: 1px; border: 1px solid #73bdef; }
+    .head { height: 100%; padding-left: 9px; background: url('../images/lesson_04/img09/headBg.jpg') repeat-x center center; }
+    .title { padding-top: 10px; }
+    .title .icon { display: inline-block; width: 8px; height: 7px; padding-right: 10px; background: url('../images/lesson_04/img09/icon.png') no-repeat left center; vertical-align: 1px; }
+    .title img { vertical-align: middle; }
+    .tab-list { position: relative; top: 12px; left: 50px; }
+    .tab-item { position: absolute; top: 1px; width: 88px; height: 26px; padding-left: 15px; line-height: 20px; color: #086ba5; background: url('../images/lesson_04/img09/menuBg.jpg') repeat-x center center; border: 1px solid #a5def7; border-bottom-color: transparent; clip-path: polygon(0 0, 78px 0, 100% 100%, 0 100%); }
+    .tab-item:first-of-type { left: 0; }
+    .tab-item:last-of-type { left: 101px; }
+    .downArrow { display: none; width: 9px; height: 5px; padding-left: 1px; padding-right: 9px; background: url('../images/lesson_04/img09/downArrow.png') no-repeat 1px center; vertical-align: 2px; }
+    .tab-item.current { top: -1px; width: 95px; height: 28px; line-height: 24px; color: #087b00; background: #fff; z-index: 1; clip-path: polygon(0 0, 83px 0, 100% 100%, 0 100%); }
+    .tab-item:last-of-type.current { left: 90px; }
+    .tab-item.current .downArrow { display: inline-block; }
+    .container { width: 691px; height: 206px; padding-top: 10px; padding-left: 9px; margin-top: -1px; border: 1px solid #a5def7; border-top-color: #73bdef; overflow-x: hidden; }
+    .hot-digital { padding-right: 12px; }
+    .hot-digital-pic { width: 175px; height: 145px; padding: 1px; border: 5px solid #a5def7; }
+    .hot-digital-pic img { width: 100%; height: 100%; vertical-align: top; }
+    .hot-digital p { height: 13px; padding-top: 7px; line-height: 12px; text-align: center; color: #5a5a5a; background: url('../images/lesson_04/img09/digitalTitleBg.jpg') repeat-x center center; border-top: 1px solid #fff; }
+    .digital-list { height: 163px; overflow-y: hidden; }
+    .digital-list-item { float: left; width: 164px; }
+    .digital-pic { width: 135px; height: 85px; padding: 4px; margin-left: 10px; border: 1px solid #ded6d6; }
+    .digital-pic img { width: 100%; height: 100%; vertical-align: top; }
+    .digital-title { line-height: 28px; text-align: center; font-weight: normal; color: #00009c; text-overflow: clip; white-space: nowrap; overflow: hidden; }
+    .digital-summary { padding-left: 10px; line-height: 20px; color: #5a5a5a; }
     </style>
 </head>
 <body>
   <div class="wrap">
     <header class="head-wrap">
-      <div class="head">
-        <h2 class="title">
-          <i class="icon"></i><img src=".." alt="">
+      <div class="head clearfix">
+        <h2 class="title fl">
+          <i class="icon"></i><img src="../images/lesson_04/img09/headTitle.jpg" alt="">
         </h2>
-        <div class="tab-list">
-          <div class="tab-item">
-            <i class="downArrow"></i> 新品
+        <div class="tab-list fl clearfix">
+          <div class="tab-item fl current">
+            <i class="downArrow"></i>新品
           </div>
-          <div class="tab-item">
-            <i class="downArrow"></i> 极客
+          <div class="tab-item fl">
+            <i class="downArrow"></i>极客
           </div>
         </div>
       </div>
     </header>
     <div class="container">
-      <div class="content">
-        <div class="hot-digital">
-          <div class="hot-digital-pic">
-            <img src=".." alt="">
-          </div>
-          <p>三星S5570/I559图赏</p>
+      <div class="content clearfix">
+        <div class="hot-digital fl">
+          <a href="#">
+            <div class="hot-digital-pic">
+              <img src="../images/lesson_04/img09/SANSUNG.jpg" alt="">
+            </div>
+            <p>三星S5570/I559图赏</p>
+          </a>
         </div>
-        <div class="content-right">
-          <ul class="digital-list">
+        <div class="content-right fl">
+          <ul class="digital-list clearfix">
             <li class="digital-list-item">
-              <div class="digital-pic"><img src=".." alt=""></div>
-              <h4 class="digital-title"></h4>
-              <p class="digital-summary"></p>
+              <div class="digital-pic"><img src="../images/lesson_04/img09/Xbox.jpg" alt=""></div>
+              <h4 class="digital-title">宾得推RS1500超级英雄限量版</h4>
+              <p class="digital-summary">日本宾得公司的相机产品一向都是因多种配色而...</p>
             </li>
             <li class="digital-list-item">
-              <div class="digital-pic"><img src=".." alt=""></div>
-              <h4 class="digital-title"></h4>
-              <p class="digital-summary"></p>
+              <div class="digital-pic"><img src="../images/lesson_04/img09/blackberry.jpg" alt=""></div>
+              <h4 class="digital-title">黑莓Bold Touch真机现身</h4>
+              <p class="digital-summary">直板全键盘+触屏+光学触摸板，应该会有非常独...</p>
             </li>
             <li class="digital-list-item">
-              <div class="digital-pic"><img src=".." alt=""></div>
-              <h4 class="digital-title"></h4>
-              <p class="digital-summary"></p>
+              <div class="digital-pic"><img src="../images/lesson_04/img09/nexus.jpg" alt=""></div>
+              <h4 class="digital-title">AT&T新版本Nexus S真机抢先看</h4>
+              <p class="digital-summary">白色版本Nexus S是专门适配与AT&T的3G网络制式...</p>
             </li>
-            <li class="digital-list-item">
-              <div class="digital-pic"><img src=".." alt=""></div>
-              <h4 class="digital-title"></h4>
-              <p class="digital-summary"></p>
+            <li class="digital-list-item hide">
+              <div class="digital-pic"><img src="../images/lesson_04/img09/micro.jpg" alt=""></div>
+              <h4 class="digital-title">超迷你Micro SD读卡器相机</h4>
+              <p class="digital-summary">Micro SD读卡器可以造得很小，数码相机同样可...</p>
             </li>
-            <li class="digital-list-item">
-              <div class="digital-pic"><img src=".." alt=""></div>
-              <h4 class="digital-title"></h4>
-              <p class="digital-summary"></p>
+            <li class="digital-list-item hide">
+              <div class="digital-pic"><img src="../images/lesson_04/img09/carl.jpg" alt=""></div>
+              <h4 class="digital-title">卡尔蔡司推出单反镜头大套装</h4>
+              <p class="digital-summary">热衷于手动镜头的朋友们可以注意了，德国卡尔...</p>
+            </li>
+            <li class="digital-list-item hide">
+              <div class="digital-pic"><img src="../images/lesson_04/img09/nokia.jpg" alt=""></div>
+              <h4 class="digital-title">诺基亚T7-00谍照曝光</h4>
+              <p class="digital-summary">诺基亚T7-00采用的是Symbian^3操作系统，背</p>
             </li>
           </ul>
           <div class="switch-button">
@@ -74,22 +105,30 @@
             <i class="rightArrow"></i>
           </div>
         </div>
+      </div>
+      <div class="content hide">
+        <div class="hot-digital">
+          <div class="hot-digital-pic">
+            <img src="../images/lesson_04/img09/birdGame.jpg" alt="">
+          </div>
+          <p>小鸟学飞</p>
+        </div>
         <div class="content-right">
           <ul class="digital-list">
             <li class="digital-list-item">
-              <div class="digital-pic"><img src=".." alt=""></div>
-              <h4 class="digital-title"></h4>
-              <p class="digital-summary"></p>
+              <div class="digital-pic"><img src="../images/lesson_04/img09/neer.jpg" alt=""></div>
+              <h4 class="digital-title">LBS预设提醒服务应用Neer</h4>
+              <p class="digital-summary">今天介绍的Neer就是一个可以在某地预先设置一...</p>
             </li>
             <li class="digital-list-item">
-              <div class="digital-pic"><img src=".." alt=""></div>
-              <h4 class="digital-title"></h4>
-              <p class="digital-summary"></p>
+              <div class="digital-pic"><img src="../images/lesson_04/img09/go.jpg" alt=""></div>
+              <h4 class="digital-title">搜索引擎APP鸭鸭GO</h4>
+              <p class="digital-summary">鸭鸭GO是一个新型的搜索引擎APP。使用鸭鸭GO可...</p>
             </li>
             <li class="digital-list-item">
-              <div class="digital-pic"><img src=".." alt=""></div>
-              <h4 class="digital-title"></h4>
-              <p class="digital-summary"></p>
+              <div class="digital-pic"><img src="../images/lesson_04/img09/neer.jpg" alt=""></div>
+              <h4 class="digital-title">LBS预设提醒服务应用Neer</h4>
+              <p class="digital-summary">今天介绍的Neer就是一个可以在某地预先设置一...</p>
             </li>
           </ul>
           <div class="switch-button">
