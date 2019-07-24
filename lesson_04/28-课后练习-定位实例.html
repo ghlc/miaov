@@ -27,12 +27,20 @@
     .hot-digital-pic { width: 175px; height: 145px; padding: 1px; border: 5px solid #a5def7; }
     .hot-digital-pic img { width: 100%; height: 100%; vertical-align: top; }
     .hot-digital p { height: 13px; padding-top: 7px; line-height: 12px; text-align: center; color: #5a5a5a; background: url('../images/lesson_04/img09/digitalTitleBg.jpg') repeat-x center center; border-top: 1px solid #fff; }
-    .digital-list { height: 163px; overflow-y: hidden; }
+    .digital-list { width: 492px; height: 163px; overflow-y: hidden; }
     .digital-list-item { float: left; width: 164px; }
-    .digital-pic { width: 135px; height: 85px; padding: 4px; margin-left: 10px; border: 1px solid #ded6d6; }
+    .digital-pic { width: 135px; height: 85px; padding: 4px; margin-left: 10px; border: 1px solid #ded6d6; cursor: pointer; }
+    .digital-pic:hover { border-color: #2994de; }
     .digital-pic img { width: 100%; height: 100%; vertical-align: top; }
     .digital-title { line-height: 28px; text-align: center; font-weight: normal; color: #00009c; text-overflow: clip; white-space: nowrap; overflow: hidden; }
     .digital-summary { padding-left: 10px; line-height: 20px; color: #5a5a5a; }
+    .switch-button { padding-top: 7px; padding-left: 201px; }
+    .leftArrow, .rightArrow { width: 13px; height: 13px; padding: 1px; border: 1px solid #398cad; }
+    .leftArrow { background: url('../images/lesson_04/img09/leftArrow.jpg') no-repeat center center; }
+    .rightArrow { background: url('../images/lesson_04/img09/rightArrow.jpg') no-repeat center center; }
+    .point-list { height: 13px; padding: 4px 10px 0; }
+    .point-list-item { float: left; width: 8px; height: 8px; margin: 0 2px; background: #adb5b5; border: 1px solid #808080; border-radius: 50%; }
+    .point-list-item.current { background: #d6eff7; border-color: #398cad; }
     </style>
 </head>
 <body>
@@ -43,10 +51,10 @@
           <i class="icon"></i><img src="../images/lesson_04/img09/headTitle.jpg" alt="">
         </h2>
         <div class="tab-list fl clearfix">
-          <div class="tab-item fl current">
+          <div class="tab-item fl ">
             <i class="downArrow"></i>新品
           </div>
-          <div class="tab-item fl">
+          <div class="tab-item fl current">
             <i class="downArrow"></i>极客
           </div>
         </div>
@@ -79,41 +87,43 @@
               <h4 class="digital-title">AT&T新版本Nexus S真机抢先看</h4>
               <p class="digital-summary">白色版本Nexus S是专门适配与AT&T的3G网络制式...</p>
             </li>
-            <li class="digital-list-item hide">
+            <li class="digital-list-item">
               <div class="digital-pic"><img src="../images/lesson_04/img09/micro.jpg" alt=""></div>
               <h4 class="digital-title">超迷你Micro SD读卡器相机</h4>
               <p class="digital-summary">Micro SD读卡器可以造得很小，数码相机同样可...</p>
             </li>
-            <li class="digital-list-item hide">
+            <li class="digital-list-item">
               <div class="digital-pic"><img src="../images/lesson_04/img09/carl.jpg" alt=""></div>
               <h4 class="digital-title">卡尔蔡司推出单反镜头大套装</h4>
               <p class="digital-summary">热衷于手动镜头的朋友们可以注意了，德国卡尔...</p>
             </li>
-            <li class="digital-list-item hide">
+            <li class="digital-list-item">
               <div class="digital-pic"><img src="../images/lesson_04/img09/nokia.jpg" alt=""></div>
               <h4 class="digital-title">诺基亚T7-00谍照曝光</h4>
               <p class="digital-summary">诺基亚T7-00采用的是Symbian^3操作系统，背</p>
             </li>
           </ul>
-          <div class="switch-button">
-            <i class="leftArrow"></i>
-            <ul class="point-list">
-              <li class="point-list-item"></li>
+          <div class="switch-button clearfix">
+            <div class="leftArrow fl"></div>
+            <ul class="point-list fl clearfix">
+              <li class="point-list-item current"></li>
               <li class="point-list-item"></li>
               <li class="point-list-item"></li>
             </ul>
-            <i class="rightArrow"></i>
+            <div class="rightArrow fl"></div>
           </div>
         </div>
       </div>
-      <div class="content hide">
-        <div class="hot-digital">
-          <div class="hot-digital-pic">
-            <img src="../images/lesson_04/img09/birdGame.jpg" alt="">
-          </div>
-          <p>小鸟学飞</p>
+      <div class="content clearfix hide">
+        <div class="hot-digital fl">
+          <a href="#">
+            <div class="hot-digital-pic">
+              <img src="../images/lesson_04/img09/birdGame.jpg" alt="">
+            </div>
+            <p>小鸟学飞</p>
+          </a>
         </div>
-        <div class="content-right">
+        <div class="content-right fl">
           <ul class="digital-list">
             <li class="digital-list-item">
               <div class="digital-pic"><img src="../images/lesson_04/img09/neer.jpg" alt=""></div>
@@ -131,12 +141,12 @@
               <p class="digital-summary">今天介绍的Neer就是一个可以在某地预先设置一...</p>
             </li>
           </ul>
-          <div class="switch-button">
-            <i class="leftArrow"></i>
-            <ul class="point-list">
-              <li class="point-list-item"></li>
+          <div class="switch-button clearfix">
+            <div class="leftArrow fl"></div>
+            <ul class="point-list fl clearfix">
+              <li class="point-list-item current"></li>
             </ul>
-            <i class="rightArrow"></i>
+            <div class="rightArrow fl"></div>
           </div>
         </div>
       </div>
