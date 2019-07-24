@@ -20,18 +20,25 @@
     .extension { width: 100%; padding-top: 16px; }
     .keyword { width: 64px; height: 16px; line-height: 16px; text-align: center; color: #fff; background: #42ad6b; }
     .links { padding-top: 5px; padding-right: 20px; }
-    .share { position: relative; width: 55px; height: 28px; padding-left: 6px; line-height: 28px; border: 1px solid transparent; }
-    .share:hover {  border-color: #cec6ce; border-bottom-color: #fff; }
+    .share-wrap { position: relative; width: 61px; height: 30px; }
+    .share { position: absolute; top: 0; left: 0; width: 55px; height: 28px; padding-left: 6px; line-height: 28px; border: 1px solid transparent; }
+    .share-wrap:hover .share { border-color: #cec6ce; border-bottom-color: #fff; z-index: 1; }
     .shareIcon { display: inline-block; width: 16px; height: 20px; background: url('../images/lesson_04/img10/share.png') no-repeat center center; vertical-align: middle; }
     .share a { padding-left: 4px; color: #808080; vertical-align: middle; }
-    .share-list { position: absolute; top: 30px; left: -86px; width: 116px; height: 184px; padding:  2px 15px 0; background: #fff; border: 1px solid #cec6ce; }
+    .share-list { display: none; position: absolute; top: 29px; left: -85px; width: 116px; height: 184px; padding:  2px 15px 0; background: #fff; border: 1px solid #cec6ce; }
+    .share-wrap:hover .share-list { display: block; }
     .share-list-item { height: 36px; line-height: 36px; border-bottom: 1px dotted #ded6ce; }
-    .share-list-item i { display: inline-block; width: 24px; height: 24px; vertical-align: middle; }
-    .share-list-item .netease { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat left top; }
-    .share-list-item .sina { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat -24px top; }
-    .share-list-item .tencent { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat -48px top; }
-    .share-list-item .renren { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat -72px top; }
-    .share-list-item .youdao { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat right top; }
+    .sharelogo { display: inline-block; width: 24px; height: 24px; vertical-align: middle; }
+    .netease { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat left top; }
+    .share-list-item:hover .netease { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat left bottom; }
+    .sina { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat -24px top; }
+    .share-list-item:hover .sina { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat -24px bottom; }
+    .tencent { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat -48px top; }
+    .share-list-item:hover .tencent { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat -48px bottom; }
+    .renren { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat -72px top; }
+    .share-list-item:hover .renren { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat -72px bottom; }
+    .youdao { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat right top; }
+    .share-list-item:hover .youdao { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat right bottom; }
     .share-list-item a { color: #212110; }
     .share-list-item:hover a { color: #ad2929; }
     .share-list-item.youdao { border-bottom: none; }
@@ -56,8 +63,11 @@
         <div class="extension clearfix">
           <div class="keyword fl hide">Galaxy S5</div>
           <div class="links fr clearfix">
-            <div class="share fl"><i class="shareIcon"></i><a href="#">分享</a>
-              <ul class="share-list ">
+            <div class="share-wrap fl">
+              <div class="share">
+                <i class="shareIcon"></i><a href="#">分享</a>
+              </div>
+              <ul class="share-list">
                 <li class="share-list-item">
                   <i class="sharelogo netease"></i><a href="#">网易微博</a>
                 </li>
