@@ -9,8 +9,8 @@
   <style>
     .hide { display: none; }
     .wrap { width: 620px; height: 382px; padding-left: 19px; padding-right: 21px; margin: 60px auto; }
-    .main { width: 100%; padding-top: 10px; border-top: 1px dotted #ded6ce; }
-    .news:hover { background: url('') ; }
+    .section { width: 100%; padding-top: 10px; border-top: 1px dotted #ded6ce; }
+    .news:hover { background: url('../images/lesson_04/img10/newsBg.png') repeat top left; }
     .news-pic { width: 180px; height: 126px; padding-top: 10px; padding-right: 30px; }
     .news-pic img { width: 100%; height: 100%; vertical-align: top; }
     .news-content { width: 410px; height: 180px;  }
@@ -18,16 +18,18 @@
     .news-info { line-height: 20px; color: #808080; }
     .news-summary { line-height: 20px; color: #52525a; text-indent: 2em; }
     .extension { width: 100%; padding-top: 16px; }
-    .keyword { width: 64px; height: 16px; line-height: 16px; text-align: center; color: #fff; background: #42ad6b; }
+    .keyword { display: none; width: 64px; height: 16px; line-height: 16px; text-align: center; color: #fff; background: #42ad6b; }
+    .news:hover .keyword { display: block; }
     .links { padding-top: 5px; padding-right: 20px; }
-    .share-wrap { position: relative; width: 61px; height: 30px; }
-    .share { position: absolute; top: 0; left: 0; width: 55px; height: 28px; padding-left: 6px; line-height: 28px; border: 1px solid transparent; }
-    .share-wrap:hover .share { border-color: #cec6ce; border-bottom-color: #fff; z-index: 1; }
-    .shareIcon { display: inline-block; width: 16px; height: 20px; background: url('../images/lesson_04/img10/share.png') no-repeat center center; vertical-align: middle; }
-    .share a { padding-left: 4px; color: #808080; vertical-align: middle; }
+
+    .share-wrap { position: relative; width: 63px; height: 30px; margin-top: -38px; margin-right: 127px; }
+    .share { position: absolute; top: 0; left: 0; width: 55px; height: 28px; padding-left: 6px; line-height: 28px; color: #808080; border: 1px solid transparent; vertical-align: middle; z-index: 1; cursor: pointer; }
     .share-list { display: none; position: absolute; top: 29px; left: -85px; width: 116px; height: 184px; padding:  2px 15px 0; background: #fff; border: 1px solid #cec6ce; }
+    .shareIcon { display: inline-block; width: 16px; height: 20px; padding-right: 4px; background: url('../images/lesson_04/img10/share.png') no-repeat left center; vertical-align: middle; }
+    .share-wrap:hover .share { border-color: #cec6ce; border-bottom-color: #fff; }
     .share-wrap:hover .share-list { display: block; }
-    .share-list-item { height: 36px; line-height: 36px; border-bottom: 1px dotted #ded6ce; }
+
+    .share-list-item { height: 36px; line-height: 36px; border-bottom: 1px dotted #ded6ce; cursor: pointer; }
     .sharelogo { display: inline-block; width: 24px; height: 24px; vertical-align: middle; }
     .netease { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat left top; }
     .share-list-item:hover .netease { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat left bottom; }
@@ -39,14 +41,18 @@
     .share-list-item:hover .renren { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat -72px bottom; }
     .youdao { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat right top; }
     .share-list-item:hover .youdao { background: url('../images/lesson_04/img10/shareLogo.jpg') no-repeat right bottom; }
-    .share-list-item a { color: #212110; }
+    .share-list-item a { padding-left: 6px; color: #212110; }
     .share-list-item:hover a { color: #ad2929; }
     .share-list-item.youdao { border-bottom: none; }
+
     .pageview { width: 50px; height: 30px; line-height: 30px; padding-left: 4px; }
     .pageviewIcon { display: inline-block; width: 19px; height: 17px; margin-right: 4px; background: url('../images/lesson_04/img10/pageview.png') no-repeat center center; vertical-align: middle; }
-    .recommend { width: 51px; height: 20px; margin-top: 5px; color: #000; border: 1px solid #c0c0c0; border-radius: 2px; }
-    .recommend a { padding: 0 5px; line-height: 20px; color: #000; }
-    .number { display: inline-block; width: 15px; height: 20px; line-height: 20px; text-align: center; color: #de736b; border-left: 1px solid #c0c0c0; }
+    .extension { position: relative; }
+    .recommend { position: absolute; top: 21px; left: 340px; height: 20px; padding-left: 5px; line-height: 20px; color: #000; border: 1px solid #c0c0c0; border-radius: 2px; }
+    .number { display: inline-block; width: 15px; height: 20px; margin-left: 5px; line-height: 20px; text-align: center; color: #de736b; border-left: 1px solid #c0c0c0; }
+    .recommend:hover:before  { width: 46px; }
+    .recommend:before { position: absolute; top: -1px; left: 0; width: 0; height: 20px; content: '推荐'; line-height: 20px; color: #fff; background: #d64231; border: 1px solid #d64231; transition: width 1s; -webkit-transition: width 1s; overflow: hidden; }
+    .news:hover .number { color: #fff; border-left: 1px solid #de5a52; }
     .news-list-item { float: left; width: 146px; height: 20px; padding-left: 9px; }
     .news-list-icon { display: inline-block; width: 3px; height: 3px; background: url('../images/lesson_04/img10/icon.jpg') no-repeat center center; vertical-align: middle; }
     .news-list-item a { padding-left: 4px; line-height: 20px; color: #212110; vertical-align: middle; }
@@ -54,44 +60,46 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="main news clearfix">
-      <div class="news-pic fl"><img src="../images/lesson_04/img10/SANSUNG.jpg" alt=""></div>
-      <div class="news-content fl">
-        <h2 class="news-title">Galaxy S5传闻汇总：支持虹膜扫描</h2>
-        <p class="news-info">网易科技报道 <span>2014-01-12 12:08:08</span></p>
-        <div  class="news-summary">有传言称三星将会为Galaxy S5推出两个版本，一个是采用塑料机身的较便宜的版本，另一个是采用金属机身的较贵的版本。同时会搭载64位处理器与4GB RAM。</div>
-        <div class="extension clearfix">
-          <div class="keyword fl hide">Galaxy S5</div>
-          <div class="links fr clearfix">
-            <div class="share-wrap fl">
-              <div class="share">
-                <i class="shareIcon"></i><a href="#">分享</a>
-              </div>
-              <ul class="share-list">
-                <li class="share-list-item">
-                  <i class="sharelogo netease"></i><a href="#">网易微博</a>
-                </li>
-                <li class="share-list-item">
-                  <i class="sharelogo sina"></i><a href="#">新浪微博</a>
-                </li>
-                <li class="share-list-item">
-                  <i class="sharelogo tencent"></i><a href="#">腾讯空间</a>
-                </li>
-                <li class="share-list-item">
-                  <i class="sharelogo renren"></i><a href="#">人人网</a>
-                </li>
-                <li class="share-list-item">
-                  <i class="sharelogo youdao"></i><a href="#">有道云笔记</a>
-                </li>
-              </ul>
+    <div class="main clearfix">
+      <div class="section news">
+        <div class="news-pic fl"><img src="../images/lesson_04/img10/SANSUNG.jpg" alt=""></div>
+        <div class="news-content fl">
+          <h2 class="news-title">Galaxy S5传闻汇总:支持虹膜扫描</h2>
+          <p class="news-info">网易科技报道 <span>2014-01-12 12:08:08</span></p>
+          <div  class="news-summary">有传言称三星将会为Galaxy S5推出两个版本，一个是采用塑料机身的较便宜的版本，另一个是采用金属机身的较贵的版本。同时会搭载64位处理器与4GB RAM。</div>
+          <div class="keyword fl">Galaxy S5</div>
+        </div>
+      </div>
+      <div class="extension fr clearfix">
+        <div class="links fr clearfix">
+          <div class="share-wrap fr">
+            <div class="share">
+              <i class="shareIcon"></i>分享
             </div>
-            <div class="pageview fl"><i class="pageviewIcon"></i>39</div>
-            <div class="recommend fl"><a href="#">推荐</a><span class="number">0</span></div>
+            <ul class="share-list">
+              <li class="share-list-item">
+                <i class="sharelogo netease"></i><a href="#">网易微博</a>
+              </li>
+              <li class="share-list-item">
+                <i class="sharelogo sina"></i><a href="#">新浪微博</a>
+              </li>
+              <li class="share-list-item">
+                <i class="sharelogo tencent"></i><a href="#">腾讯空间</a>
+              </li>
+              <li class="share-list-item">
+                <i class="sharelogo renren"></i><a href="#">人人网</a>
+              </li>
+              <li class="share-list-item">
+                <i class="sharelogo youdao"></i><a href="#">有道云笔记</a>
+              </li>
+            </ul>
           </div>
+          <div class="pageview fl"><i class="pageviewIcon"></i>39</div>
+          <div class="recommend fl">推荐<span class="number">0</span></div>
         </div>
       </div>
     </div>
-    <div class="main">
+    <div class="section">
       <ul class="news-list clearfix">
         <li class="news-list-item">
           <i class="news-list-icon"></i><a href="#">vivo Xplay高清登场</a>
