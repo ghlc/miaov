@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>新潮选项卡</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    .wrap { width: 280px; height: 434px; padding: 28px 14px 0 13px; margin: 60px auto; }
+    .head { position: relative; width: 100%; height: 20px; background: url('../images/lesson_04/img11/head-border.jpg') no-repeat center 20px; border-bottom: 3px solid transparent; }
+    .column-title { padding-left: 13px; line-height: 20px; font-size: 14px; letter-spacing: 1px; }
+    .head img { position: absolute; top: -2px; right: 3px; }
+    .container { padding: 62px 20px 0 24px; }
+    .main { position: relative; width: 234px; height: 274px; border: 1px dashed #ef2139; }
+    .tab-list-item { position: absolute; width: 67px; height: 30px; line-height: 15px; text-align: center; color: #293931; cursor: pointer; }
+    .tab-list-item:hover { z-index: 1; color: #fff; }
+    .tab-list-item.current { z-index: 1; color: #fff; }
+    .up-item { top: -57px; padding-top: 24px; padding-bottom: 47px; background: url('../images/lesson_04/img11/graymark.png') no-repeat center center; }
+    .up-item:nth-of-type(1) { left: -28px; }
+    .up-item:nth-of-type(2) { left: 45px; }
+    .up-item:nth-of-type(3) { left: 118px; }
+    .up-item:nth-of-type(4) { left: 191px; }
+    .up-item:hover { background: url('../images/lesson_04/img11/redmark.png') no-repeat center center; }
+    .up-item.current { background: url('../images/lesson_04/img11/redmark.png') no-repeat center center; }
+    .down-item { bottom: -58px; padding-top: 62px; padding-bottom: 9px; background: url('../images/lesson_04/img11/gray-mark.png') no-repeat center center; }
+    .down-item:nth-of-type(5) { right: -24px; }
+    .down-item:nth-of-type(6) { right: 49px; }
+    .down-item:nth-of-type(7) { right: 122px; }
+    .down-item:nth-of-type(8) { right: 195px; }
+    .down-item:hover { background: url('../images/lesson_04/img11/red-mark.png') no-repeat center center; }
+    .down-item.current { background: url('../images/lesson_04/img11/red-mark.png') no-repeat center center; }
+    .theme-list { position: absolute; top: 6px; left: 6px; width: 218px; height: 258px; padding: 1px; background: #fff; border: 1px solid #adbdbd; box-shadow: 0 0 2px 1px #deded6; overflow: hidden; }
+    .theme-list-item { display: none; position: relative; cursor: pointer; }
+    .theme-list-item.current { display: block; }
+    .theme-list-item img { width: 100%; height: 100%; }
+    .theme-title { position: absolute; top: 182px; left: 0; width: 218px; height: 30px;  text-align: center; background: rgba(255, 255, 255,.5); }
+    .theme-title a { line-height: 28px; color: #293931; }
+    .theme-title a:hover { color: #c60000; text-decoration: underline; }
+    </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="head">
+      <h2 class="column-title">王牌栏目</h2>
+      <img src="../images/lesson_04/img11/special-feature.png" alt="">
+    </header>
+    <div class="container">
+      <div class="main">
+        <ul class="tab-list">
+          <li class="tab-list-item up-item current">IN潮</li>
+          <li class="tab-list-item up-item ">大师的秀</li>
+          <li class="tab-list-item up-item ">人物志</li>
+          <li class="tab-list-item up-item ">爱在圣诞</li>
+          <li class="tab-list-item down-item ">情爱<br>解码</li>
+          <li class="tab-list-item down-item ">美丽真相</li>
+          <li class="tab-list-item down-item ">评鉴团</li>
+          <li class="tab-list-item down-item ">玩乐<br>生活家</li>
+        </ul>
+        <ul class="theme-list">
+          <li class="theme-list-item current">
+            <img src="../images/lesson_04/img11/IN-tide.jpg" alt="">
+            <div class="theme-title">
+              <a href="#">温暖圣诞季：家居心机大改造</a>
+            </div>
+          </li>
+          <li class="theme-list-item ">
+            <img src="../images/lesson_04/img11/master-show.jpg" alt="">
+            <div class="theme-title">
+              <a href="#">黄玲的花漾琉光 妆扮节日多面主角</a>
+            </div>
+          </li>
+          <li class="theme-list-item ">
+            <img src="../images/lesson_04/img11/character.jpg" alt="">
+            <div class="theme-title">
+              <a href="#">徐若瑄：女神很多 不老的只有一个</a>
+            </div>
+          </li>
+          <li class="theme-list-item ">
+            <img src="../images/lesson_04/img11/christmas.jpg" alt="">
+            <div class="theme-title">
+              <a href="#">携手翁虹探访无依儿童 圣诞传递最暖爱</a>
+            </div>
+          </li>
+          <li class="theme-list-item ">
+            <img src="../images/lesson_04/img11/love-decode.jpg" alt="">
+            <div class="theme-title">
+              <a href="#">“制服诱惑” 床上的糖衣炮弹</a>
+            </div>
+          </li>
+          <li class="theme-list-item ">
+            <img src="../images/lesson_04/img11/beautiful-truth.jpg" alt="">
+            <div class="theme-title">
+              <a href="#">品牌化妆品的艰难起步：是非成败论山寨</a>
+            </div>
+          </li>
+          <li class="theme-list-item ">
+            <img src="../images/lesson_04/img11/evaluation.jpg" alt="">
+            <div class="theme-title">
+              <a href="#">奥妙《评鉴团》：怎样洗衣服？</a>
+            </div>
+          </li>
+          <li class="theme-list-item ">
+            <img src="../images/lesson_04/img11/life-home.jpg" alt="">
+            <div class="theme-title">
+              <a href="#">翁虹：圣诞节 女人的三种情结</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
