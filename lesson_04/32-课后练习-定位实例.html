@@ -8,12 +8,59 @@
   <link rel="stylesheet" href="../css/reset.css">
   <style>
     .wrap { width: 620px; height: 382px; padding-left: 19px; padding-right: 21px; margin: 60px auto; }
-
+    .menu-wrap { position: relative; }
+    .menu-list { position: absolute; top: 10px; padding: 2px 20px 1px 15px; background: url('../images/lesson_04/img13/menuBg.jpg') repeat-x center center; border: 1px solid #94b5d6; border-radius: 5px; }
+    .menu-list:after { position: relative; top: -28px; display: block; content: ' '; width: 4px; height: 4px; background: #fff; border-top: 1px solid #94b5d6; border-left: 1px solid #94b5d6; transform: rotate(45deg); }
+    .menu-list:nth-of-type(1) { left: 4px; }
+    .menu-list:nth-of-type(1):after { left: 40px; }
+    .menu-list:nth-of-type(2) { left: 82px; }
+    .menu-list:nth-of-type(2):after { left: 55px; }
+    .menu-list:nth-of-type(3) { left: 88px; }
+    .menu-list:nth-of-type(3):after { left: 141px; }
+    .menu-list:nth-of-type(4) { left: 166px; }
+    .menu-list:nth-of-type(4):after { left: 141px; }
+    .menu-list-item { float: left; height: 22px; line-height: 22px; padding-left: 8px; padding-right: 9px; background: url('../images/lesson_04/img13/menu-border.jpg') no-repeat right 4px; }
+    .menu-list-item a { color: #215a9c; }
+    .menu-list-item a:hover {  }
     </style>
 </head>
 <body>
   <div class="wrap">
-
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-list-item current"><a href="#">首页</a></li>
+        <li class="nav-list-item"><a href="#">关于我们</a></li>
+        <li class="nav-list-item"><a href="#">作品</a></li>
+        <li class="nav-list-item"><a href="#">博客</a></li>
+      </ul>
+      <a class="more" href="#">&gt;&gt;更多</a>
+    </nav>
+    <div class="menu-wrap">
+      <ul class="menu-list clearfix current">
+        <li class="menu-list-item"><a href="#">最近更新</a></li>
+        <li class="menu-list-item"><a href="#">活动</a></li>
+        <li class="menu-list-item"><a href="#">报名试听</a></li>
+        <li class="menu-list-item"><a href="#">学员反馈</a></li>
+      </ul>
+      <ul class="menu-list clearfix">
+        <li class="menu-list-item"><a href="#">妙味讲师</a></li>
+        <li class="menu-list-item"><a href="#">培训方式</a></li>
+        <li class="menu-list-item"><a href="#">培训理念</a></li>
+        <li class="menu-list-item"><a href="#">联系我们</a></li>
+      </ul>
+      <ul class="menu-list clearfix">
+        <li class="menu-list-item"><a href="#">般固</a></li>
+        <li class="menu-list-item"><a href="#">MATRIX</a></li>
+        <li class="menu-list-item"><a href="#">留学e网</a></li>
+        <li class="menu-list-item"><a href="#">ECMall</a></li>
+      </ul>
+      <ul class="menu-list clearfix">
+        <li class="menu-list-item"><a href="#">JS教程</a></li>
+        <li class="menu-list-item"><a href="#">弹出层效果</a></li>
+        <li class="menu-list-item"><a href="#">3D球面标签云</a></li>
+        <li class="menu-list-item"><a href="#">Window计算器</a></li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
