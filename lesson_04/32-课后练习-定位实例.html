@@ -7,33 +7,41 @@
   <title>延时消失的菜单</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
-    .wrap { width: 620px; height: 382px; padding-left: 19px; padding-right: 21px; margin: 60px auto; }
-    .menu-wrap { position: relative; }
-    .menu-list { position: absolute; top: 10px; padding: 2px 20px 1px 15px; background: url('../images/lesson_04/img13/menuBg.jpg') repeat-x center center; border: 1px solid #94b5d6; border-radius: 5px; }
-    .menu-list:after { position: relative; top: -28px; display: block; content: ' '; width: 4px; height: 4px; background: #fff; border-top: 1px solid #94b5d6; border-left: 1px solid #94b5d6; transform: rotate(45deg); }
+    .wrap { position: relative; width: 520px; height: 36px; margin: 60px auto; background: url('../images/lesson_04/img13/navBg.png') no-repeat center center; }
+    .nav-wrap { padding: 2px 20px 0 12px; }
+    .nav-list { float: left; }
+    .nav-list-item { float: left; padding: 3px 5px 6px; background: url('../images/lesson_04/img13/nav-border.jpg') no-repeat right center; }
+    .nav-list-item a { display: block; height: 24px; padding: 1px 20px 0; line-height: 24px; font-size: 14px; color: #fff; }
+    .nav-list-item.current a { background: rgba(255, 255, 255, .5); border-radius: 5px; }
+    .nav-list-item a:hover { background: rgba(255, 255, 255, .5); border-radius: 5px; }
+    .more { display: block; height: 20px; margin-top: 6px; line-height: 20px; font-size: 14px; color: #fff; }
+    .menu-wrap { position: absolute; top: 46px; left: 0; }
+    .menu-list { display: none; position: relative; top: 0; height: 22px; padding: 2px 20px 1px 15px; background: url('../images/lesson_04/img13/menuBg.png') repeat-x center center; border: 1px solid #94b5d6; border-radius: 5px; }
+    .menu-list:after { position: absolute; top: -4px; display: block; content: ''; width: 4px; height: 4px; background: #fff; border-top: 1px solid #94b5d6; border-left: 1px solid #94b5d6; transform: rotate(45deg); }
+    .menu-list.current { display: block; }
     .menu-list:nth-of-type(1) { left: 4px; }
-    .menu-list:nth-of-type(1):after { left: 40px; }
+    .menu-list:nth-of-type(1):after { left: 42px; }
     .menu-list:nth-of-type(2) { left: 82px; }
-    .menu-list:nth-of-type(2):after { left: 55px; }
+    .menu-list:nth-of-type(2):after { left: 56px; }
     .menu-list:nth-of-type(3) { left: 88px; }
-    .menu-list:nth-of-type(3):after { left: 141px; }
+    .menu-list:nth-of-type(3):after { left: 142px; }
     .menu-list:nth-of-type(4) { left: 166px; }
-    .menu-list:nth-of-type(4):after { left: 141px; }
-    .menu-list-item { float: left; height: 22px; line-height: 22px; padding-left: 8px; padding-right: 9px; background: url('../images/lesson_04/img13/menu-border.jpg') no-repeat right 4px; }
-    .menu-list-item a { color: #215a9c; }
-    .menu-list-item a:hover {  }
+    .menu-list:nth-of-type(4):after { left: 142px; }
+    .menu-list-item { float: left; height: 22px; line-height: 22px; padding-left: 8px; padding-right: 8px; background: url('../images/lesson_04/img13/menu-border.jpg') no-repeat right 4px; }
+    .menu-list-item a { display: inline-block; height: 14px; line-height: 14px; color: #215a9c; border-bottom: 2px solid transparent; }
+    .menu-list-item a:hover { border-bottom-color: #215a9c; }
     </style>
 </head>
 <body>
   <div class="wrap">
-    <nav>
-      <ul class="nav-list">
+    <nav class="nav-wrap clearfix">
+      <ul class="nav-list clearfix">
         <li class="nav-list-item current"><a href="#">首页</a></li>
         <li class="nav-list-item"><a href="#">关于我们</a></li>
         <li class="nav-list-item"><a href="#">作品</a></li>
         <li class="nav-list-item"><a href="#">博客</a></li>
       </ul>
-      <a class="more" href="#">&gt;&gt;更多</a>
+      <a class="more fr" href="#">&gt;&gt;更多</a>
     </nav>
     <div class="menu-wrap">
       <ul class="menu-list clearfix current">

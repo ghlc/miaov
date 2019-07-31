@@ -7,13 +7,130 @@
   <title>影片信息提示效果</title>
   <link rel="stylesheet" href="../css/reset.css">
   <style>
-    .wrap { width: 620px; height: 382px; padding-left: 19px; padding-right: 21px; margin: 60px auto; }
-
+    .wrap { width: 475px; height: 229px; margin: 60px auto; }
+    .menu-wrap { height: 27px; border-left: 1px solid #fff; border-bottom: 1px solid #dedede; }
+    .menu { float: left; height: 26px; padding-left: 10px; padding-right: 11px; margin-left: -1px; line-height: 26px; text-align: center; color: #394242; border: 1px solid transparent; }
+    .menu:hover { font-weight: bold; border-color: #dedede; border-bottom-color: #fff; }
+    .menu.current { font-weight: bold; border-color: #dedede; border-bottom-color: #fff; }
+    .main { padding-top: 12px; }
+    .content { display: none; }
+    .content.current { display: block; }
+    .film-list-item { float: left; position: relative; padding-right: 17px; }
+    .film-list-item:last-child { padding-right: 0; }
+    .film-info { position: relative; width: 100px; height: 140px; padding: 2px; border: 1px solid #dedede; overflow: hidden; }
+    .film-info img { width: 100%; height: 100%; vertical-align: top; }
+    .film-info:after { position: absolute; top: 8px; left: 46px; display: block; content: '720高清'; width: 80px; height: 18px; padding-top: 2px; line-height: 18px; text-align: center; color: #fff; background: #f75200; transform: rotate(43deg); }
+    .film-info:hover { border-color: #088cc6; }
+    .film-title { padding-top: 3px; line-height: 20px; text-align: center; }
+    .film-title:after { float: right; display: block; content:''; width: 8px; height: 10px;margin-top: 5px; background: url('../images/lesson_04/img14/icon.png') no-repeat center center; }
+    .film-title a { font-weight: normal; color: #394242; }
+    .film-summary { line-height: 20px; color: #adada5; }
+    .film-desc { display: none; position: absolute; top: 0; width: 202px; height: 138px; padding-top: 6px; padding-left: 9px; background: url('../images/lesson_04/img14/Bg.jpg') repeat-x center center; border: 1px solid #cecece; z-index: 1; }
+    .film-list-item:nth-of-type(1) .film-desc { left: 109px; }
+    .film-list-item:nth-of-type(2) .film-desc { left: 109px; }
+    .film-list-item:nth-of-type(3) .film-desc { right: 126px; }
+    .film-list-item:nth-of-type(4) .film-desc { right: 109px; }
+    .film-info:hover + .film-desc { display: block; }
+    .film-name { line-height: 20px; font-size: 14px; letter-spacing: 1px; }
+    .film-star { height: 24px; color: #adada5; }
+    .film-star span { padding-right: 10px; padding-left: 5px; line-height: 20px; font-size: 14px; color: #ef4200; }
+    .film-star img { vertical-align: text-top; }
+    .film-desc p { line-height: 20px; color: #4a4a4a; }
+    .film-type span, .film-action span,
+    .film-area span, .film-year span { padding-right: 3px; color: #8c8c8c; }
     </style>
 </head>
 <body>
   <div class="wrap">
-
+    <div class="menu-wrap clearfix">
+      <div class="menu current">最新电影</div>
+      <div class="menu">经典大片</div>
+      <div class="menu">新片预告</div>
+    </div>
+    <div class="main">
+      <div class="content current">
+        <ul class="film-list clearfix">
+          <li class="film-list-item">
+            <div class="film-info">
+              <a href="#">
+                <img src="../images/lesson_04/img14/chenxiaochun.jpg" alt="">
+              </a>
+            </div>
+            <div class="film-desc">
+              <h4 class="film-name">寻龙夺宝</h4>
+              <div class="film-star">
+                <img src="../images/lesson_04/img14/4star.jpg" alt=""><span>7.1</span>[116评]
+              </div>
+              <p class="film-type"><span>类型：</span>动作</p>
+              <p class="film-action"><span>主演：</span>山姆·尼尔 陈小春 王姬</p>
+              <p class="film-area"><span>地区：</span>澳大利亚</p>
+              <p class="film-year"><span>年份：</span>2011</p>
+            </div>
+            <h4 class="film-title"><a href="#">寻龙夺宝</a></h4>
+            <p class="film-summary">陈小春奇幻冒险片</p>
+          </li>
+          <li class="film-list-item">
+            <div class="film-info">
+              <a href="#">
+                <img src="../images/lesson_04/img14/gongli.jpg" alt="">
+              </a>
+            </div>
+            <div class="film-desc">
+              <h4 class="film-name">我知女人心</h4>
+              <div class="film-star">
+                <img src="../images/lesson_04/img14/5star.jpg" alt=""><span>7.1</span>[116评]
+              </div>
+              <p class="film-type"><span>类型：</span>情感</p>
+              <p class="film-action"><span>主演：</span>巩俐 刘德华</p>
+              <p class="film-area"><span>地区：</span>大陆</p>
+              <p class="film-year"><span>年份：</span>2011</p>
+            </div>
+            <h4 class="film-title"><a href="#">我知女人心</a></h4>
+            <p class="film-summary">巩俐化身广告杀手</p>
+          </li>
+          <li class="film-list-item">
+            <div class="film-info">
+              <a href="#">
+                <img src="../images/lesson_04/img14/yuwenle.jpg" alt="">
+              </a>
+            </div>
+            <div class="film-desc">
+              <h4 class="film-name">龙虎门</h4>
+              <div class="film-star">
+                <img src="../images/lesson_04/img14/3star.jpg" alt=""><span>7.1</span>[116评]
+              </div>
+              <p class="film-type"><span>类型：</span>动作</p>
+              <p class="film-action"><span>主演：</span>甄子丹 余文乐</p>
+              <p class="film-area"><span>地区：</span>香港</p>
+              <p class="film-year"><span>年份：</span>2013</p>
+            </div>
+            <h4 class="film-title"><a href="#">龙虎门</a></h4>
+            <p class="film-summary">漫画改编热血动作</p>
+          </li>
+          <li class="film-list-item">
+            <div class="film-info">
+              <a href="#">
+                <img src="../images/lesson_04/img14/xietingfeng.jpg" alt="">
+              </a>
+            </div>
+            <div class="film-desc">
+              <h4 class="film-name">新少林寺</h4>
+              <div class="film-star">
+                <img src="../images/lesson_04/img14/4star.jpg" alt=""><span>7.1</span>[116评]
+              </div>
+              <p class="film-type"><span>类型：</span>战争</p>
+              <p class="film-action"><span>主演：</span>刘德华 范冰冰 谢霆锋</p>
+              <p class="film-area"><span>地区：</span>大陆</p>
+              <p class="film-year"><span>年份：</span>2015</p>
+            </div>
+            <h4 class="film-title"><a href="#">新少林寺</a></h4>
+            <p class="film-summary">谢霆锋活杀范冰冰</p>
+          </li>
+        </ul>
+      </div>
+      <div class="content"></div>
+      <div class="content"></div>
+    </div>
   </div>
 </body>
 </html>
