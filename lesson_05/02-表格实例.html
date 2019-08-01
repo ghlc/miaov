@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table 合并单元格</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<style>
+		table { border-collapse: collapse; width: 640px; margin: 60px auto; }
+		th,td { text-align: center; border: 1px solid #99b0da; }
+		th { height: 30px; font-size: 14px; background: #dbe3fa; }
+		td { height: 28px; }
+		img { vertical-align: top; }
+	</style>
+</head>
+<body>
+	<table>
+		<tbody>
+			<tr>
+				<th colspan="2" width="172">日期</th>
+				<th colspan="2" width="179">天气风向</th>
+				<th width="95">气温</th>
+				<th width="94">风向</th>
+				<th width="94">风力</th>
+			</tr>
+			<tr>
+				<td rowspan="2" width="95" bgcolor="#f4f7fc">22日星期五</td>
+				<td width="76" bgcolor="#f4f7fc">白天</td>
+				<td width="63"><img src="../images/lesson_05/sun.jpg" alt=""></td>
+				<td width="115">晴间多云</td>
+				<td style="color: #e54600;">高温7℃</td>
+				<td>无持续风向</td>
+				<td>微风</td>
+			</tr>
+			<tr>
+				<td bgcolor="#f4f7fc">夜间</td>
+				<td><img src="../images/lesson_05/moon.jpg" alt=""></td>
+				<td>晴</td>
+				<td style="color: #000065;">低温-4℃</td>
+				<td>无持续风向</td>
+				<td>微风</td>
+			</tr>
+			<tr>
+				<td rowspan="2" bgcolor="#f4f7fc" style="color: #cc0000;">23日星期六</td>
+				<td bgcolor="#f4f7fc">白天</td>
+				<td><img src="../images/lesson_05/sun.jpg" alt=""></td>
+				<td>晴</td>
+				<td style="color: #e54600;">高温9℃</td>
+				<td>无持续风向</td>
+				<td>微风</td>
+			</tr>
+			<tr>
+				<td bgcolor="#f4f7fc">夜间</td>
+				<td><img src="../images/lesson_05/cloud.jpg" alt=""></td>
+				<td>阴</td>
+				<td style="color: #000065;">低温-2℃</td>
+				<td>无持续风向</td>
+				<td>微风</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
