@@ -1,38 +1,46 @@
 @charset "utf-8";
 body {
 	line-height: 160%;
-	font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	color: #555;
+	text-align: center;
+	background-color: #f9f9f9;
 }
 
-body, p, h1, h2, h3, h4, h5, h6, dl, dd, form {
-	margin: 0;
-}
+body, p, h1, h2, h3, h4, h5, h6, dl, dd, form { margin: 0; }
+
+body, button, input, select, textarea { font-family: "Microsoft YaHei", "微软雅黑"， "SimHei", "黑体", "SimSun", "宋体", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+header, nav, section, aside, article, footer { display: block; }
 
 ol, ul, input, textarea {
 	padding: 0;
 	margin: 0;
 }
 
-ol, ul {
-	list-style: none;
-}
+textarea { resize: none; }
 
-*:focus { outline: none; }
+th, td, select, option { padding: 0; }
+
+ol, ul { list-style: none; }
+
+em, i { font-style: normal; }
+
+:focus { outline: none; }
 
 a { text-decoration: none; }
 
-img { border: none; }
+img { border: 0; }
 
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-th, td, select, option { padding: 0; }
-
-i { font-style: normal; }
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
 
 .fl { float: left; }
 
@@ -51,9 +59,17 @@ i { font-style: normal; }
 	overflow: hidden;
 }
 
-.none { display: none; }
+.hidden { visibility: hidden; }
 
-.block { display: block; }
+.hide, .none { display: none; }
+
+.block, .on, .current { display: block; }
+
+.m-t-5 { margin-top: 5px; }
+
+.m-t-10 { margin-top: 10px; }
+
+.m-t-15 { margin-top: 15px; }
 
 .f-small { font-size: 12px; }
 
@@ -62,6 +78,18 @@ i { font-style: normal; }
 .f-large { font-size: 16px; }
 
 .f-18 { font-size: 18px; }
+
+.f-20 { font-size: 20px; }
+
+.f-bold { font-weight: bold; }
+
+.f-lighter { font-weight: lighter; }
+
+.txt-left { text-align: left; }
+
+.txt-center { text-align: center; }
+
+.txt-right { text-align: right; }
 
 .white { color: #fff; }
 
@@ -72,3 +100,18 @@ i { font-style: normal; }
 .gray { color: #e0e0e0; }
 
 .black { color: #000; }
+
+.o-hidden { overflow: hidden; }
+
+.hand { cursor: pointer; }
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.wrap, .wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
