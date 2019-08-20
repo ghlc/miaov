@@ -1,36 +1,32 @@
 @charset "utf-8";
-body {
-	line-height: 160%;
-	font-size: 12px;
-	color: #555;
-	text-align: center;
-	background-color: #f9f9f9;
-}
+html { height: 100%; }
 
-body, p, h1, h2, h3, h4, h5, h6, dl, dd, form { margin: 0; }
+header, nav, menu, section, aside, article, footer { display: block; }
 
-body, button, input, select, textarea { font-family: "Microsoft YaHei", "微软雅黑"， "SimHei", "黑体", "SimSun", "宋体", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-header, nav, section, aside, article, footer { display: block; }
-
-ol, ul, input, textarea {
-	padding: 0;
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, input, textarea, select {
 	margin: 0;
+	padding: 0;
 }
 
-textarea { resize: none; }
+body {
+	height: 100%;
+	font: 12px/1.6 "Microsoft YaHei", "微软雅黑"， "SimHei", "黑体", "SimSun", "宋体", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background: #fff;
+}
 
-th, td, select, option { padding: 0; }
+img {
+	border: 0;
+	vertical-align: top;
+}
 
 ol, ul { list-style: none; }
 
-em, i { font-style: normal; }
+a {
+	color: #333;
+	text-decoration: none;
+}
 
-:focus { outline: none; }
-
-a { text-decoration: none; }
-
-img { border: 0; }
+a:hover { color: #0c82ff; }
 
 table {
 	border-collapse: collapse;
@@ -42,11 +38,22 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 
+em, i { font-style: normal; }
+
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+}
+
+button:focus, input:focus, select:focus, textarea:focus { outline: none; }
+
+/* 浮动 */
 .fl { float: left; }
 
 .fr { float: right; }
 
-.clearfix { zoom: 1; }
+/* 清除浮动 */
+.clearfix { *zoom: 1; }
 
 .clearfix:after {
 	display: block;
@@ -56,24 +63,19 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 0;
 	clear: both;
 	visibility: hidden;
-	overflow: hidden;
 }
 
-.hidden { visibility: hidden; }
+/* 状态显示 */
+.o-hide { overflow: hidden; }
 
-.hide, .none { display: none; }
+.hide { display: none; }
 
-.block, .on, .current { display: block; }
+.block { display: block; }
 
-.m-t-5 { margin-top: 5px; }
-
-.m-t-10 { margin-top: 10px; }
-
-.m-t-15 { margin-top: 15px; }
-
+/* 字号 */
 .f-small { font-size: 12px; }
 
-.f-medium { font-size: 14px; }
+.f-base { font-size: 14px; }
 
 .f-large { font-size: 16px; }
 
@@ -81,37 +83,49 @@ h1, h2, h3, h4, h5, h6 {
 
 .f-20 { font-size: 20px; }
 
-.f-bold { font-weight: bold; }
-
-.f-lighter { font-weight: lighter; }
-
+/* 文本对齐 */
 .txt-left { text-align: left; }
 
 .txt-center { text-align: center; }
 
 .txt-right { text-align: right; }
 
-.white { color: #fff; }
+.txt-justify { text-align: justify; }
 
-.red { color: #C00; }
+.v-middle { vertical-align: middle; }
 
-.blue { color: #039; }
+/* 行高 */
+.l-20 { line-height: 20px; }
 
-.gray { color: #e0e0e0; }
+.l-24 { line-height: 24px; }
 
-.black { color: #000; }
+.l-26 { line-height: 26px; }
 
-.o-hidden { overflow: hidden; }
+.l-28 { line-height: 28px; }
 
-.hand { cursor: pointer; }
+.l-30 { line-height: 30px; }
 
-.ellipsis {
+.txt-ellip {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
 
-.wrap, .wrapper {
+.txt-ellips {
+	display: -webkit-box;
+	overflow: hidden;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.wrapper {
 	width: 1200px;
+	margin: 0 auto;
+}
+
+.layout {
+	width: 1400px;
 	margin: 0 auto;
 }
