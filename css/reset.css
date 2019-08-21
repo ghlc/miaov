@@ -10,7 +10,7 @@ body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, input, textarea, 
 
 body {
 	height: 100%;
-	font: 12px/1.6 "Microsoft YaHei", "微软雅黑"， "SimHei", "黑体", "SimSun", "宋体", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font: 12px/1.5 "Microsoft YaHei", "微软雅黑"， "SimHei", "黑体", "SimSun", "宋体", Arial, "Helvetica Neue", Helvetica, sans-serif;
 	background: #fff;
 }
 
@@ -55,20 +55,20 @@ button:focus, input:focus, select:focus, textarea:focus { outline: none; }
 /* 清除浮动 */
 .clearfix { *zoom: 1; }
 
-.clearfix:after {
+.clearfix:after, .clearfix:before {
 	display: block;
 	content: "";
+}
+
+.clearfix:after {
 	height: 0;
-	line-height: 0;
-	font-size: 0;
 	clear: both;
-	visibility: hidden;
 }
 
 /* 状态显示 */
 .o-hide { overflow: hidden; }
 
-.hide { display: none; }
+.hide, .none, .dn { display: none; }
 
 .block { display: block; }
 
@@ -120,12 +120,7 @@ button:focus, input:focus, select:focus, textarea:focus { outline: none; }
 	-webkit-box-orient: vertical;
 }
 
-.wrapper {
+.wrapper, .wrap {
 	width: 1200px;
-	margin: 0 auto;
-}
-
-.layout {
-	width: 1400px;
 	margin: 0 auto;
 }
