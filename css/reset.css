@@ -10,7 +10,7 @@ body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, input, textarea, 
 
 body {
 	height: 100%;
-	font: 12px/1.5 "Microsoft YaHei", "微软雅黑"， "SimHei", "黑体", "SimSun", "宋体", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font: normal 12px/1.5 "Microsoft YaHei", "微软雅黑", "SimHei", "黑体", "SimSun", "宋体", Arial, "Helvetica Neue", Helvetica, sans-serif;
 	background: #fff;
 }
 
@@ -53,6 +53,15 @@ button:focus, input:focus, select:focus, textarea:focus { outline: none; }
 .fr { float: right; }
 
 /* 清除浮动 */
+.clear {
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
+}
+
 .clearfix { *zoom: 1; }
 
 .clearfix:after, .clearfix:before {
@@ -63,6 +72,7 @@ button:focus, input:focus, select:focus, textarea:focus { outline: none; }
 .clearfix:after {
 	height: 0;
 	clear: both;
+	visibility: hidden;
 }
 
 /* 状态显示 */
@@ -75,7 +85,7 @@ button:focus, input:focus, select:focus, textarea:focus { outline: none; }
 /* 字号 */
 .f-small { font-size: 12px; }
 
-.f-base { font-size: 14px; }
+.f-medium { font-size: 14px; }
 
 .f-large { font-size: 16px; }
 
