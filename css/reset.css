@@ -1,5 +1,5 @@
 @charset "utf-8";
-html { height: 100%; }
+html, body { height: 100%; }
 
 header, nav, menu, section, aside, article, footer { display: block; }
 
@@ -9,8 +9,8 @@ body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, input, textarea, 
 }
 
 body {
-	height: 100%;
-	font: normal 12px/1.5 "Microsoft YaHei", "微软雅黑", "SimHei", "黑体", "SimSun", "宋体", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font: normal 12px/1.5 "PingFangSC-Regular", "Microsoft YaHei", "微软雅黑", "SimHei", "黑体", "SimSun", "宋体", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #333;
 	background: #fff;
 }
 
@@ -45,6 +45,8 @@ button, input, select, textarea {
 	font-size: 100%;
 }
 
+textarea { resize: none; }
+
 button:focus, input:focus, select:focus, textarea:focus { outline: none; }
 
 /* 浮动 */
@@ -78,7 +80,7 @@ button:focus, input:focus, select:focus, textarea:focus { outline: none; }
 /* 状态显示 */
 .o-hide { overflow: hidden; }
 
-.hide, .none, .dn { display: none; }
+.hide { display: none; }
 
 .block { display: block; }
 
@@ -115,13 +117,13 @@ button:focus, input:focus, select:focus, textarea:focus { outline: none; }
 
 .l-30 { line-height: 30px; }
 
-.txt-ellip {
+.txt-ellipsis {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
 
-.txt-ellips {
+.text-ellipsis {
 	display: -webkit-box;
 	overflow: hidden;
 	word-break: break-all;
@@ -130,7 +132,7 @@ button:focus, input:focus, select:focus, textarea:focus { outline: none; }
 	-webkit-box-orient: vertical;
 }
 
-.wrapper, .wrap {
+.wrapper {
 	width: 1200px;
 	margin: 0 auto;
 }
